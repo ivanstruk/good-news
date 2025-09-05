@@ -1,1 +1,4 @@
 .env
+.venv
+launch_env.command
+~$sources.xlsx
