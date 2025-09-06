@@ -1,5 +1,7 @@
 .env
 .venv
 launch_env.command
-~$sources.xlsx
+~$blog_config.xlsx
 __pycache__
+dev.ipynb
+.ipynb_checkpoints
