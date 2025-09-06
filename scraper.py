@@ -1,17 +1,55 @@
+from dotenv import load_dotenv
+import pandas as pd
+from pathlib import Path
+import os
+from db_utils import insert_article
 
 
-topic_whitelist = [
-    "blockchain",
-    "ai",
-    "economy",
-    "sports",
-    "politics",
-    "climate"
-]
+base_dir = Path(__file__).resolve().parent
+dotenv_path = os.path.join(base_dir, ".env")
+load_dotenv(dotenv_path)
+
+
+#Defining some blocked domains.
+blocked_sources = pd.read_excel(os.path.join(base_dir,"sources.xlsx"), sheet_name = 'blocked_domains')["Domains"].to_list()
+
+## Dependencies
+
+def serpapi_search(topic, api_key, num_results=5):
+    url = "https://serpapi.com/search"
+    serp_api_key = os.getenv("serp_api_key")
+    params = {
+        "engine": "google",     # Use Google search engine
+        "q": topic,             # Search topic
+        "tbm": "nws",           # News tab
+        "num": num_results,     # How many news results to return
+        "api_key": serp_api_key
+    }
+
+    response = requests.get(url, params=params)
+    response.raise_for_status()  # Raise error if request fails
+
+    data = response.json()
+
+    # Extract relevant info
+    articles = []
+    for item in data.get("news_results", []):
+        articles.append({
+            "title": item.get("title"),
+            "link": item.get("link"),
+            "snippet": item.get("snippet"),
+            "source": item.get("source"),
+            "date": item.get("date")
+        })
+    return articles
+
+
+## Core
+
 
 def research(topic, results=5):
     """
-    Search for recent news on a given topic.
+    Search for recent news on a given topic in SERP.
 
     Args:
         topic (str): The search keyword/topic.
@@ -30,71 +68,37 @@ def research(topic, results=5):
         raise ValueError("topic must be a non-empty string.")
 
     research = []
-        keywords = extract_keywords(search_term)
-        k_len=0
-        where_clause = ""
-        for k in keywords:
-            k_len+=1
-            print(k)
-            if k_len > 1:
-                
-                where_clause+= "OR content LIKE '%{}%' COLLATE NOCASE ".format(k)
-            else:
-                where_clause+="content LIKE '%{}%' COLLATE NOCASE "
-
-        conn = sqlite3.connect(os.path.join(base_dir,"articles.db"))
         
-        df = pd.read_sql_query("""
-            SELECT 
-                title,
-                content,
-                channel,
-                source,
-                topic,
-                link,
-                dt_published
+    results = serpapi_search(topic,20)
+    blocked_sources = ["finance.yahoo.com", "bloomberg.com"]
+    counter=0
+    for x in results:
+        url = x.get("link", "").lower()
+        if any(bad in url for bad in blocked_sources):
+            continue  # Skip blocked domains
+
+        art = get_article(x["link"])
+        if art == None:
+            continue
+            
+        my_article = {
+            "title" : art["title"],
+            "content" : convert_HTML(art["text"]),
+            "channel" : "News",
+            "source" : get_domain(url),
+            "topic" : "On-Demand",
+            "link" : url,
+            "dt_published" : convert_to_sql_datetime(art["publish_date"])    
+        }
+        research.append(my_article)
+        response = insert_article(my_article)
+        if response == 200:
+            counter+=1
                 
-            FROM articles
-            WHERE 1=1
-            AND ({})
-
-            ORDER BY dt_published DESC
-            LIMIT 5
-        """.format(where_clause), conn)
-
-        research.extend(df.to_dict(orient='records'))
-        
-        results = serpapi_search(search_term,20)
-        blocked_sources = ["finance.yahoo.com", "bloomberg.com"]
-        counter=0
-        for x in results:
-            url = x.get("link", "").lower()
-            if any(bad in url for bad in blocked_sources):
-                continue  # Skip blocked domains
-
-            art = get_article(x["link"])
-            if art == None:
-                continue
-                
-            my_article = {
-                "title" : art["title"],
-                "content" : convert_HTML(art["text"]),
-                "channel" : "News",
-                "source" : get_domain(url),
-                "topic" : "On-Demand",
-                "link" : url,
-                "dt_published" : convert_to_sql_datetime(art["publish_date"])    
-            }
-            research.append(my_article)
-            response = insert_article(my_article)
-            if response == 200:
-                counter+=1
-                
-
     try:
         # TODO: implement research logic
         pass
     except Exception as e:
         print(f"Error in research: {e}")
 
-    return articles
+    return research

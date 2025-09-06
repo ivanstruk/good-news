@@ -1,4 +1,6 @@
 from scraper import research
 
 
-print("Hello Ivan.")
+test = research("EU tariff exemptions")
+
+print(len(test))

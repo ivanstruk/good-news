@@ -2,3 +2,4 @@
 .venv
 launch_env.command
 ~$sources.xlsx
+__pycache__
