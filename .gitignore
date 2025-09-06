@@ -5,3 +5,4 @@ launch_env.command
 __pycache__
 dev.ipynb
 .ipynb_checkpoints
+launch_db.command
