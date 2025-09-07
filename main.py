@@ -1,8 +1,10 @@
 from logger import logger
-from scraper import research, scrapeRSS
+from scraper import research, scrapeRSS, fetchNews
 from telegram_scraper import fetchTelegram
 import pandas as pd
 import datetime
+from prompts.prompter import build_news_prompt, build_history_prompt
+from prompts.writer import write_article
 
 logger.info("Modules imported.")
 
@@ -31,7 +33,7 @@ sources = [s for s in sources if s["bool_visibility"]==True]
 # Initializing script...
 
 for topic in topic_agenda:
-    logger.info("Topic lool, topic: {}".format(topic))
+    logger.info("Topic pool, topic: {}".format(topic))
 
     temp_research_db = []
 
@@ -50,11 +52,11 @@ for topic in topic_agenda:
             if len(RSS_articles) > 0:
                 temp_research_db.extend(RSS_articles)
 
-        elif channel == "News":
-            news_articles = fetchNews(source)
-            if len(news_articles) > 0:
-                temp_research_db.extend(news_articles)
-
+        #elif channel == "News":
+        #    news_articles = fetchNews(source)
+        #    if len(news_articles) > 0:
+        #        temp_research_db.extend(news_articles)
+        #
         elif channel == "Telegram":
             telegram_messages = fetchNews(source)
             if len(telegram_messages) > 0:
@@ -64,5 +66,8 @@ for topic in topic_agenda:
             logger.info("Channel unrecognized: {}".format(channel))
             pass
     
-    print("Outcome:")
-    print(len(temp_research_db))
+    news = build_news_prompt(temp_research_db, 10000)
+    past_works = build_history_prompt(topic, limit=10)
+
+
+    write_article(news,past_works)

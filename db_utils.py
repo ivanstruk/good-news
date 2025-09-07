@@ -1,10 +1,10 @@
 from logger import logger
-from db_utils import insert_article, to_sql_datetime
 from datetime import datetime, timedelta
 import sqlite3
 import os
 import email.utils
 from pathlib import Path
+import pandas as pd
 
 
 base_dir = Path(__file__).resolve().parent
@@ -67,3 +67,21 @@ def to_sql_datetime(raw_date):
 
     fallback_time = datetime.utcnow() - timedelta(hours=1)
     return fallback_time.strftime('%Y-%m-%d %H:%M:%S')
+
+def fetch_posts(category,limit=100):
+    conn = sqlite3.connect("articles.db")
+    cursor = conn.cursor()
+    
+    df = pd.read_sql_query("""
+        SELECT 
+            *
+            
+        FROM posted_articles
+        WHERE category = '{}'
+        ORDER BY dt_published desc
+        LIMIT {}
+    """.format(category,limit), conn)
+    
+    return df.to_dict(orient='records')
+
+

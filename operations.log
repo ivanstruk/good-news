@@ -1,3 +1,193 @@
 2025-09-06 17:52:39,329 - INFO - main - Modules imported.
 2025-09-06 17:52:39,344 - INFO - main - Schedule determined. Today is Saturday
 2025-09-06 17:52:39,361 - INFO - main - Topic lool, topic: World News
+2025-09-06 19:03:06,413 - INFO - main - Modules imported.
+2025-09-06 19:03:06,427 - INFO - main - Schedule determined. Today is Saturday
+2025-09-06 19:03:06,443 - INFO - main - Topic lool, topic: World News
+2025-09-06 19:04:12,125 - INFO - main - Modules imported.
+2025-09-06 19:04:12,141 - INFO - main - Schedule determined. Today is Saturday
+2025-09-06 19:04:12,157 - INFO - main - Topic lool, topic: World News
+2025-09-06 19:04:23,137 - INFO - main - Modules imported.
+2025-09-06 19:04:23,151 - INFO - main - Schedule determined. Today is Saturday
+2025-09-06 19:04:23,165 - INFO - main - Topic lool, topic: World News
+2025-09-06 19:05:11,579 - INFO - main - Modules imported.
+2025-09-06 19:05:11,594 - INFO - main - Schedule determined. Today is Saturday
+2025-09-06 19:05:11,609 - INFO - main - Topic lool, topic: World News
+2025-09-06 19:13:41,221 - INFO - main - Modules imported.
+2025-09-06 19:13:41,235 - INFO - main - Schedule determined. Today is Saturday
+2025-09-06 19:13:41,250 - INFO - main - Topic pool, topic: World News
+2025-09-06 19:13:41,250 - INFO - scraper - Fetching News from Aljazeera
+2025-09-06 19:14:56,744 - INFO - scraper - Found 0 new articles
+2025-09-06 19:14:56,747 - INFO - scraper - Fetching News from Insiderr
+2025-09-06 19:14:58,608 - INFO - scraper - Found 0 new articles
+2025-09-06 19:14:58,610 - INFO - scraper - research(): searching SERP for latest world news today
+2025-09-06 19:14:58,891 - INFO - scraper - Failed to fetch article: https://www.reuters.com/world/middle-east/israeli-military-warns-gaza-city-residents-leave-bombs-high-rise-tower-2025-09-06/
+2025-09-06 19:14:58,891 - INFO - scraper - Error: Article `download()` failed with 401 Client Error: HTTP Forbidden for url: https://www.reuters.com/world/middle-east/israeli-military-warns-gaza-city-residents-leave-bombs-high-rise-tower-2025-09-06/ on URL https://www.reuters.com/world/middle-east/israeli-military-warns-gaza-city-residents-leave-bombs-high-rise-tower-2025-09-06/
+2025-09-06 19:15:03,420 - INFO - scraper - Exception: Failed to extract domain from URL
+2025-09-06 19:15:07,797 - INFO - scraper - Exception: Failed to extract domain from URL
+2025-09-06 19:15:07,977 - INFO - scraper - Failed to fetch article: https://www.nytimes.com/2025/09/05/world/europe/angela-rayner-nigel-farage-reform-uk-labour.html
+2025-09-06 19:15:07,977 - INFO - scraper - Error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/09/05/world/europe/angela-rayner-nigel-farage-reform-uk-labour.html on URL https://www.nytimes.com/2025/09/05/world/europe/angela-rayner-nigel-farage-reform-uk-labour.html
+2025-09-06 19:15:08,112 - INFO - scraper - Failed to fetch article: https://www.nytimes.com/2025/09/06/world/americas/javier-milei-karina-argentina-leaked-audio.html
+2025-09-06 19:15:08,113 - INFO - scraper - Error: Article `download()` failed with 403 Client Error: Forbidden for url: https://www.nytimes.com/2025/09/06/world/americas/javier-milei-karina-argentina-leaked-audio.html on URL https://www.nytimes.com/2025/09/06/world/americas/javier-milei-karina-argentina-leaked-audio.html
+2025-09-06 19:15:08,113 - INFO - scraper - Found 0 new articles
+2025-09-07 10:01:00,915 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 10:01:00,920 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 10:01:50,560 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 10:01:50,567 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 10:02:06,921 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 10:02:06,924 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 10:03:25,208 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 10:03:25,209 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 10:03:26,317 - INFO - scraper - Found 10 new articles
+2025-09-07 10:03:26,317 - INFO - scraper - Fetching News from CNN
+2025-09-07 10:05:03,521 - INFO - scraper - Found 0 new articles
+2025-09-07 10:05:03,723 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 10:06:48,734 - INFO - scraper - Found 0 new articles
+2025-09-07 10:06:48,741 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 10:07:05,714 - INFO - scraper - Found 0 new articles
+2025-09-07 10:07:05,717 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 10:07:05,889 - INFO - scraper - Found 5 new articles
+2025-09-07 10:07:05,890 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 10:07:06,016 - INFO - scraper - Found 5 new articles
+2025-09-07 10:07:06,016 - INFO - scraper - Fetching News from BBC Innovation
+2025-09-07 10:07:18,726 - INFO - scraper - Found 0 new articles
+2025-09-07 10:27:46,348 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 10:27:46,349 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 10:27:47,396 - INFO - scraper - Found 0 new articles
+2025-09-07 10:27:47,397 - INFO - scraper - Fetching News from CNN
+2025-09-07 10:28:16,967 - INFO - scraper - Found 0 new articles
+2025-09-07 10:28:17,016 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 10:28:35,724 - INFO - scraper - Found 0 new articles
+2025-09-07 10:28:35,726 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 10:28:49,115 - INFO - scraper - Found 0 new articles
+2025-09-07 10:28:49,116 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 10:28:49,284 - INFO - scraper - Found 0 new articles
+2025-09-07 10:28:49,285 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 10:28:49,424 - INFO - scraper - Found 0 new articles
+2025-09-07 10:28:49,424 - INFO - scraper - Fetching News from BBC Innovation
+2025-09-07 10:29:01,152 - INFO - scraper - Found 0 new articles
+2025-09-07 11:05:02,940 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 11:05:02,942 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 11:05:04,055 - INFO - scraper - Found 0 new articles
+2025-09-07 11:05:04,056 - INFO - scraper - Fetching News from CNN
+2025-09-07 11:05:35,333 - INFO - scraper - Found 0 new articles
+2025-09-07 11:05:35,427 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 11:05:55,314 - INFO - scraper - Found 0 new articles
+2025-09-07 11:05:55,318 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 11:06:07,572 - INFO - scraper - Found 0 new articles
+2025-09-07 11:06:07,573 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 11:06:07,738 - INFO - scraper - Found 1 new articles
+2025-09-07 11:06:07,739 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 11:06:07,854 - INFO - scraper - Found 0 new articles
+2025-09-07 11:06:07,854 - INFO - scraper - Fetching News from BBC Innovation
+2025-09-07 11:06:24,700 - INFO - scraper - Found 0 new articles
+2025-09-07 12:04:17,978 - INFO - 992865759 - Topic pool, topic: Business
+2025-09-07 12:04:17,980 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 12:04:19,049 - INFO - scraper - Found 0 new articles
+2025-09-07 12:04:19,049 - INFO - scraper - Fetching News from CNN
+2025-09-07 12:04:49,797 - INFO - scraper - Found 0 new articles
+2025-09-07 12:04:49,874 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 12:05:18,331 - INFO - scraper - Found 0 new articles
+2025-09-07 12:05:18,352 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 12:05:26,295 - INFO - scraper - Found 0 new articles
+2025-09-07 12:05:26,296 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 12:05:26,452 - INFO - scraper - Found 1 new articles
+2025-09-07 12:05:26,453 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 12:05:26,569 - INFO - scraper - Found 0 new articles
+2025-09-07 12:05:26,570 - INFO - scraper - Fetching News from BBC Innovation
+2025-09-07 12:05:40,978 - INFO - scraper - Found 0 new articles
+2025-09-07 14:24:48,613 - INFO - main - Modules imported.
+2025-09-07 14:24:48,630 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 14:24:48,647 - INFO - main - Topic pool, topic: Business
+2025-09-07 14:24:48,647 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 14:24:49,683 - INFO - scraper - Found 3 new articles
+2025-09-07 14:24:49,683 - INFO - scraper - Fetching News from CNN
+2025-09-07 14:26:18,450 - INFO - scraper - Found 0 new articles
+2025-09-07 14:26:18,588 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 14:27:36,605 - INFO - scraper - Found 0 new articles
+2025-09-07 14:27:36,667 - INFO - scraper - Fetching News from BBC Business
+2025-09-07 14:28:48,700 - INFO - scraper - Found 0 new articles
+2025-09-07 14:28:48,757 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 14:28:48,877 - INFO - scraper - Found 2 new articles
+2025-09-07 14:28:48,877 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 14:28:48,974 - INFO - scraper - Found 1 new articles
+2025-09-07 14:28:48,974 - INFO - scraper - Fetching News from BBC Innovation
+2025-09-07 14:30:14,209 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:01,926 - INFO - main - Modules imported.
+2025-09-07 14:32:01,941 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 14:32:01,955 - INFO - main - Topic pool, topic: Business
+2025-09-07 14:32:01,955 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 14:32:02,968 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:02,968 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:02,968 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:02,968 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:02,968 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 14:32:03,094 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:03,094 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 14:32:03,191 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:03,191 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:27,735 - INFO - main - Modules imported.
+2025-09-07 14:32:27,750 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 14:32:27,765 - INFO - main - Topic pool, topic: Business
+2025-09-07 14:32:27,765 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 14:32:28,742 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:28,742 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:28,742 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:28,742 - INFO - main - Channel unrecognized: News
+2025-09-07 14:32:28,742 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 14:32:28,841 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:28,841 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 14:32:28,918 - INFO - scraper - Found 0 new articles
+2025-09-07 14:32:28,918 - INFO - main - Channel unrecognized: News
+2025-09-07 14:33:43,209 - INFO - main - Modules imported.
+2025-09-07 14:33:43,224 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 14:33:43,238 - INFO - main - Topic pool, topic: Business
+2025-09-07 14:33:43,239 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 14:33:44,225 - INFO - scraper - Found 0 new articles
+2025-09-07 14:33:44,225 - INFO - main - Channel unrecognized: News
+2025-09-07 14:33:44,225 - INFO - main - Channel unrecognized: News
+2025-09-07 14:33:44,225 - INFO - main - Channel unrecognized: News
+2025-09-07 14:33:44,225 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 14:33:44,326 - INFO - scraper - Found 0 new articles
+2025-09-07 14:33:44,326 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 14:33:44,416 - INFO - scraper - Found 0 new articles
+2025-09-07 14:33:44,416 - INFO - main - Channel unrecognized: News
+2025-09-07 14:34:37,969 - INFO - main - Modules imported.
+2025-09-07 14:34:37,984 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 14:34:37,998 - INFO - main - Topic pool, topic: Business
+2025-09-07 14:34:37,998 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 14:34:39,003 - INFO - scraper - Found 0 new articles
+2025-09-07 14:34:39,003 - INFO - main - Channel unrecognized: News
+2025-09-07 14:34:39,003 - INFO - main - Channel unrecognized: News
+2025-09-07 14:34:39,003 - INFO - main - Channel unrecognized: News
+2025-09-07 14:34:39,003 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 14:34:39,110 - INFO - scraper - Found 0 new articles
+2025-09-07 14:34:39,110 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 14:34:39,191 - INFO - scraper - Found 0 new articles
+2025-09-07 14:34:39,191 - INFO - main - Channel unrecognized: News
+2025-09-07 15:18:55,200 - INFO - main - Modules imported.
+2025-09-07 15:18:55,215 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 15:18:55,231 - INFO - main - Topic pool, topic: Business
+2025-09-07 15:18:55,232 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 15:18:56,252 - INFO - scraper - Found 1 new articles
+2025-09-07 15:18:56,252 - INFO - main - Channel unrecognized: News
+2025-09-07 15:18:56,253 - INFO - main - Channel unrecognized: News
+2025-09-07 15:18:56,253 - INFO - main - Channel unrecognized: News
+2025-09-07 15:18:56,253 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 15:18:56,380 - INFO - scraper - Found 0 new articles
+2025-09-07 15:18:56,380 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 15:18:56,474 - INFO - scraper - Found 0 new articles
+2025-09-07 15:18:56,474 - INFO - main - Channel unrecognized: News
+2025-09-07 15:19:22,797 - INFO - main - Modules imported.
+2025-09-07 15:19:22,813 - INFO - main - Schedule determined. Today is Sunday
+2025-09-07 15:19:22,828 - INFO - main - Topic pool, topic: Business
+2025-09-07 15:19:22,828 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-09-07 15:19:23,817 - INFO - scraper - Found 0 new articles
+2025-09-07 15:19:23,817 - INFO - main - Channel unrecognized: News
+2025-09-07 15:19:23,817 - INFO - main - Channel unrecognized: News
+2025-09-07 15:19:23,817 - INFO - main - Channel unrecognized: News
+2025-09-07 15:19:23,817 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-09-07 15:19:23,906 - INFO - scraper - Found 0 new articles
+2025-09-07 15:19:23,906 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-09-07 15:19:23,982 - INFO - scraper - Found 0 new articles
+2025-09-07 15:19:23,982 - INFO - main - Channel unrecognized: News

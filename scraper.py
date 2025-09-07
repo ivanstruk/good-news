@@ -6,9 +6,11 @@ from db_utils import insert_article, to_sql_datetime
 import requests
 from newspaper import Article
 from newspaper import Config
+import feedparser
 import time
 from bs4 import BeautifulSoup
 from logger import logger
+from newspaper import Article, Config, build, fulltext
 
 base_dir = Path(__file__).resolve().parent
 dotenv_path = os.path.join(base_dir, ".env")
@@ -43,8 +45,8 @@ def get_article(url):
         return result
 
     except Exception as e:
-        print(f"Failed to fetch article: {url}")
-        print(f"Error: {e}")
+        logger.info(f"Failed to fetch article: {url}")
+        logger.info(f"Error: {e}")
         return None
 
 def get_domain(url):
@@ -55,7 +57,7 @@ def get_domain(url):
         parsed_url = urlparse(url)
         return parsed_url.netloc
     except:
-        print("Exception: Failed to extract domain from URL")
+        logger.info("Exception: Failed to extract domain from URL")
         return None
         
 def convert_HTML(raw_html):
@@ -91,10 +93,10 @@ def serpapi_search(topic, api_key, num_results=5):
         })
     return articles
 
-
 ## Core
 def research(query, topic, results=5):
     research = []
+    logger.info(f"research(): searching SERP for {query}")
     """
     Search for recent news on a given topic in SERP.
 
@@ -107,17 +109,18 @@ def research(query, topic, results=5):
     """
     # Validate 'results'
     if not isinstance(results, int) or results <= 0:
-        print("Warning: 'results' must be a positive integer. Defaulting to 5.")
+        logger.info("Warning: 'results' must be a positive integer. Defaulting to 5.")
         results = 5
 
     # Validate 'query'
     if not isinstance(query, str) or not query.strip():
         raise ValueError("query must be a non-empty string.")
-         
+    
+    counter=0
     try:
         results = serpapi_search(topic,20)
         blocked_sources = ["finance.yahoo.com", "bloomberg.com"]
-        counter=0
+        
         for x in results:
             url = x.get("link", "").lower()
             if any(bad in url for bad in blocked_sources):
@@ -142,11 +145,15 @@ def research(query, topic, results=5):
                 counter+=1
         pass
     except Exception as e:
-        print(f"Error in research: {e}")
+        logger.info(f"Error in research(): {e}")
 
+    logger.info(f"Found {counter} new articles")
     return research
 
 def scrapeRSS(url, topic, max_articles=10):
+    
+    logger.info(f"Scraping RSS: {url}")
+    counter=0
     research = []
     feed = feedparser.parse(url)
     
@@ -160,7 +167,7 @@ def scrapeRSS(url, topic, max_articles=10):
 
         article = {
                 "title" : entry.title,
-                "content" : entry.summary,
+                "content" : entry_content,
                 "channel" : "RSS",
                 "source" : entry.get("source", {}).get("title", "Unknown Source"),
                 "topic" : topic,
@@ -173,9 +180,12 @@ def scrapeRSS(url, topic, max_articles=10):
             counter+=1
             pass
 
+    logger.info(f"Found {counter} new articles")
     return research
 
-def get_article_texts(source):
+def fetchNews(source):
+    name_name = source["desc_name"]
+    logger.info(f"Fetching News from {name_name}")
     research = []
     config = Config()
     config.browser_user_agent = (
@@ -183,7 +193,7 @@ def get_article_texts(source):
         "Chrome/120.0.0.0 Safari/537.36"
     )
     config.request_timeout = 10
-
+    counter=0
     #print(f"Crawling source: {x['name']}")
     try:
         paper = build(source['desc_payload'], config=config, memoize_articles=False)
@@ -212,9 +222,10 @@ def get_article_texts(source):
                 time.sleep(1)
                 
     except Exception as e:
-        logger.info(f"get_article_texts() - Failed to build source: {x['name']}")
-        logger.info(f"get_article_texts() - Error: {e}")
+        logger.info(f"fetchNews() - Failed to build source: {x['name']}")
+        logger.info(f"fetchNews() - Error: {e}")
 
+    logger.info(f"Found {counter} new articles")
     return research
 
 
