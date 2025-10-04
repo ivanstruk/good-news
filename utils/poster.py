@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Iterable, Optional
 
 import requests
+from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
 from utils.logger import logger  # logger.py lives in the same folder
 
@@ -15,23 +16,24 @@ base_dir = Path(__file__).resolve().parent.parent  # project root
 dotenv_path = os.path.join(base_dir, ".env")
 load_dotenv(dotenv_path)
 
-# === Config from environment ===
-WP_API_BASE = (os.getenv("WP_API_BASE") or "").rstrip("/")
-WP_USER = os.getenv("WP_USER") or ""
-WP_PASS = os.getenv("WP_PASS") or ""
+# -------- API Configurations --------
+# WordPress (domain + app password)
+logger.info("[poster.py] - Connecting to WordPress")
 
-if not WP_API_BASE:
-    logger.warning("WP_API_BASE is not set. WordPress requests will fail.")
-if not WP_USER or not WP_PASS:
-    logger.warning("WP_USER / WP_PASS not set. Auth will fail.")
+WP_DOMAIN = os.getenv("domain")  # e.g. https://example.com
+if not WP_DOMAIN:
+    logger.warning("No 'domain' set in .env. WordPress requests will fail.")
 
+WP_API_BASE = f"{WP_DOMAIN.rstrip('/')}/wp-json/wp/v2"
 WP_POSTS_URL = f"{WP_API_BASE}/posts"
 WP_MEDIA_URL = f"{WP_API_BASE}/media"
 
+WP_USERNAME = "admin"  # user tied to the Application Password
+WP_APP_PASSWORD = os.getenv("WP_APP_PASSWORD") or ""
+if not WP_APP_PASSWORD:
+    logger.warning("WP_APP_PASSWORD not set in .env. Authentication will fail.")
 
-def _auth() -> requests.auth.HTTPBasicAuth:
-    """Create HTTP Basic auth object."""
-    return requests.auth.HTTPBasicAuth(WP_USER, WP_PASS)
+auth = HTTPBasicAuth(WP_USERNAME, WP_APP_PASSWORD)
 
 
 def upload_featured_image(image_path: str) -> Optional[int]:
@@ -46,14 +48,13 @@ def upload_featured_image(image_path: str) -> Optional[int]:
         return None
 
     filename = os.path.basename(image_path)
-    # Guess content type; fallback to jpeg if unknown
     content_type = mimetypes.guess_type(filename)[0] or "image/jpeg"
     headers = {"Content-Disposition": f'attachment; filename="{filename}"'}
 
     try:
         with open(image_path, "rb") as f:
             files = {"file": (filename, f, content_type)}
-            resp = requests.post(WP_MEDIA_URL, auth=_auth(), headers=headers, files=files, timeout=60)
+            resp = requests.post(WP_MEDIA_URL, auth=auth, headers=headers, files=files, timeout=60)
     except Exception as exc:
         logger.exception("Image upload request failed: %s", exc)
         return None
@@ -80,7 +81,7 @@ def post_to_wordpress(
     category_ids: Optional[Iterable[int]] = None,
 ) -> Optional[dict]:
     """
-    Create a WordPress post (no taxonomy helper imports).
+    Create a WordPress post.
 
     Args:
         title: Post title.
@@ -92,10 +93,6 @@ def post_to_wordpress(
 
     Returns:
         The created post JSON dict on success (201), else None.
-
-    Notes:
-        - This function assumes you already have numeric IDs for tags/categories.
-          If you pass names instead of IDs, WordPress will reject the request.
     """
     payload = {
         "title": title,
@@ -118,7 +115,7 @@ def post_to_wordpress(
             logger.warning("category_ids must be integers. Skipping categories.")
 
     try:
-        resp = requests.post(WP_POSTS_URL, auth=_auth(), json=payload, timeout=60)
+        resp = requests.post(WP_POSTS_URL, auth=auth, json=payload, timeout=60)
     except Exception as exc:
         logger.exception("Post creation request failed: %s", exc)
         return None

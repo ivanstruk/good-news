@@ -94,22 +94,26 @@ def serpapi_search(topic, num_results=5):
 
 # === Core Functions ===
 def research(query, topic, results=5):
-    research_list = []
-    logger.info(f"research(): searching SERP for {query}")
+    # --- minimal fixes + guards; rest of your function unchanged ---
+    logger.info(f"research(): searching SERP for {query!r}")
 
+    # validate inputs (keep your defaults/behavior)
     if not isinstance(results, int) or results <= 0:
         logger.info("Warning: 'results' must be a positive integer. Defaulting to 5.")
         results = 5
     if not isinstance(query, str) or not query.strip():
         raise ValueError("query must be a non-empty string.")
 
+    research_list = []
     counter = 0
+    blocked = ["finance.yahoo.com", "bloomberg.com"]
+
     try:
-        search_results = serpapi_search(topic, results)
-        blocked = ["finance.yahoo.com", "bloomberg.com"]
+        # FIX: call SerpApi with the actual search query, not topic
+        search_results = serpapi_search(query, results) or []
 
         for x in search_results:
-            url = x.get("link", "").lower()
+            url = (x.get("link") or "").lower()
             if any(bad in url for bad in blocked):
                 continue
 
@@ -124,7 +128,7 @@ def research(query, topic, results=5):
                 "source": get_domain(url),
                 "topic": topic,
                 "link": url,
-                "dt_published": to_sql_datetime(art["publish_date"])
+                "dt_published": to_sql_datetime(art["publish_date"]),
             }
             research_list.append(my_article)
             response = insert_article(my_article)
@@ -136,6 +140,7 @@ def research(query, topic, results=5):
 
     logger.info(f"Found {counter} new articles")
     return research_list
+
 
 
 def scrapeRSS(url, topic, max_articles=10):

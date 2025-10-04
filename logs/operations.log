@@ -202,3 +202,131 @@
 2025-10-04 15:21:17,378 - INFO - scraper - research(): searching SERP for latest world news today
 2025-10-04 15:21:17,605 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=World+News&tbm=nws&num=5
 2025-10-04 15:21:17,607 - INFO - scraper - Found 0 new articles
+2025-10-04 15:32:00,636 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 15:32:00,636 - INFO - main - Modules imported.
+2025-10-04 15:32:00,650 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 15:32:00,663 - INFO - main - Topic pool, topic: World News
+2025-10-04 15:32:00,664 - INFO - main - Channel unrecognized: News
+2025-10-04 15:32:00,664 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 15:32:02,642 - INFO - scraper - Found 0 new articles
+2025-10-04 15:32:02,644 - INFO - scraper - research(): searching SERP for latest world news today
+2025-10-04 15:32:02,858 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=World+News&tbm=nws&num=5
+2025-10-04 15:32:02,863 - INFO - scraper - Found 0 new articles
+2025-10-04 15:39:57,419 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 15:39:57,419 - INFO - main - Modules imported.
+2025-10-04 15:39:57,433 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 15:39:57,446 - INFO - main - Topic pool, topic: World News
+2025-10-04 15:39:57,446 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 15:40:16,450 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 15:41:06,687 - INFO - scraper - Found 48 new articles
+2025-10-04 15:41:06,752 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 15:41:08,698 - INFO - scraper - Found 0 new articles
+2025-10-04 15:41:08,701 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 15:41:08,925 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 15:41:08,930 - INFO - scraper - Found 0 new articles
+2025-10-04 15:45:15,817 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 15:45:15,817 - INFO - main - Modules imported.
+2025-10-04 15:45:15,832 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 15:45:15,846 - INFO - main - Topic pool, topic: World News
+2025-10-04 15:45:15,846 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 15:45:34,810 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 15:46:22,725 - INFO - scraper - Found 0 new articles
+2025-10-04 15:46:22,788 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 15:46:24,760 - INFO - scraper - Found 0 new articles
+2025-10-04 15:46:24,762 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 15:46:24,991 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 15:46:24,997 - INFO - scraper - Found 0 new articles
+2025-10-04 15:46:25,203 - INFO - writer - Starting article generation...
+2025-10-04 15:46:25,205 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_154625.txt
+2025-10-04 15:46:25,205 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 15:46:36,867 - INFO - writer - Article generated successfully.
+2025-10-04 15:46:36,868 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 15:46:41,967 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 15:46:41,968 - INFO - writer - Generating article title...
+2025-10-04 15:46:42,809 - INFO - writer - Article title generated successfully.
+2025-10-04 16:13:17,329 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 16:13:17,330 - INFO - main - Modules imported.
+2025-10-04 16:13:17,345 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 16:13:17,359 - INFO - main - Topic pool, topic: World News
+2025-10-04 16:13:17,359 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 16:13:39,422 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 16:14:28,768 - INFO - scraper - Found 2 new articles
+2025-10-04 16:14:28,812 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 16:14:30,935 - INFO - scraper - Found 0 new articles
+2025-10-04 16:14:30,936 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 16:14:31,159 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 16:14:31,164 - INFO - scraper - Found 0 new articles
+2025-10-04 16:14:31,410 - INFO - writer - Starting article generation...
+2025-10-04 16:14:31,412 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_161431.txt
+2025-10-04 16:14:31,413 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 16:14:50,952 - INFO - writer - Article generated successfully.
+2025-10-04 16:14:50,953 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 16:14:56,998 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 16:14:57,000 - INFO - writer - Generating article title...
+2025-10-04 16:14:57,734 - INFO - writer - Article title generated successfully.
+2025-10-04 16:17:28,932 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 16:17:28,932 - INFO - main - Modules imported.
+2025-10-04 16:17:28,947 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 16:17:28,961 - INFO - main - Topic pool, topic: World News
+2025-10-04 16:17:28,961 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 16:17:48,961 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 16:18:32,114 - INFO - scraper - Found 0 new articles
+2025-10-04 16:18:32,145 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 16:18:34,091 - INFO - scraper - Found 0 new articles
+2025-10-04 16:18:34,093 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 16:18:34,490 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 16:18:34,493 - INFO - scraper - Found 0 new articles
+2025-10-04 16:18:34,714 - INFO - writer - Starting article generation...
+2025-10-04 16:18:34,716 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_161834.txt
+2025-10-04 16:18:34,716 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 16:18:46,215 - INFO - writer - Article generated successfully.
+2025-10-04 16:18:46,216 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 16:18:50,636 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 16:18:50,637 - INFO - writer - Generating article title...
+2025-10-04 16:18:51,759 - INFO - writer - Article title generated successfully.
+2025-10-04 16:19:41,941 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 16:19:41,941 - INFO - main - Modules imported.
+2025-10-04 16:19:41,955 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 16:19:41,969 - INFO - main - Topic pool, topic: World News
+2025-10-04 16:19:41,969 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 16:20:03,559 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 16:20:47,014 - INFO - scraper - Found 0 new articles
+2025-10-04 16:20:47,059 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 16:20:48,953 - INFO - scraper - Found 0 new articles
+2025-10-04 16:20:48,955 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 16:20:49,182 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 16:20:49,184 - INFO - scraper - Found 0 new articles
+2025-10-04 16:20:49,394 - INFO - writer - Starting article generation...
+2025-10-04 16:20:49,396 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_162049.txt
+2025-10-04 16:20:49,396 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 16:21:07,996 - INFO - writer - Article generated successfully.
+2025-10-04 16:21:07,997 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 16:21:14,789 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 16:21:14,790 - INFO - writer - Generating article title...
+2025-10-04 16:21:15,799 - INFO - writer - Article title generated successfully.
+2025-10-04 17:13:25,296 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 17:13:25,297 - INFO - main - Modules imported.
+2025-10-04 17:13:25,311 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 17:13:25,325 - INFO - main - Topic pool, topic: World News
+2025-10-04 17:13:25,325 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 17:13:45,526 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 17:14:30,016 - INFO - scraper - Found 0 new articles
+2025-10-04 17:14:30,078 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 17:14:32,085 - INFO - scraper - Found 0 new articles
+2025-10-04 17:14:32,086 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 17:14:32,494 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 17:14:32,500 - INFO - scraper - Found 0 new articles
+2025-10-04 17:14:32,732 - INFO - writer - Starting article generation...
+2025-10-04 17:14:32,733 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_171432.txt
+2025-10-04 17:14:32,734 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 17:14:56,753 - INFO - writer - Article generated successfully.
+2025-10-04 17:14:56,754 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 17:15:01,697 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 17:15:01,698 - INFO - writer - Generating article title...
+2025-10-04 17:15:02,785 - INFO - writer - Article title generated successfully.
+2025-10-04 17:22:19,466 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 17:22:19,467 - INFO - main - Modules imported.
+2025-10-04 17:22:19,482 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 17:22:19,496 - INFO - main - Topic pool, topic: World News
+2025-10-04 17:22:19,496 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 17:22:40,624 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms

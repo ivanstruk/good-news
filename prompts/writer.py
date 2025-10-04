@@ -9,7 +9,6 @@ import re
 from typing import Optional
 
 
-
 # === Setup ===
 base_dir = Path(__file__).resolve().parent.parent
 dotenv_path = os.path.join(base_dir, ".env")
@@ -17,6 +16,8 @@ load_dotenv(dotenv_path)
 
 # OpenAI client
 openai_key = os.getenv("OPENAI_API_KEY")
+if not openai_key:
+    logger.error("OPENAI_API_KEY is not set in the environment.")
 client = OpenAI(api_key=openai_key)
 
 
@@ -34,17 +35,20 @@ def write_article(research: str, post_history: Optional[str]):
     Fill the article-writing template with research and past history,
     save the filled prompt, and call OpenAI to generate the article.
 
-    Args:
-        research (str): Formatted research content.
-        post_history (str | None): Summaries of past articles, or None.
-
     Returns:
         tuple[str, str]: (generated_article, saved_prompt_path)
     """
+    logger.info("Starting article generation...")
+
     # Load writer template
     template_path = os.path.join(os.path.dirname(__file__), "writer_template.txt")
-    with open(template_path, "r", encoding="utf-8") as file:
-        template = file.read()
+    try:
+        with open(template_path, "r", encoding="utf-8") as file:
+            template = file.read()
+        logger.debug(f"Loaded writer template from {template_path}")
+    except Exception as e:
+        logger.error(f"Failed to load writer template: {e}")
+        raise
 
     if post_history is None:
         filled_prompt = template.format(
@@ -52,6 +56,7 @@ def write_article(research: str, post_history: Optional[str]):
             post_header="",
             post_history=""
         )
+        logger.debug("Filled prompt without post history.")
     else:
         post_header = "=== PAST ARTICLES (SUMMARIES) ==="
         filled_prompt = template.format(
@@ -59,12 +64,13 @@ def write_article(research: str, post_history: Optional[str]):
             post_header=post_header,
             post_history=post_history
         )
+        logger.debug("Filled prompt with post history.")
 
     # Clean prompt text
     try:
         filled_prompt = clean_text(filled_prompt)
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning(f"Failed to clean filled prompt: {e}")
 
     # Save filled prompt for logging
     save_dir = os.path.join(os.path.dirname(__file__), "logged_prompts")
@@ -74,39 +80,47 @@ def write_article(research: str, post_history: Optional[str]):
     filename = f"article_prompt_{timestamp}.txt"
     file_path = os.path.join(save_dir, filename)
 
-    with open(file_path, "w", encoding="utf-8") as f:
-        f.write(filled_prompt)
+    try:
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(filled_prompt)
+        logger.info(f"Saved filled prompt to {file_path}")
+    except Exception as e:
+        logger.error(f"Failed to save filled prompt: {e}")
+        raise
 
     # Load system prompt
     system_prompt_path = os.path.join(os.path.dirname(__file__), "writer_system_prompt.txt")
-    with open(system_prompt_path, "r", encoding="utf-8") as file:
-        system_prompt = file.read()
+    try:
+        with open(system_prompt_path, "r", encoding="utf-8") as file:
+            system_prompt = file.read()
+        logger.debug(f"Loaded system prompt from {system_prompt_path}")
+    except Exception as e:
+        logger.error(f"Failed to load system prompt: {e}")
+        raise
 
     # Call OpenAI
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": filled_prompt}
-        ],
-        temperature=0.4,
-        max_tokens=4096
-    )
+    logger.info("Requesting article from OpenAI API...")
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": filled_prompt}
+            ],
+            temperature=0.4,
+            max_tokens=4096
+        )
+        logger.info("Article generated successfully.")
+    except Exception as e:
+        logger.error(f"OpenAI API call failed: {e}")
+        raise
 
     article = response.choices[0].message.content
     return article, file_path
 
 
 def generate_article_title(article_text: str) -> str:
-    """
-    Generate a unique, concise, and engaging article title.
-
-    Args:
-        article_text (str): Full article text.
-
-    Returns:
-        str: Generated article title.
-    """
+    logger.info("Generating article title...")
     system_prompt = (
         "You are an expert news editor. "
         "Your job is to create concise, engaging, and unique titles for news articles. "
@@ -116,30 +130,25 @@ def generate_article_title(article_text: str) -> str:
         "- Capture the main story accurately"
     )
 
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"Here is the article (~1000 words):\n\n{article_text}"}
-        ],
-        temperature=0.7,
-        max_tokens=100
-    )
-
-    return response.choices[0].message.content.strip()
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": f"Here is the article (~1000 words):\n\n{article_text}"}
+            ],
+            temperature=0.7,
+            max_tokens=100
+        )
+        logger.info("Article title generated successfully.")
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        logger.error(f"OpenAI API call failed while generating title: {e}")
+        raise
 
 
 def summarize_article(article_text: str):
-    """
-    Summarize an article into one concise paragraph
-    and generate SEO/blog tags (slug-friendly).
-
-    Args:
-        article_text (str): Full article text (700–1000 words).
-
-    Returns:
-        tuple[str, list[str]]: (summary, tags)
-    """
+    logger.info("Summarizing article and generating tags...")
     system_prompt = (
         "You are an expert news editor. "
         "Summarize long news articles into one clear, objective paragraph. "
@@ -147,17 +156,21 @@ def summarize_article(article_text: str):
         "Tags should be SEO-friendly and capture the article's core topics."
     )
 
-    response = client.chat.completions.create(
-        model="gpt-4o",
-        messages=[
-            {"role": "system", "content": system_prompt},
-            {"role": "user", "content": f"Summarize this article and create tags:\n\n{article_text}"}
-        ],
-        temperature=0.5,
-        max_tokens=400
-    )
-
-    output = response.choices[0].message.content.strip()
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": f"Summarize this article and create tags:\n\n{article_text}"}
+            ],
+            temperature=0.5,
+            max_tokens=400
+        )
+        output = response.choices[0].message.content.strip()
+        logger.info("Summary and tags generated successfully.")
+    except Exception as e:
+        logger.error(f"OpenAI API call failed while summarizing article: {e}")
+        raise
 
     # Parse response (expecting "Summary: ...\nTags: ...")
     summary, tags = "", []
@@ -167,7 +180,6 @@ def summarize_article(article_text: str):
         tags_text = parts[1].strip()
         raw_tags = [t.strip() for t in tags_text.replace(",", "\n").split("\n") if t.strip()]
 
-        # Convert to slug-friendly tags
         tags = [
             re.sub(r"[^a-z0-9\-]", "", t.lower().replace(" ", "-"))
             for t in raw_tags

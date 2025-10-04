@@ -1,3 +1,5 @@
+from pathlib import Path
+from datetime import datetime
 from utils.logger import logger
 from utils.scraper import research, scrapeRSS, fetchNews
 from utils.telegram_scraper import fetchTelegram
@@ -53,11 +55,11 @@ for topic in topic_agenda:
             if len(RSS_articles) > 0:
                 temp_research_db.extend(RSS_articles)
 
-        #elif channel == "News":
-        #    news_articles = fetchNews(source)
-        #    if len(news_articles) > 0:
-        #        temp_research_db.extend(news_articles)
-        #
+        elif channel == "News":
+            news_articles = fetchNews(source)
+            if len(news_articles) > 0:
+                temp_research_db.extend(news_articles)
+        
         elif channel == "Telegram":
             telegram_messages = fetchNews(source)
             if len(telegram_messages) > 0:
@@ -71,9 +73,23 @@ for topic in topic_agenda:
     news = build_news_prompt(temp_research_db, 10000)
     past_works = build_history_prompt(topic, limit=10)
 
-    article_text = write_article(news,past_works)
+    article_text, article_prompt = write_article(news,past_works)
     summary, tags = summarize_article(article_text)
     title = generate_article_title(article_text)
 
+    # === Save draft for debugging ===
+    drafts_dir = Path(__file__).resolve().parent / "drafts"
+    drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
+
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    file_path = drafts_dir / f"{timestamp}.txt"
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.write(title + "\n\n")      # Title at the top
+        f.write(article_text + "\n\n")  
+        f.write("Tags: " + ", ".join(tags) + "\n\n")
+        f.write("Summary:\n" + summary + "\n")
+
+    logger.info(f"Draft saved: {file_path}")    
+
 print("Done")
-    
