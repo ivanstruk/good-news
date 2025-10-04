@@ -1,3 +1,4 @@
+from utils.logger import logger
 import os
 import unicodedata
 from datetime import datetime
@@ -5,6 +6,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 import re
+from typing import Optional
 
 
 
@@ -27,7 +29,7 @@ def clean_text(text: str) -> str:
 
 
 # === Main Functions ===
-def write_article(research: str, post_history: str | None):
+def write_article(research: str, post_history: Optional[str]):
     """
     Fill the article-writing template with research and past history,
     save the filled prompt, and call OpenAI to generate the article.

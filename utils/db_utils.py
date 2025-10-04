@@ -1,4 +1,4 @@
-from logger import logger
+from utils.logger import logger
 from datetime import datetime, timedelta
 import sqlite3
 import os

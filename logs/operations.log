@@ -191,3 +191,14 @@
 2025-09-07 15:19:23,906 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
 2025-09-07 15:19:23,982 - INFO - scraper - Found 0 new articles
 2025-09-07 15:19:23,982 - INFO - main - Channel unrecognized: News
+2025-10-04 15:21:15,262 - WARNING - poster - WP_API_BASE is not set. WordPress requests will fail.
+2025-10-04 15:21:15,263 - WARNING - poster - WP_USER / WP_PASS not set. Auth will fail.
+2025-10-04 15:21:15,263 - INFO - main - Modules imported.
+2025-10-04 15:21:15,277 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 15:21:15,292 - INFO - main - Topic pool, topic: World News
+2025-10-04 15:21:15,292 - INFO - main - Channel unrecognized: News
+2025-10-04 15:21:15,292 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 15:21:17,370 - INFO - scraper - Found 1 new articles
+2025-10-04 15:21:17,378 - INFO - scraper - research(): searching SERP for latest world news today
+2025-10-04 15:21:17,605 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=World+News&tbm=nws&num=5
+2025-10-04 15:21:17,607 - INFO - scraper - Found 0 new articles

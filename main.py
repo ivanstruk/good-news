@@ -1,10 +1,11 @@
-from logger import logger
-from scraper import research, scrapeRSS, fetchNews
-from telegram_scraper import fetchTelegram
+from utils.logger import logger
+from utils.scraper import research, scrapeRSS, fetchNews
+from utils.telegram_scraper import fetchTelegram
 import pandas as pd
 import datetime
 from prompts.prompter import build_news_prompt, build_history_prompt
-from prompts.writer import write_article, summarize_article
+from prompts.writer import write_article, summarize_article, generate_article_title
+from utils.poster import upload_featured_image, post_to_wordpress
 
 logger.info("Modules imported.")
 
@@ -74,4 +75,5 @@ for topic in topic_agenda:
     summary, tags = summarize_article(article_text)
     title = generate_article_title(article_text)
 
+print("Done")
     

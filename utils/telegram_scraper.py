@@ -3,7 +3,7 @@ from telethon import TelegramClient
 import asyncio
 from dotenv import load_dotenv
 import os
-from logger import logger
+from utils.logger import logger
 
 # Load environment variables
 base_dir = os.path.dirname(os.path.abspath(__file__))

@@ -9,7 +9,7 @@ from newspaper import Article, Config, build
 import feedparser
 import time
 from bs4 import BeautifulSoup
-from logger import logger
+from utils.logger import logger
 
 # === Paths ===
 base_dir = Path(__file__).resolve().parent.parent  # project root

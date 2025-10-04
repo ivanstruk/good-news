@@ -4,7 +4,7 @@ import tiktoken
 import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-from db_utils import fetch_posts
+from utils.db_utils import fetch_posts
 
 
 # Tiktoken
