@@ -191,21 +191,6 @@ Logs are written to `logs/operations.log`.
 - Attribute sources in generated text where appropriate.
 - Add rate limits/backoff when scaling scraping.
 
----
-
-## 🗺️ Roadmap (suggested)
-
-- [ ] Robust retry/backoff and per-source rate limiting
-- [ ] Queue-based runner (e.g. asyncio or a task queue) for parallel collection
-- [ ] Unit tests for scrapers and WordPress poster (use VCR/cassettes)
-- [ ] Configurable prompts per topic (tone, voice, length)
-- [ ] Image generation (OpenAI Images or other) with featured image auto-upload
-- [ ] CLI with subcommands: `collect`, `generate`, `publish`, `run`
-- [ ] Dockerfile + Compose for one-command deployment
-- [ ] Health metrics & simple dashboard
-
----
-
 
 ---
 
@@ -216,11 +201,6 @@ This project is provided **as-is**. By using it, you agree to operate at your ow
 - **AI content policies**: Always review generated content before publishing to make sure it aligns with your site's editorial standards and AI policies.  
 - **Web scraping**: Not all websites allow scraping. Check each site's terms of service and robots.txt before enabling sources.  
 - The authors and contributors assume **no liability** for misuse of this codebase.
-
----
-## 📝 License
-
-MIT (or your preference).
 
 ---
 
