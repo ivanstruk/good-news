@@ -4,6 +4,8 @@ from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
+import re
+
 
 
 # === Setup ===
@@ -128,7 +130,7 @@ def generate_article_title(article_text: str) -> str:
 def summarize_article(article_text: str):
     """
     Summarize an article into one concise paragraph
-    and generate SEO/blog tags.
+    and generate SEO/blog tags (slug-friendly).
 
     Args:
         article_text (str): Full article text (700–1000 words).
@@ -161,7 +163,13 @@ def summarize_article(article_text: str):
         parts = output.split("Tags:")
         summary = parts[0].replace("Summary:", "").strip()
         tags_text = parts[1].strip()
-        tags = [t.strip() for t in tags_text.replace(",", "\n").split("\n") if t.strip()]
+        raw_tags = [t.strip() for t in tags_text.replace(",", "\n").split("\n") if t.strip()]
+
+        # Convert to slug-friendly tags
+        tags = [
+            re.sub(r"[^a-z0-9\-]", "", t.lower().replace(" ", "-"))
+            for t in raw_tags
+        ]
     else:
         summary = output
 

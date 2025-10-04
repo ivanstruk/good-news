@@ -4,7 +4,7 @@ from telegram_scraper import fetchTelegram
 import pandas as pd
 import datetime
 from prompts.prompter import build_news_prompt, build_history_prompt
-from prompts.writer import write_article
+from prompts.writer import write_article, summarize_article
 
 logger.info("Modules imported.")
 
@@ -66,8 +66,12 @@ for topic in topic_agenda:
             logger.info("Channel unrecognized: {}".format(channel))
             pass
     
+    # Compiling and writing the article.
     news = build_news_prompt(temp_research_db, 10000)
     past_works = build_history_prompt(topic, limit=10)
 
+    article_text = write_article(news,past_works)
+    summary, tags = summarize_article(article_text)
+    title = generate_article_title(article_text)
 
-    write_article(news,past_works)
+    
