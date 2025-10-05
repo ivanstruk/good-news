@@ -140,9 +140,9 @@ def save_generated_article(
             ))
 
             conn.commit()
-            logger.info("[db_utils] - ✅ Generated article saved to database.")
+            logger.info("Generated article saved to database.")
 
     except sqlite3.IntegrityError:
-        logger.warning(f"[db_utils] - ⚠️ Article with link '{link}' already exists.")
+        logger.warning(f"Article with link '{link}' already exists.")
     except Exception as e:
-        logger.error(f"[db_utils] - ❌ Error saving generated article: {e}")
+        logger.error(f"Error saving generated article: {e}")

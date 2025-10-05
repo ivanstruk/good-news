@@ -1,10 +1,12 @@
 === INSTRUCTIONS ===
-Write a news article based on the recent news items below. Avoid repeating content that has already been covered in the past articles. Focus on clarity, neutrality, and engagement. Include relevant context and organize the article with a clear introduction, body, and conclusion. You may synthesize information from multiple sources.
+Write a news article based on the recent news items currated for you below. Identify one topic to write about, using information from multiple source. Avoid choosing a topic that has already been covered in the past articles. Focus on clarity, neutrality, and engagement. Include relevant context and organize the article with a clear introduction, body, and conclusion. You may synthesize information from multiple sources, and are expected to do so.  
+
+{post_header}
+{post_history}
 
 === RECENT NEWS ===
 {articles}
-{post_header}
-{post_history}
 === NEW ARTICLE PARAMETERS ===
 - Target word count: 600-800 words
-- Avoid topics already extensively covered in past articles
+- Avoid topics already extensively covered in the past articles
+- Do not create a title

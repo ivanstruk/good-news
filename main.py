@@ -6,6 +6,7 @@ from utils.logger import logger
 from utils.scraper import research, scrapeRSS, fetchNews
 from utils.telegram_scraper import fetchTelegram
 from utils.poster import upload_featured_image, post_to_wordpress
+from utils.db_utils import save_generated_article
 
 from prompts.prompter import build_news_prompt, build_history_prompt
 from prompts.writer import write_article, summarize_article, generate_article_title
@@ -41,10 +42,9 @@ sources = [s for s in sources if s["bool_visibility"]==True]
 
 for topic in topic_agenda:
     logger.info("Topic pool, topic: {}".format(topic))
-
+    
+    # === Research and News Curration ===
     temp_research_db = []
-
-    # Starting to research latest sources
     filtered_sources = [s for s in sources if s["desc_topic_primary"]==topic]
     for source in filtered_sources:
         channel = source["desc_channel"]
@@ -73,7 +73,7 @@ for topic in topic_agenda:
             logger.info("Channel unrecognized: {}".format(channel))
             pass
     
-    # Compiling and writing the article.
+    # === Article Generation ===
     news = build_news_prompt(temp_research_db, 10000)
     past_works = build_history_prompt(topic, limit=10)
 
@@ -105,10 +105,24 @@ for topic in topic_agenda:
     if featured_image == True:
         image_id = upload_featured_image("featured_image.jpg")
 
-    post_to_wordpress(
+    # === Posting to Wordpress ===
+    response = post_to_wordpress(
         title= title,
         content= article_text,
         featured_image_id=image_id,
-        tags=tags)
+        tags=tags,
+        categories=[topic])
+
+    if response != None:
+        dt_published = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        save_generated_article(
+            title= title, 
+            content = article_text, 
+            topic=topic,
+            category=topic, 
+            summary=summary,
+            link=response.get("link"), 
+            dt_published=dt_published,
+            )
 
 print("Done")

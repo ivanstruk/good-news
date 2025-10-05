@@ -118,7 +118,6 @@ def write_article(research: str, post_history: Optional[str]):
     article = response.choices[0].message.content
     return article, file_path
 
-
 def generate_article_title(article_text: str) -> str:
     logger.info("Generating article title...")
     system_prompt = (

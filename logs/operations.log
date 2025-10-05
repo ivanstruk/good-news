@@ -487,3 +487,154 @@
 2025-10-05 14:19:31,450 - INFO - image - Image pipeline completed successfully.
 2025-10-05 14:19:32,533 - INFO - poster - Uploaded featured image. Media ID=986
 2025-10-05 14:19:44,441 - INFO - poster - Article posted. Post ID=987, Link=https://bukhdir.com/2025/10/05/georgia-faces-political-crisis-amid-alleged-coup-and-eu-protests/
+2025-10-05 14:42:58,355 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 14:42:58,710 - INFO - main - Modules imported.
+2025-10-05 14:42:58,725 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 14:42:58,739 - INFO - main - Topic pool, topic: Business
+2025-10-05 14:42:58,739 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 14:42:59,776 - INFO - scraper - Found 0 new articles
+2025-10-05 14:42:59,776 - INFO - scraper - Fetching News from CNN
+2025-10-05 14:44:42,355 - INFO - scraper - Found 0 new articles
+2025-10-05 14:44:42,485 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:46:06,464 - INFO - scraper - Found 0 new articles
+2025-10-05 14:46:06,527 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:47:19,449 - INFO - scraper - Found 0 new articles
+2025-10-05 14:47:19,510 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 14:47:19,637 - INFO - scraper - Found 0 new articles
+2025-10-05 14:47:19,637 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 14:47:19,729 - INFO - scraper - Found 0 new articles
+2025-10-05 14:47:19,729 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 14:48:47,921 - INFO - scraper - Found 0 new articles
+2025-10-05 14:48:48,175 - INFO - writer - Starting article generation...
+2025-10-05 14:48:48,176 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_144848.txt
+2025-10-05 14:48:48,176 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 14:49:06,916 - INFO - writer - Article generated successfully.
+2025-10-05 14:49:06,917 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 14:49:10,285 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 14:49:10,286 - INFO - writer - Generating article title...
+2025-10-05 14:49:11,262 - INFO - writer - Article title generated successfully.
+2025-10-05 14:49:11,264 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1449.txt
+2025-10-05 14:49:11,296 - INFO - image - Starting full image pipeline...
+2025-10-05 14:49:11,296 - INFO - image - Starting image generation...
+2025-10-05 14:49:27,043 - INFO - image - Image generated successfully.
+2025-10-05 14:49:27,045 - INFO - image - Downloading image...
+2025-10-05 14:49:29,017 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:49:29,019 - INFO - image - Cropping image: /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:49:29,094 - INFO - image - Cropped image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:49:29,094 - INFO - image - Image pipeline completed successfully.
+2025-10-05 14:49:30,148 - INFO - poster - Uploaded featured image. Media ID=988
+2025-10-05 14:49:43,833 - INFO - poster - Article posted. Post ID=989, Link=https://bukhdir.com/2025/10/05/saudi-arabias-vision-2030-faces-fiscal-strain-amid-oil-price-drop/
+2025-10-05 16:18:26,431 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 16:18:26,802 - INFO - main - Modules imported.
+2025-10-05 16:18:26,817 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 16:18:26,832 - INFO - main - Topic pool, topic: Business
+2025-10-05 16:18:26,832 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 16:18:27,867 - INFO - scraper - Found 2 new articles
+2025-10-05 16:18:27,867 - INFO - scraper - Fetching News from CNN
+2025-10-05 16:20:13,689 - INFO - scraper - Found 0 new articles
+2025-10-05 16:20:13,859 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 16:21:35,570 - INFO - scraper - Found 0 new articles
+2025-10-05 16:21:35,653 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 16:22:47,940 - INFO - scraper - Found 0 new articles
+2025-10-05 16:22:48,023 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 16:22:48,157 - INFO - scraper - Found 1 new articles
+2025-10-05 16:22:48,157 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 16:22:48,250 - INFO - scraper - Found 0 new articles
+2025-10-05 16:22:48,250 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 16:24:21,907 - INFO - scraper - Found 0 new articles
+2025-10-05 16:24:22,203 - INFO - writer - Starting article generation...
+2025-10-05 16:24:22,205 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_162422.txt
+2025-10-05 16:24:22,205 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 16:24:39,630 - INFO - writer - Article generated successfully.
+2025-10-05 16:24:39,631 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 16:24:43,694 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 16:24:43,695 - INFO - writer - Generating article title...
+2025-10-05 16:24:44,702 - INFO - writer - Article title generated successfully.
+2025-10-05 16:24:44,706 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1624.txt
+2025-10-05 16:24:44,753 - INFO - image - Starting full image pipeline...
+2025-10-05 16:24:44,753 - INFO - image - Starting image generation...
+2025-10-05 16:25:00,089 - INFO - image - Image generated successfully.
+2025-10-05 16:25:00,090 - INFO - image - Downloading image...
+2025-10-05 16:25:04,540 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:25:04,546 - INFO - image - Cropping image: /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:25:04,618 - INFO - image - Cropped image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:25:04,618 - INFO - image - Image pipeline completed successfully.
+2025-10-05 16:25:05,768 - INFO - poster - Uploaded featured image. Media ID=990
+2025-10-05 16:25:21,685 - INFO - poster - Article posted. Post ID=991, Link=https://bukhdir.com/2025/10/05/dating-apps-plateau-are-singles-returning-to-traditional-romance/
+2025-10-05 16:25:21,699 - INFO - db_utils - [db_utils] - ✅ Generated article saved to database.
+2025-10-05 16:27:59,503 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 16:27:59,848 - INFO - main - Modules imported.
+2025-10-05 16:27:59,863 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 16:27:59,877 - INFO - main - Topic pool, topic: Business
+2025-10-05 16:27:59,877 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 16:28:00,903 - INFO - scraper - Found 0 new articles
+2025-10-05 16:28:00,904 - INFO - scraper - Fetching News from CNN
+2025-10-05 16:29:29,151 - INFO - scraper - Found 0 new articles
+2025-10-05 16:29:29,282 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 16:31:01,972 - INFO - scraper - Found 0 new articles
+2025-10-05 16:31:02,039 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 16:32:21,852 - INFO - scraper - Found 0 new articles
+2025-10-05 16:32:21,917 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 16:32:22,232 - INFO - scraper - Found 0 new articles
+2025-10-05 16:32:22,232 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 16:32:22,331 - INFO - scraper - Found 0 new articles
+2025-10-05 16:32:22,331 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 16:33:59,167 - INFO - scraper - Found 0 new articles
+2025-10-05 16:33:59,431 - INFO - writer - Starting article generation...
+2025-10-05 16:33:59,432 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_163359.txt
+2025-10-05 16:33:59,432 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 16:34:11,858 - INFO - writer - Article generated successfully.
+2025-10-05 16:34:11,860 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 16:34:15,759 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 16:34:15,761 - INFO - writer - Generating article title...
+2025-10-05 16:34:16,496 - INFO - writer - Article title generated successfully.
+2025-10-05 16:34:16,500 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1634.txt
+2025-10-05 16:34:16,543 - INFO - image - Starting full image pipeline...
+2025-10-05 16:34:16,543 - INFO - image - Starting image generation...
+2025-10-05 16:34:33,708 - INFO - image - Image generated successfully.
+2025-10-05 16:34:33,710 - INFO - image - Downloading image...
+2025-10-05 16:34:36,218 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:34:36,220 - INFO - image - Cropping image: /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:34:36,303 - INFO - image - Cropped image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 16:34:36,303 - INFO - image - Image pipeline completed successfully.
+2025-10-05 16:34:37,298 - INFO - poster - Uploaded featured image. Media ID=992
+2025-10-05 16:34:48,575 - INFO - poster - Article posted. Post ID=993, Link=https://bukhdir.com/2025/10/05/dating-apps-plateau-as-singles-reconnect-with-traditional-romance/
+2025-10-05 16:34:48,588 - INFO - db_utils - [db_utils] - ✅ Generated article saved to database.
+2025-10-05 17:44:18,073 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 17:44:18,444 - INFO - main - Modules imported.
+2025-10-05 17:44:18,459 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 17:44:18,473 - INFO - main - Topic pool, topic: Business
+2025-10-05 17:44:18,473 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 17:44:19,769 - INFO - scraper - Found 3 new articles
+2025-10-05 17:44:19,769 - INFO - scraper - Fetching News from CNN
+2025-10-05 17:46:02,569 - INFO - scraper - Found 0 new articles
+2025-10-05 17:46:02,758 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 17:47:23,612 - INFO - scraper - Found 0 new articles
+2025-10-05 17:47:23,698 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 17:48:36,878 - INFO - scraper - Found 0 new articles
+2025-10-05 17:48:36,962 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 17:48:37,106 - INFO - scraper - Found 0 new articles
+2025-10-05 17:48:37,106 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 17:48:37,206 - INFO - scraper - Found 1 new articles
+2025-10-05 17:48:37,206 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 17:50:06,912 - INFO - scraper - Found 0 new articles
+2025-10-05 17:50:07,207 - INFO - writer - Starting article generation...
+2025-10-05 17:50:07,209 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_175007.txt
+2025-10-05 17:50:07,209 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 17:50:26,256 - INFO - writer - Article generated successfully.
+2025-10-05 17:50:26,257 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 17:50:30,143 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 17:50:30,145 - INFO - writer - Generating article title...
+2025-10-05 17:50:31,668 - INFO - writer - Article title generated successfully.
+2025-10-05 17:50:31,671 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1750.txt
+2025-10-05 17:50:31,714 - INFO - image - Starting full image pipeline...
+2025-10-05 17:50:31,714 - INFO - image - Starting image generation...
+2025-10-05 17:50:46,769 - INFO - image - Image generated successfully.
+2025-10-05 17:50:46,769 - INFO - image - Downloading image...
+2025-10-05 17:50:56,057 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 17:50:56,062 - INFO - image - Cropping image: /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 17:50:56,152 - INFO - image - Cropped image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 17:50:56,152 - INFO - image - Image pipeline completed successfully.
+2025-10-05 17:50:57,253 - INFO - poster - Uploaded featured image. Media ID=994
+2025-10-05 17:51:11,477 - INFO - poster - Article posted. Post ID=995, Link=https://bukhdir.com/2025/10/05/portland-unrest-highlights-federal-vs-local-authority-tensions/
+2025-10-05 17:51:11,491 - INFO - db_utils - [db_utils] - ✅ Generated article saved to database.
