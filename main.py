@@ -1,13 +1,17 @@
+import pandas as pd
 from pathlib import Path
-from datetime import datetime
+import datetime
+
 from utils.logger import logger
 from utils.scraper import research, scrapeRSS, fetchNews
 from utils.telegram_scraper import fetchTelegram
-import pandas as pd
-import datetime
+from utils.poster import upload_featured_image, post_to_wordpress
+
 from prompts.prompter import build_news_prompt, build_history_prompt
 from prompts.writer import write_article, summarize_article, generate_article_title
-from utils.poster import upload_featured_image, post_to_wordpress
+from prompts.image import process_image
+
+
 
 logger.info("Modules imported.")
 
@@ -80,16 +84,31 @@ for topic in topic_agenda:
     # === Save draft for debugging ===
     drafts_dir = Path(__file__).resolve().parent / "drafts"
     drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
-
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
     file_path = drafts_dir / f"{timestamp}.txt"
-
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(title + "\n\n")      # Title at the top
         f.write(article_text + "\n\n")  
         f.write("Tags: " + ", ".join(tags) + "\n\n")
         f.write("Summary:\n" + summary + "\n")
 
-    logger.info(f"Draft saved: {file_path}")    
+    logger.info(f"Draft saved: {file_path}")
+
+    # === Image Generation ===
+    d = pd.read_excel("blog_config.xlsx", sheet_name="image_prompts").to_dict(orient='records')
+    image_prompt = next(
+        (item["desc_image_prompt"] for item in d if item["desc_topic_primary"] == topic),
+        next((item["desc_image_prompt"] for item in d if item["desc_topic_primary"] == "General"), None)
+    )
+    featured_image = process_image(image_prompt)
+    image_id = None
+    if featured_image == True:
+        image_id = upload_featured_image("featured_image.jpg")
+
+    post_to_wordpress(
+        title= title,
+        content= article_text,
+        featured_image_id=image_id,
+        tags=tags)
 
 print("Done")

@@ -141,8 +141,6 @@ def research(query, topic, results=5):
     logger.info(f"Found {counter} new articles")
     return research_list
 
-
-
 def scrapeRSS(url, topic, max_articles=10):
     logger.info(f"Scraping RSS: {url}")
     counter = 0

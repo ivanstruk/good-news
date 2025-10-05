@@ -6,7 +6,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 import re
-from typing import Optional
+from typing import Optional, List, Tuple
 
 
 # === Setup ===
@@ -147,13 +147,28 @@ def generate_article_title(article_text: str) -> str:
         raise
 
 
-def summarize_article(article_text: str):
+def clean_tag(tag: str) -> str:
+    """Convert a tag into a clean SEO slug."""
+    # Lowercase, strip whitespace
+    tag = tag.strip().lower()
+    # Replace any non-alphanumeric sequence with a single hyphen
+    tag = re.sub(r"[^a-z0-9]+", "-", tag)
+    # Collapse multiple hyphens and trim ends
+    tag = re.sub(r"-{2,}", "-", tag).strip("-")
+    return tag
+
+def summarize_article(article_text: str) -> Tuple[str, List[str]]:
+    """
+    Summarizes a news article and extracts clean, SEO-friendly tags.
+    Returns: (summary, tags)
+    """
     logger.info("Summarizing article and generating tags...")
+
     system_prompt = (
         "You are an expert news editor. "
         "Summarize long news articles into one clear, objective paragraph. "
-        "Also, generate 5–10 relevant blog tags (as short keywords, not sentences). "
-        "Tags should be SEO-friendly and capture the article's core topics."
+        "Also, generate 5–10 relevant blog tags (short keywords, not sentences). "
+        "Return them clearly after 'Tags:' on new lines or comma-separated."
     )
 
     try:
@@ -172,19 +187,28 @@ def summarize_article(article_text: str):
         logger.error(f"OpenAI API call failed while summarizing article: {e}")
         raise
 
-    # Parse response (expecting "Summary: ...\nTags: ...")
+    # --- Parse response ---
     summary, tags = "", []
+
     if "Tags:" in output:
-        parts = output.split("Tags:")
+        parts = output.split("Tags:", 1)
         summary = parts[0].replace("Summary:", "").strip()
         tags_text = parts[1].strip()
-        raw_tags = [t.strip() for t in tags_text.replace(",", "\n").split("\n") if t.strip()]
 
-        tags = [
-            re.sub(r"[^a-z0-9\-]", "", t.lower().replace(" ", "-"))
-            for t in raw_tags
-        ]
+        # Split tags by commas or newlines
+        raw_tags = re.split(r"[,|\n]+", tags_text)
+        raw_tags = [t.strip() for t in raw_tags if t.strip()]
+
+        # Clean up tags and remove duplicates
+        seen = set()
+        tags = []
+        for t in raw_tags:
+            clean = clean_tag(t)
+            if clean and clean not in seen:
+                seen.add(clean)
+                tags.append(clean)
+
     else:
-        summary = output
+        summary = output.strip()
 
     return summary, tags

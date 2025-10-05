@@ -330,3 +330,160 @@
 2025-10-04 17:22:19,496 - INFO - main - Topic pool, topic: World News
 2025-10-04 17:22:19,496 - INFO - scraper - Fetching News from Aljazeera
 2025-10-04 17:22:40,624 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 17:23:24,125 - INFO - scraper - Found 0 new articles
+2025-10-04 17:23:24,184 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 17:23:26,215 - INFO - scraper - Found 0 new articles
+2025-10-04 17:23:26,217 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 17:23:26,458 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 17:23:26,463 - INFO - scraper - Found 0 new articles
+2025-10-04 17:23:26,690 - INFO - writer - Starting article generation...
+2025-10-04 17:23:26,691 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_172326.txt
+2025-10-04 17:23:26,691 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 17:23:47,894 - INFO - writer - Article generated successfully.
+2025-10-04 17:23:47,894 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 17:23:52,991 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 17:23:52,992 - INFO - writer - Generating article title...
+2025-10-04 17:23:53,767 - INFO - writer - Article title generated successfully.
+2025-10-04 17:25:05,934 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-04 17:25:05,934 - INFO - main - Modules imported.
+2025-10-04 17:25:05,948 - INFO - main - Schedule determined. Today is Saturday
+2025-10-04 17:25:05,962 - INFO - main - Topic pool, topic: World News
+2025-10-04 17:25:05,962 - INFO - scraper - Fetching News from Aljazeera
+2025-10-04 17:25:26,368 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms on URL https://www.aljazeera.com/gallery/2025/10/3/russia-escalates-strikes-on-ukraines-power-grid-gas-sites-as-winter-looms
+2025-10-04 17:26:11,462 - INFO - scraper - Found 0 new articles
+2025-10-04 17:26:11,519 - INFO - scraper - Fetching News from Insiderr
+2025-10-04 17:26:13,581 - INFO - scraper - Found 0 new articles
+2025-10-04 17:26:13,582 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-04 17:26:13,805 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-04 17:26:13,807 - INFO - scraper - Found 0 new articles
+2025-10-04 17:26:14,022 - INFO - writer - Starting article generation...
+2025-10-04 17:26:14,023 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251004_172614.txt
+2025-10-04 17:26:14,023 - INFO - writer - Requesting article from OpenAI API...
+2025-10-04 17:26:28,256 - INFO - writer - Article generated successfully.
+2025-10-04 17:26:28,257 - INFO - writer - Summarizing article and generating tags...
+2025-10-04 17:26:33,076 - INFO - writer - Summary and tags generated successfully.
+2025-10-04 17:26:33,077 - INFO - writer - Generating article title...
+2025-10-04 17:26:33,755 - INFO - writer - Article title generated successfully.
+2025-10-04 17:26:33,758 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251004_172633.txt
+2025-10-05 13:07:36,233 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 13:07:36,233 - INFO - main - Modules imported.
+2025-10-05 13:07:36,248 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 13:07:36,262 - INFO - main - Topic pool, topic: Business
+2025-10-05 13:07:36,262 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 13:07:37,343 - INFO - scraper - Found 10 new articles
+2025-10-05 13:07:37,343 - INFO - scraper - Fetching News from CNN
+2025-10-05 13:09:24,219 - INFO - scraper - Found 50 new articles
+2025-10-05 13:09:24,426 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 13:10:54,006 - INFO - scraper - Found 31 new articles
+2025-10-05 13:10:54,100 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 13:12:09,684 - INFO - scraper - Found 0 new articles
+2025-10-05 13:12:09,739 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 13:12:09,920 - INFO - scraper - Found 5 new articles
+2025-10-05 13:12:09,921 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 13:12:10,026 - INFO - scraper - Found 5 new articles
+2025-10-05 13:12:10,026 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 13:13:34,965 - INFO - scraper - Found 0 new articles
+2025-10-05 13:13:35,249 - INFO - writer - Starting article generation...
+2025-10-05 13:13:35,252 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_131335.txt
+2025-10-05 13:13:35,252 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 13:13:49,317 - INFO - writer - Article generated successfully.
+2025-10-05 13:13:49,318 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 13:13:52,972 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 13:13:52,974 - INFO - writer - Generating article title...
+2025-10-05 13:13:53,453 - INFO - writer - Article title generated successfully.
+2025-10-05 13:13:53,457 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1313.txt
+2025-10-05 13:18:40,819 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 13:18:40,819 - INFO - main - Modules imported.
+2025-10-05 13:18:40,834 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 13:18:40,849 - INFO - main - Topic pool, topic: Business
+2025-10-05 13:18:40,849 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 13:18:41,868 - INFO - scraper - Found 0 new articles
+2025-10-05 13:18:41,868 - INFO - scraper - Fetching News from CNN
+2025-10-05 13:20:13,038 - INFO - scraper - Found 0 new articles
+2025-10-05 13:20:13,182 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 13:21:41,834 - INFO - scraper - Found 0 new articles
+2025-10-05 13:21:41,904 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 13:23:06,193 - INFO - scraper - Found 0 new articles
+2025-10-05 13:23:06,277 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 13:23:06,427 - INFO - scraper - Found 0 new articles
+2025-10-05 13:23:06,427 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 13:23:06,529 - INFO - scraper - Found 0 new articles
+2025-10-05 13:23:06,529 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 13:24:33,609 - INFO - scraper - Found 0 new articles
+2025-10-05 13:24:33,871 - INFO - writer - Starting article generation...
+2025-10-05 13:24:33,873 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_132433.txt
+2025-10-05 13:24:33,873 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 13:24:48,138 - INFO - writer - Article generated successfully.
+2025-10-05 13:24:48,140 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 13:24:51,783 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 13:24:51,785 - INFO - writer - Generating article title...
+2025-10-05 13:24:52,419 - INFO - writer - Article title generated successfully.
+2025-10-05 13:24:52,423 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1324.txt
+2025-10-05 13:59:45,313 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 13:59:45,686 - INFO - main - Modules imported.
+2025-10-05 14:00:34,135 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 14:00:34,445 - INFO - main - Modules imported.
+2025-10-05 14:00:52,109 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 14:00:52,452 - INFO - main - Modules imported.
+2025-10-05 14:00:52,467 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 14:00:52,482 - INFO - main - Topic pool, topic: Business
+2025-10-05 14:00:52,482 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 14:00:53,555 - INFO - scraper - Found 1 new articles
+2025-10-05 14:00:53,555 - INFO - scraper - Fetching News from CNN
+2025-10-05 14:02:30,282 - INFO - scraper - Found 0 new articles
+2025-10-05 14:02:30,421 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:03:55,836 - INFO - scraper - Found 0 new articles
+2025-10-05 14:03:55,895 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:05:09,262 - INFO - scraper - Found 0 new articles
+2025-10-05 14:05:09,323 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 14:05:09,494 - INFO - scraper - Found 0 new articles
+2025-10-05 14:05:09,494 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 14:05:09,591 - INFO - scraper - Found 0 new articles
+2025-10-05 14:05:09,591 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 14:06:40,140 - INFO - scraper - Found 0 new articles
+2025-10-05 14:06:40,407 - INFO - writer - Starting article generation...
+2025-10-05 14:06:40,410 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_140640.txt
+2025-10-05 14:06:40,410 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 14:07:01,796 - INFO - writer - Article generated successfully.
+2025-10-05 14:07:01,797 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 14:07:05,202 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 14:07:05,204 - INFO - writer - Generating article title...
+2025-10-05 14:07:06,365 - INFO - writer - Article title generated successfully.
+2025-10-05 14:07:06,368 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1407.txt
+2025-10-05 14:12:58,929 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-05 14:12:59,288 - INFO - main - Modules imported.
+2025-10-05 14:12:59,302 - INFO - main - Schedule determined. Today is Sunday
+2025-10-05 14:12:59,316 - INFO - main - Topic pool, topic: Business
+2025-10-05 14:12:59,316 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-05 14:13:00,363 - INFO - scraper - Found 1 new articles
+2025-10-05 14:13:00,363 - INFO - scraper - Fetching News from CNN
+2025-10-05 14:14:32,539 - INFO - scraper - Found 0 new articles
+2025-10-05 14:14:32,697 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:15:56,142 - INFO - scraper - Found 0 new articles
+2025-10-05 14:15:56,199 - INFO - scraper - Fetching News from BBC Business
+2025-10-05 14:17:23,714 - INFO - scraper - Found 0 new articles
+2025-10-05 14:17:23,782 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-05 14:17:23,933 - INFO - scraper - Found 0 new articles
+2025-10-05 14:17:23,934 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-05 14:17:24,027 - INFO - scraper - Found 0 new articles
+2025-10-05 14:17:24,027 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-05 14:18:51,887 - INFO - scraper - Found 0 new articles
+2025-10-05 14:18:52,159 - INFO - writer - Starting article generation...
+2025-10-05 14:18:52,160 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251005_141852.txt
+2025-10-05 14:18:52,161 - INFO - writer - Requesting article from OpenAI API...
+2025-10-05 14:19:10,072 - INFO - writer - Article generated successfully.
+2025-10-05 14:19:10,073 - INFO - writer - Summarizing article and generating tags...
+2025-10-05 14:19:13,891 - INFO - writer - Summary and tags generated successfully.
+2025-10-05 14:19:13,893 - INFO - writer - Generating article title...
+2025-10-05 14:19:14,841 - INFO - writer - Article title generated successfully.
+2025-10-05 14:19:14,846 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251005_1419.txt
+2025-10-05 14:19:14,880 - INFO - image - Starting full image pipeline...
+2025-10-05 14:19:14,880 - INFO - image - Starting image generation...
+2025-10-05 14:19:29,013 - INFO - image - Image generated successfully.
+2025-10-05 14:19:29,015 - INFO - image - Downloading image...
+2025-10-05 14:19:31,037 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:19:31,042 - INFO - image - Cropping image: /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:19:31,449 - INFO - image - Cropped image saved to /Users/ivanstruk/Documents/GitHub/good-news/featured_image.jpg
+2025-10-05 14:19:31,450 - INFO - image - Image pipeline completed successfully.
+2025-10-05 14:19:32,533 - INFO - poster - Uploaded featured image. Media ID=986
+2025-10-05 14:19:44,441 - INFO - poster - Article posted. Post ID=987, Link=https://bukhdir.com/2025/10/05/georgia-faces-political-crisis-amid-alleged-coup-and-eu-protests/

@@ -7,3 +7,4 @@ dev.ipynb
 .ipynb_checkpoints
 launch_db.command
 prompts/logged_prompts
+drafts
