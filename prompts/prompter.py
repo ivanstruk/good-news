@@ -2,6 +2,7 @@ import os
 import sys
 import tiktoken
 import pandas as pd
+from utils.logger import logger
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from utils.db_utils import fetch_posts
@@ -41,7 +42,7 @@ def build_news_prompt(research_list, max_token_limit=10000):
         more_news = fill_news_article_template(n, i["title"], source, i["content"])
         more_news_token_count = count_tokens(more_news)
         if prompt_token_count + more_news_token_count > max_token_limit:
-            print("Stopping after {} sources added. Tokens used: {}".format(n-1, more_news_token_count+prompt_token_count))
+            logger.info("Stopping after {} sources added. Tokens used: {}".format(n-1, more_news_token_count+prompt_token_count))
             break
         
         prompt_part_news += more_news

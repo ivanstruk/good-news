@@ -100,7 +100,10 @@ for topic in topic_agenda:
         (item["desc_image_prompt"] for item in d if item["desc_topic_primary"] == topic),
         next((item["desc_image_prompt"] for item in d if item["desc_topic_primary"] == "General"), None)
     )
-    featured_image = process_image(image_prompt)
+    featured_image = process_image(
+        article_summary=summary,
+        system_prompt=image_prompt)
+    
     image_id = None
     if featured_image == True:
         image_id = upload_featured_image("featured_image.jpg")

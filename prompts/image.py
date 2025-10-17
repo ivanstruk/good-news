@@ -20,7 +20,6 @@ from typing import List, Tuple, Optional
 base_dir = Path(__file__).resolve().parent.parent
 dotenv_path = os.path.join(base_dir, ".env")
 load_dotenv(dotenv_path)
-fonts_dir = base_dir / "assets" / "fonts"
 
 # OpenAI client
 openai_key = os.getenv("OPENAI_API_KEY")
@@ -30,6 +29,22 @@ client = OpenAI(api_key=openai_key)
 
 
 # === Main Functions ===
+
+def generate_image_prompt(article_summary: str, system_prompt: str) -> str:
+    # Prepare messages for Chat Completions
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"Article summary:\n{article_summary.strip()}\n\nWrite the final image prompt."},
+    ]
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",  # good balance of speed and creativity
+        messages=messages,
+        temperature=0.8,      # slightly creative to vary scene composition
+    )
+    # Extract the prompt text
+    return response.choices[0].message.content.strip()
+
 def generate_image(prompt: str) -> str:
     """
     Generate an image from a text prompt using OpenAI's image API.
@@ -42,9 +57,10 @@ def generate_image(prompt: str) -> str:
     """
     logger.info("Starting image generation...")
 
-    size = "1024x1024"
+    #size = "1024x1024"
+    size = "1792x1024"
     model = "dall-e-3"
-    retries = 3
+    retries = 2
 
     for attempt in range(1, retries + 1):
         try:
@@ -98,12 +114,6 @@ def download_image(image_url: str) -> str:
 def crop_to_size(path: str) -> None:
     """
     Crop an image to 1024x537 and overwrite it.
-
-    Args:
-        path (str): Path to the image file.
-
-    Returns:
-        None
     """
     logger.info(f"Cropping image: {path}")
 
@@ -125,22 +135,17 @@ def crop_to_size(path: str) -> None:
         logger.error(f"Failed to crop image: {e}")
         raise
 
-def process_image(prompt: str, title: str) -> bool:
-    """
-    Full image pipeline:
-      1) Generate image from prompt via OpenAI
-      2) Download image
-      3) Crop to 1024x537
-      4) Add title text
-      5) Save as featured_image.jpg
-    """
-    print("Starting image pipeline...")
+def process_image(system_prompt: str, article_summary: str) -> bool:
+
+    logger.info("Starting image pipeline...")
+    # The real first step is generating the prompt
+    prompt = generate_image_prompt(system_prompt, article_summary)
 
     try:
         # 1) Generate
         image_url = generate_image(prompt)
         if not image_url:
-            print("❌ Image generation failed (no URL).")
+            logger.error("Image generation failed (no URL).")
             return False
 
         # 2) Download
@@ -148,10 +153,10 @@ def process_image(prompt: str, title: str) -> bool:
 
         featured_path = base_dir / "featured_image.jpg"
 
-        print("✅ Image pipeline finished successfully.")
-        print(f"Saved at: {featured_path}")
+        logger.info(f"Image saved at: {featured_path}")
+        logger.info("Image pipeline finished successfully.")
         return True
 
     except Exception as e:
-        print(f"⚠️ Image pipeline failed: {e}")
+        logger.error(f"Image pipeline failed: {e}")
         return False
