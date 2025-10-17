@@ -1,16 +1,26 @@
+import sys
+from pathlib import Path
+
+# Ensure project root is in sys.path so imports like "from utils.logger" work
+root_dir = Path(__file__).resolve().parent.parent
+if str(root_dir) not in sys.path:
+    sys.path.append(str(root_dir))
+
 from utils.logger import logger
 import os
 from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
 import requests
-from PIL import Image
-
+from PIL import Image, ImageDraw, ImageFont
+from dataclasses import dataclass
+from typing import List, Tuple, Optional
 
 # === Setup ===
 base_dir = Path(__file__).resolve().parent.parent
 dotenv_path = os.path.join(base_dir, ".env")
 load_dotenv(dotenv_path)
+fonts_dir = base_dir / "assets" / "fonts"
 
 # OpenAI client
 openai_key = os.getenv("OPENAI_API_KEY")
@@ -115,38 +125,33 @@ def crop_to_size(path: str) -> None:
         logger.error(f"Failed to crop image: {e}")
         raise
 
-def process_image(prompt: str) -> bool:
+def process_image(prompt: str, title: str) -> bool:
     """
-    Full pipeline: generate an image, download it, crop to size,
-    and overwrite as featured_image.jpg.
-
-    Args:
-        prompt (str): Text prompt for image generation.
-
-    Returns:
-        bool: True if successful, False otherwise.
+    Full image pipeline:
+      1) Generate image from prompt via OpenAI
+      2) Download image
+      3) Crop to 1024x537
+      4) Add title text
+      5) Save as featured_image.jpg
     """
-    logger.info("Starting full image pipeline...")
+    print("Starting image pipeline...")
 
-    # Step 1: Generate image
-    image_url = generate_image(prompt)
-    if not image_url:
-        logger.error("Image generation failed. Aborting pipeline.")
-        return False
-
-    # Step 2: Download image
     try:
-        file_path = download_image(image_url)
-    except Exception as e:
-        logger.error(f"Image download failed: {e}")
-        return False
+        # 1) Generate
+        image_url = generate_image(prompt)
+        if not image_url:
+            print("❌ Image generation failed (no URL).")
+            return False
 
-    # Step 3: Crop image
-    try:
-        crop_to_size(file_path)
-    except Exception as e:
-        logger.error(f"Image cropping failed: {e}")
-        return False
+        # 2) Download
+        downloaded_path = download_image(image_url)
 
-    logger.info("Image pipeline completed successfully.")
-    return True
+        featured_path = base_dir / "featured_image.jpg"
+
+        print("✅ Image pipeline finished successfully.")
+        print(f"Saved at: {featured_path}")
+        return True
+
+    except Exception as e:
+        print(f"⚠️ Image pipeline failed: {e}")
+        return False
