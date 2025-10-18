@@ -7,12 +7,11 @@ from utils.scraper import research, scrapeRSS, fetchNews
 from utils.telegram_scraper import fetchTelegram
 from utils.poster import upload_featured_image, post_to_wordpress
 from utils.db_utils import save_generated_article
+from utils.editor import refine_article
 
 from prompts.prompter import build_news_prompt, build_history_prompt
 from prompts.writer import write_article, summarize_article, generate_article_title
 from prompts.image import process_image
-
-
 
 logger.info("Modules imported.")
 
@@ -81,6 +80,9 @@ for topic in topic_agenda:
     summary, tags = summarize_article(article_text)
     title = generate_article_title(article_text)
 
+    # === Editor ===
+    article_text = refine_article(article_text, limit=5, threshold=40)
+    
     # === Save draft for debugging ===
     drafts_dir = Path(__file__).resolve().parent / "drafts"
     drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
@@ -103,10 +105,10 @@ for topic in topic_agenda:
     featured_image = process_image(
         article_summary=summary,
         system_prompt=image_prompt)
-    
+
     image_id = None
     if featured_image == True:
-        image_id = upload_featured_image("featured_image.jpg")
+        image_id = upload_featured_image("assets/featured_image.jpg")
 
     # === Posting to Wordpress ===
     response = post_to_wordpress(

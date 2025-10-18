@@ -796,3 +796,103 @@ TypeError: crop_to_size() got an unexpected keyword argument 'target_w'
 2025-10-17 22:10:47,490 - INFO - poster - Uploaded featured image. Media ID=1072
 2025-10-17 22:11:03,257 - INFO - poster - Article posted. Post ID=1073, Link=https://bukhdir.com/2025/10/17/trumps-tariffs-challenge-u-s-india-trade-amid-ongoing-talks/
 2025-10-17 22:11:03,268 - INFO - db_utils - Generated article saved to database.
+2025-10-17 22:54:20,096 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-17 22:54:20,495 - INFO - main - Modules imported.
+2025-10-17 22:54:20,511 - INFO - main - Schedule determined. Today is Friday
+2025-10-17 22:54:20,525 - INFO - main - Topic pool, topic: Business
+2025-10-17 22:54:20,525 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-17 22:54:21,673 - INFO - scraper - Found 2 new articles
+2025-10-17 22:54:21,673 - INFO - scraper - Fetching News from CNN
+2025-10-17 22:55:47,546 - INFO - scraper - Found 0 new articles
+2025-10-17 22:55:47,696 - INFO - scraper - Fetching News from BBC Business
+2025-10-17 22:57:18,042 - INFO - scraper - Found 0 new articles
+2025-10-17 22:57:18,120 - INFO - scraper - Fetching News from BBC Business
+2025-10-17 22:58:34,077 - INFO - scraper - Found 0 new articles
+2025-10-17 22:58:34,138 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-17 22:58:34,395 - INFO - scraper - Found 0 new articles
+2025-10-17 22:58:34,395 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-17 22:58:34,535 - INFO - scraper - Found 0 new articles
+2025-10-17 22:58:34,535 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-17 23:00:04,318 - INFO - scraper - Found 0 new articles
+2025-10-17 23:00:04,602 - INFO - prompter - Stopping after 19 sources added. Tokens used: 11276
+2025-10-17 23:00:04,605 - INFO - writer - Starting article generation...
+2025-10-17 23:00:04,606 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251017_230004.txt
+2025-10-17 23:00:04,607 - INFO - writer - Requesting article from OpenAI API...
+2025-10-17 23:00:25,180 - INFO - writer - Article generated successfully.
+2025-10-17 23:00:25,181 - INFO - writer - Summarizing article and generating tags...
+2025-10-17 23:00:29,866 - INFO - writer - Summary and tags generated successfully.
+2025-10-17 23:00:29,869 - INFO - writer - Generating article title...
+2025-10-17 23:00:31,086 - INFO - writer - Article title generated successfully.
+2025-10-17 23:00:31,090 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251017_2300.txt
+2025-10-17 23:00:31,132 - INFO - image - Starting image pipeline...
+2025-10-17 23:00:34,440 - INFO - image - Starting image generation...
+2025-10-17 23:00:54,604 - INFO - image - Image generated successfully.
+2025-10-17 23:00:54,604 - INFO - image - Downloading image...
+2025-10-17 23:00:56,689 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-17 23:00:56,694 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-17 23:00:56,694 - INFO - image - Image pipeline finished successfully.
+2025-10-17 23:01:01,497 - INFO - poster - Uploaded featured image. Media ID=1074
+2025-10-17 23:01:16,959 - INFO - poster - Article posted. Post ID=1075, Link=https://bukhdir.com/2025/10/17/nano-nuclear-begins-microreactor-project-at-university-of-illinois/
+2025-10-17 23:01:16,970 - INFO - db_utils - Generated article saved to database.
+2025-10-18 09:26:10,847 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-18 09:26:11,256 - INFO - main - Modules imported.
+2025-10-18 09:26:11,271 - INFO - main - Schedule determined. Today is Saturday
+2025-10-18 09:26:11,286 - INFO - main - Topic pool, topic: World News
+2025-10-18 09:26:11,286 - INFO - scraper - Fetching News from Aljazeera
+2025-10-18 09:27:24,878 - INFO - scraper - Found 48 new articles
+2025-10-18 09:27:24,930 - INFO - scraper - Fetching News from Insiderr
+2025-10-18 09:27:28,428 - INFO - scraper - Found 0 new articles
+2025-10-18 09:27:28,430 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-18 09:27:28,674 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-18 09:27:28,680 - INFO - scraper - Found 0 new articles
+2025-10-18 09:27:28,894 - INFO - prompter - Stopping after 15 sources added. Tokens used: 10094
+2025-10-18 09:27:28,896 - INFO - writer - Starting article generation...
+2025-10-18 09:27:28,898 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251018_092728.txt
+2025-10-18 09:27:28,898 - INFO - writer - Requesting article from OpenAI API...
+2025-10-18 09:27:41,326 - INFO - writer - Article generated successfully.
+2025-10-18 09:27:41,327 - INFO - writer - Summarizing article and generating tags...
+2025-10-18 09:27:46,825 - INFO - writer - Summary and tags generated successfully.
+2025-10-18 09:27:46,827 - INFO - writer - Generating article title...
+2025-10-18 09:27:48,383 - INFO - writer - Article title generated successfully.
+2025-10-18 09:27:48,387 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251018_0927.txt
+2025-10-18 09:27:48,433 - INFO - image - Starting image pipeline...
+2025-10-18 09:27:51,858 - INFO - image - Starting image generation...
+2025-10-18 09:28:09,638 - INFO - image - Image generated successfully.
+2025-10-18 09:28:09,639 - INFO - image - Downloading image...
+2025-10-18 09:28:12,185 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 09:28:12,191 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 09:28:12,192 - INFO - image - Image pipeline finished successfully.
+2025-10-18 09:28:17,968 - INFO - poster - Uploaded featured image. Media ID=1076
+2025-10-18 09:28:41,720 - INFO - poster - Article posted. Post ID=1077, Link=https://bukhdir.com/2025/10/18/pakistan-afghanistan-tensions-rise-amid-truce-violation-accusations/
+2025-10-18 09:28:41,734 - INFO - db_utils - Generated article saved to database.
+2025-10-18 16:10:36,761 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-18 16:10:37,081 - INFO - main - Modules imported.
+2025-10-18 16:10:37,097 - INFO - main - Schedule determined. Today is Saturday
+2025-10-18 16:10:37,114 - INFO - main - Topic pool, topic: World News
+2025-10-18 16:10:37,114 - INFO - scraper - Fetching News from Aljazeera
+2025-10-18 16:11:47,132 - INFO - scraper - Found 4 new articles
+2025-10-18 16:11:47,190 - INFO - scraper - Fetching News from Insiderr
+2025-10-18 16:11:50,583 - INFO - scraper - Found 0 new articles
+2025-10-18 16:11:50,585 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-18 16:11:50,833 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-18 16:11:50,835 - INFO - scraper - Found 0 new articles
+2025-10-18 16:11:51,079 - INFO - prompter - Stopping after 18 sources added. Tokens used: 12089
+2025-10-18 16:11:51,081 - INFO - writer - Starting article generation...
+2025-10-18 16:11:51,083 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251018_161151.txt
+2025-10-18 16:11:51,083 - INFO - writer - Requesting article from OpenAI API...
+2025-10-18 16:12:09,769 - INFO - writer - Article generated successfully.
+2025-10-18 16:12:09,770 - INFO - writer - Summarizing article and generating tags...
+2025-10-18 16:12:13,139 - INFO - writer - Summary and tags generated successfully.
+2025-10-18 16:12:13,141 - INFO - writer - Generating article title...
+2025-10-18 16:12:14,515 - INFO - writer - Article title generated successfully.
+2025-10-18 16:12:14,519 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251018_1612.txt
+2025-10-18 16:12:14,563 - INFO - image - Starting image pipeline...
+2025-10-18 16:12:16,666 - INFO - image - Starting image generation...
+2025-10-18 16:12:34,300 - INFO - image - Image generated successfully.
+2025-10-18 16:12:34,303 - INFO - image - Downloading image...
+2025-10-18 16:12:36,582 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 16:12:36,591 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 16:12:36,591 - INFO - image - Image pipeline finished successfully.
+2025-10-18 16:12:40,796 - INFO - poster - Uploaded featured image. Media ID=1083
+2025-10-18 16:12:56,904 - INFO - poster - Article posted. Post ID=1084, Link=https://bukhdir.com/2025/10/18/china-eastern-airlines-resumes-china-india-flights-after-five-year-break/
+2025-10-18 16:12:56,911 - INFO - db_utils - Generated article saved to database.

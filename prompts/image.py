@@ -20,6 +20,8 @@ from typing import List, Tuple, Optional
 base_dir = Path(__file__).resolve().parent.parent
 dotenv_path = os.path.join(base_dir, ".env")
 load_dotenv(dotenv_path)
+assets_dir = base_dir / "assets"
+assets_dir.mkdir(exist_ok=True)
 
 # OpenAI client
 openai_key = os.getenv("OPENAI_API_KEY")
@@ -99,7 +101,7 @@ def download_image(image_url: str) -> str:
         logger.error(f"Failed to download image: {e}")
         raise
 
-    file_path = os.path.join(base_dir, "featured_image.jpg")
+    file_path = assets_dir / "featured_image.jpg"
     try:
         with open(file_path, "wb") as f:
             f.write(response.content)
@@ -127,7 +129,7 @@ def crop_to_size(path: str) -> None:
         bottom = top + 537
 
         cropped_image = image.crop((left, top, right, bottom))
-        save_path = os.path.join(base_dir, "featured_image.jpg")
+        save_path = assets_dir / "featured_image.jpg"
         cropped_image.save(save_path)
 
         logger.info(f"Cropped image saved to {save_path}")
@@ -151,7 +153,7 @@ def process_image(system_prompt: str, article_summary: str) -> bool:
         # 2) Download
         downloaded_path = download_image(image_url)
 
-        featured_path = base_dir / "featured_image.jpg"
+        featured_path = assets_dir / "featured_image.jpg"
 
         logger.info(f"Image saved at: {featured_path}")
         logger.info("Image pipeline finished successfully.")
