@@ -1,7 +1,7 @@
 import os
+from pathlib import Path
 import re
 from typing import Optional
-
 from dotenv import load_dotenv
 from openai import OpenAI
 from utils.logger import logger
@@ -76,10 +76,10 @@ def detemplate_lede_once(text: str) -> str:
     )
     return resp.choices[0].message.content.strip()
 
-
 # =========================================
 # 1) Unbiased rubric-based grader (no anchor)
 # =========================================
+
 def grade_base(article_text: str) -> int:
     """
     Fresh score (1–100) for AI-likeness using a weighted rubric.
@@ -231,6 +231,7 @@ def humanize_article(article_text: str, score: Optional[int] = None, mode: str =
 # ====================
 # 4) Main refinement
 # ====================
+
 def refine_article(
     article_text: str,
     limit: int = 5,

@@ -896,3 +896,124 @@ TypeError: crop_to_size() got an unexpected keyword argument 'target_w'
 2025-10-18 16:12:40,796 - INFO - poster - Uploaded featured image. Media ID=1083
 2025-10-18 16:12:56,904 - INFO - poster - Article posted. Post ID=1084, Link=https://bukhdir.com/2025/10/18/china-eastern-airlines-resumes-china-india-flights-after-five-year-break/
 2025-10-18 16:12:56,911 - INFO - db_utils - Generated article saved to database.
+2025-10-18 19:06:30,810 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-18 19:07:12,103 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-18 19:07:12,450 - INFO - main - Modules imported.
+2025-10-18 19:07:12,466 - INFO - main - Schedule determined. Today is Saturday
+2025-10-18 19:07:12,480 - INFO - main - Topic pool, topic: World News
+2025-10-18 19:07:12,481 - INFO - scraper - Fetching News from Aljazeera
+2025-10-18 19:07:14,591 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:15,854 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:17,121 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:18,358 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:19,634 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:20,915 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:22,192 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:23,497 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:24,842 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:26,160 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:27,447 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:28,792 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:30,161 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:31,432 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:32,705 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:34,074 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:35,355 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:36,724 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:37,994 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:39,288 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:40,604 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:41,861 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:43,769 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:45,046 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:46,322 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:47,641 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:48,916 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:50,331 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:51,734 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:53,012 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:55,060 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:56,330 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:58,013 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:07:59,321 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:00,619 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:01,998 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:03,289 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:04,585 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:05,879 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:07,169 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:08,472 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:09,804 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:11,079 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:12,467 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:13,822 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:15,107 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:16,439 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:17,729 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:19,034 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:20,311 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:21,317 - INFO - scraper - Found 0 new articles
+2025-10-18 19:08:21,376 - INFO - scraper - Fetching News from Insiderr
+2025-10-18 19:08:22,545 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:23,770 - INFO - db_utils - [db_utils] - Database insert error: no such table: articles
+2025-10-18 19:08:24,776 - INFO - scraper - Found 0 new articles
+2025-10-18 19:08:24,778 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-18 19:08:25,027 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-18 19:08:25,032 - INFO - scraper - Found 0 new articles
+2025-10-18 19:08:25,257 - INFO - prompter - Stopping after 18 sources added. Tokens used: 12089
+2025-10-18 20:18:57,297 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-18 20:18:57,722 - INFO - main - Modules imported.
+2025-10-18 20:18:57,746 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-18 20:18:57,764 - INFO - main - Schedule determined. Today is Saturday
+2025-10-18 20:18:57,781 - INFO - main - Topic pool, topic: World News
+2025-10-18 20:18:57,781 - INFO - scraper - Fetching News from Aljazeera
+2025-10-18 20:20:09,061 - INFO - scraper - Found 48 new articles
+2025-10-18 20:20:09,122 - INFO - scraper - Fetching News from Insiderr
+2025-10-18 20:20:12,583 - INFO - scraper - Found 0 new articles
+2025-10-18 20:20:12,585 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-18 20:20:12,859 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-18 20:20:12,864 - INFO - scraper - Found 0 new articles
+2025-10-18 20:20:13,096 - INFO - prompter - Stopping after 18 sources added. Tokens used: 12089
+2025-10-18 20:20:13,098 - INFO - writer - Starting article generation...
+2025-10-18 20:20:13,100 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251018_202013.txt
+2025-10-18 20:20:13,100 - INFO - writer - Requesting article from OpenAI API...
+2025-10-18 20:20:29,604 - INFO - writer - Article generated successfully.
+2025-10-18 20:20:29,605 - INFO - writer - Summarizing article and generating tags...
+2025-10-18 20:20:34,242 - INFO - writer - Summary and tags generated successfully.
+2025-10-18 20:20:34,245 - INFO - writer - Generating article title...
+2025-10-18 20:20:35,976 - INFO - writer - Article title generated successfully.
+2025-10-18 20:20:44,515 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-18 20:20:44,516 - INFO - editor - 
+--- Iteration 1 ---
+2025-10-18 20:20:45,699 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-18 20:20:45,699 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-18 20:20:45,700 - INFO - editor - Rewriting to sound more human...
+2025-10-18 20:21:00,652 - INFO - editor - 
+--- Iteration 2 ---
+2025-10-18 20:21:01,679 - INFO - editor - Base score: 70 | Smoothed score: 67
+2025-10-18 20:21:01,679 - INFO - editor - Rewriting to sound more human...
+2025-10-18 20:21:17,651 - INFO - editor - 
+--- Iteration 3 ---
+2025-10-18 20:21:18,068 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-18 20:21:18,068 - INFO - editor - Rewriting to sound more human...
+2025-10-18 20:21:33,115 - INFO - editor - 
+--- Iteration 4 ---
+2025-10-18 20:21:33,625 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-18 20:21:33,625 - INFO - editor - Rewriting to sound more human...
+2025-10-18 20:21:51,428 - INFO - editor - 
+--- Iteration 5 ---
+2025-10-18 20:21:52,072 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-18 20:21:52,072 - INFO - editor - Rewriting to sound more human...
+2025-10-18 20:22:08,543 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-18 20:22:08,544 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-18 20:22:08,549 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/20251018_2022.txt
+2025-10-18 20:22:08,588 - INFO - image - Starting image pipeline...
+2025-10-18 20:22:11,138 - INFO - image - Starting image generation...
+2025-10-18 20:22:31,640 - INFO - image - Image generated successfully.
+2025-10-18 20:22:31,642 - INFO - image - Downloading image...
+2025-10-18 20:22:37,278 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 20:22:37,284 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-18 20:22:37,284 - INFO - image - Image pipeline finished successfully.
+2025-10-18 20:22:42,085 - INFO - poster - Uploaded featured image. Media ID=1085
+2025-10-18 20:22:55,869 - INFO - poster - Article posted. Post ID=1086, Link=https://bukhdir.com/2025/10/18/pakistan-afghanistan-tensions-rise-as-ceasefire-violations-occur/
+2025-10-18 20:22:55,877 - INFO - db_utils - Generated article saved to database.

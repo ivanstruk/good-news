@@ -6,7 +6,7 @@ from utils.logger import logger
 from utils.scraper import research, scrapeRSS, fetchNews
 from utils.telegram_scraper import fetchTelegram
 from utils.poster import upload_featured_image, post_to_wordpress
-from utils.db_utils import save_generated_article
+from utils.db_utils import DB_PATH, backup_sqlite, connect, save_generated_article
 from utils.editor import refine_article
 
 from prompts.prompter import build_news_prompt, build_history_prompt
@@ -14,6 +14,11 @@ from prompts.writer import write_article, summarize_article, generate_article_ti
 from prompts.image import process_image
 
 logger.info("Modules imported.")
+
+backup_path: Path = DB_PATH.with_name("backup_articles.db")
+backup_sqlite(DB_PATH, backup_path)
+logger.info(f"Startup backup OK → {backup_path}")
+
 
 # Weekly Schedule
 schedule_sheet = pd.read_excel(
@@ -37,8 +42,17 @@ logger.info("Schedule determined. Today is {}".format(weekday))
 sources = pd.read_excel("blog_config.xlsx", sheet_name="sources").to_dict(orient='records')
 sources = [s for s in sources if s["bool_visibility"]==True]
 
-# Initializing script...
+# Translation Settings
+supported_languages = [
+    {"lang" : "German", "post" : True, "run" : True, "code" : "DE"},
+    {"lang" : "Russian", "post" : True, "run" : True, "code" : "RU"},
+    {"lang" : "Chinesse (simplified)", "run" : False, "post" : True, "code" : "CN"},
+    {"lang" : "Hindi", "post" : False, "run" : False, "code" : "HI"},
+    {"lang" : "Spanish", "post" : False, "run" : False, "code" : "ES"},
+    {"lang" : "French", "post" : True, "run" : False, "code" : "FR"},
+]
 
+# Initializing script...
 for topic in topic_agenda:
     logger.info("Topic pool, topic: {}".format(topic))
     
@@ -83,8 +97,36 @@ for topic in topic_agenda:
     # === Editor ===
     article_text = refine_article(article_text, limit=5, threshold=40)
     
-    # === Save draft for debugging ===
-    drafts_dir = Path(__file__).resolve().parent / "drafts"
+    # === Translation ===
+    supported_languages = [lang for lang in supported_languages if lang["run"]]
+    translated_articles = []
+
+    for language in supported_languages:
+        translated_title, translated_article = translate_post_content(
+            title_en=title, 
+            body_en=article_text, 
+            lang=language["lang"])
+
+        translation = {
+            "title" : translated_title,
+            "body" : translated_article,
+            "language" : language["post"]}
+
+        translated_articles.append(translation)
+
+        drafts_dir = Path(__file__).resolve().parent / "drafts/{}".format()
+        drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+        file_path = drafts_dir / f"{timestamp}.txt"
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(translated_title + "\n\n")      # Title at the top
+            f.write(translated_article + "\n\n")  
+            f.write("Tags: " + ", ".join(tags) + "\n\n")
+
+    logger.info(f"Draft saved: {file_path}")
+
+    # === Save draft for debugging (English) ===
+    drafts_dir = Path(__file__).resolve().parent / "drafts/EN"
     drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
     file_path = drafts_dir / f"{timestamp}.txt"

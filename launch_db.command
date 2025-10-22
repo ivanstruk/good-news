@@ -3,7 +3,7 @@
 PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Path to your SQLite database
-DB_PATH="$PROJECT_DIR/articles.db"
+DB_PATH="$PROJECT_DIR/assets/articles.db"
 
 # Open a new Terminal window and start sqlite3 on articles.db
 osascript <<EOF
