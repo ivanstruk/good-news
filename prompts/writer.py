@@ -18,6 +18,7 @@ load_dotenv(dotenv_path)
 openai_key = os.getenv("OPENAI_API_KEY")
 if not openai_key:
     logger.error("OPENAI_API_KEY is not set in the environment.")
+
 client = OpenAI(api_key=openai_key)
 
 

@@ -8,10 +8,13 @@ from utils.telegram_scraper import fetchTelegram
 from utils.poster import upload_featured_image, post_to_wordpress
 from utils.db_utils import DB_PATH, backup_sqlite, connect, save_generated_article
 from utils.editor import refine_article
+from utils.image import process_image
+from utils.translator import translate_post_content
 
 from prompts.prompter import build_news_prompt, build_history_prompt
 from prompts.writer import write_article, summarize_article, generate_article_title
-from prompts.image import process_image
+
+from typing import Optional
 
 logger.info("Modules imported.")
 
@@ -44,12 +47,12 @@ sources = [s for s in sources if s["bool_visibility"]==True]
 
 # Translation Settings
 supported_languages = [
-    {"lang" : "German", "post" : True, "run" : True, "code" : "DE"},
-    {"lang" : "Russian", "post" : True, "run" : True, "code" : "RU"},
-    {"lang" : "Chinesse (simplified)", "run" : False, "post" : True, "code" : "CN"},
-    {"lang" : "Hindi", "post" : False, "run" : False, "code" : "HI"},
-    {"lang" : "Spanish", "post" : False, "run" : False, "code" : "ES"},
-    {"lang" : "French", "post" : True, "run" : False, "code" : "FR"},
+    {"lang": "German",  "post": True, "run": True,  "code": "de"},
+    {"lang": "Russian", "post": True, "run": True,  "code": "ru"},
+    {"lang": "Chinese (simplified)", "post": True, "run": True, "code": "zh"},
+    {"lang": "Hindi",   "post": False, "run": False, "code": "hi"},
+    {"lang": "Spanish", "post": False, "run": False, "code": "es"},
+    {"lang": "French",  "post": True,  "run": False, "code": "fr"},
 ]
 
 # Initializing script...
@@ -107,14 +110,15 @@ for topic in topic_agenda:
             body_en=article_text, 
             lang=language["lang"])
 
+        #We are going to need this variable later.
         translation = {
             "title" : translated_title,
             "body" : translated_article,
-            "language" : language["post"]}
+            "language" : language["code"]}
 
         translated_articles.append(translation)
 
-        drafts_dir = Path(__file__).resolve().parent / "drafts/{}".format()
+        drafts_dir = Path(__file__).resolve().parent / "drafts/{}".format(language["code"])
         drafts_dir.mkdir(exist_ok=True)  # create folder if it doesn't exist
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
         file_path = drafts_dir / f"{timestamp}.txt"
@@ -152,24 +156,124 @@ for topic in topic_agenda:
     if featured_image == True:
         image_id = upload_featured_image("assets/featured_image.jpg")
 
-    # === Posting to Wordpress ===
-    response = post_to_wordpress(
-        title= title,
-        content= article_text,
+    # === Posting to WordPress (multi-language with Polylang linking) ===
+
+    def _get_lang_code(item: dict) -> Optional[str]:
+        """Return a normalized 2–5 char language code from a translation item."""
+        for key in ("language", "code", "lang", "slug"):
+            if key in item and item[key]:
+                code = str(item[key]).strip().lower()
+                if 2 <= len(code) <= 5:
+                    return code
+        return None
+
+    def _get_text(item: dict, *keys: str) -> Optional[str]:
+        """Return the first present non-empty string for given keys from item."""
+        for k in keys:
+            if k in item and isinstance(item[k], str) and item[k].strip():
+                return item[k]
+        return None
+
+    posted_ids: dict[str, int] = {}   # e.g. {"en": 123, "de": 456, ...}
+    
+    # 1) Post English base article first (so other languages can link to it)
+    base_response = post_to_wordpress(
+        title=title,
+        content=article_text,
         featured_image_id=image_id,
         tags=tags,
-        categories=[topic])
+        categories=[topic],
+        language="en",                # ensure EN is the canonical source
+        translations=None,            # nothing to link yet
+    )
 
-    if response != None:
+    if base_response is not None:
+        en_id = int(base_response.get("id"))
+        posted_ids["en"] = en_id
+
         dt_published = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         save_generated_article(
-            title= title, 
-            content = article_text, 
+            title=title,
+            content=article_text,
             topic=topic,
-            category=topic, 
+            category=topic,
             summary=summary,
-            link=response.get("link"), 
+            link=base_response.get("link"),
             dt_published=dt_published,
-            )
+        )
 
-print("Done")
+        # Optional: store an EN draft alongside translated drafts for parity
+        en_dir = Path(__file__).resolve().parent / "drafts/EN"
+        en_dir.mkdir(exist_ok=True)
+        ts = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+        with open(en_dir / f"{ts}.txt", "w", encoding="utf-8") as f:
+            f.write(title + "\n\n")
+            f.write(article_text + "\n\n")
+            f.write("Tags: " + ", ".join(tags) + "\n\n")
+            f.write("Summary:\n" + summary + "\n")
+
+    else:
+        logger.error("English base post failed; skipping translations.")
+        print("Done")
+        raise SystemExit(1)
+
+    # 2) Post each translated article and link it to all previously posted siblings
+    for item in translated_articles:
+        code = _get_lang_code(item)
+        if not code:
+            logger.warning("Skipping translation without a valid language code: %s", item)
+            continue
+
+        # Pull translated fields with graceful fallbacks
+        t_title = _get_text(item, "title", "headline") or title
+        t_body = _get_text(item, "content", "body", "text")
+        if not t_body:
+            logger.warning("Skipping %s translation without content/body.", code)
+            continue
+
+        #t_summary = _get_text(item, "summary", "abstract") or summary
+        t_tags = item.get("tags", tags) or tags  # reuse EN tags if not provided
+
+        response = post_to_wordpress(
+            title=t_title,
+            content=t_body,
+            featured_image_id=image_id,     # reuse the same featured image
+            tags=t_tags,
+            categories=[topic],
+            language=code,                  # Polylang language slug/code (e.g., "de", "ru", "fr")
+            translations=posted_ids,        # link to everything posted so far (incl. EN)
+        )
+
+        if response is None:
+            logger.error("Failed to post %s translation.", code.upper())
+            continue
+
+        # Record this language’s post id (so the next languages can link to it too)
+        lang_post_id = int(response.get("id"))
+        posted_ids[code] = lang_post_id
+
+        # Save per-language DB entry and an on-disk draft
+        # dt_published = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        # save_generated_article(
+        #     title=t_title,
+        #     content=t_body,
+        #     topic=topic,
+        #     category=topic,
+        #     summary=t_summary,
+        #     link=response.get("link"),
+        #     dt_published=dt_published,
+        # )
+
+        drafts_dir = Path(__file__).resolve().parent / f"drafts/{code.upper()}"
+        drafts_dir.mkdir(exist_ok=True)
+        ts = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+        file_path = drafts_dir / f"{ts}.txt"
+        with open(file_path, "w", encoding="utf-8") as f:
+            f.write(t_title + "\n\n")
+            f.write(t_body + "\n\n")
+            if isinstance(t_tags, (list, tuple)):
+                f.write("Tags: " + ", ".join(map(str, t_tags)) + "\n\n")
+            else:
+                f.write("Tags: " + str(t_tags) + "\n\n")
+
+    print("Done")

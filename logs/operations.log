@@ -1017,3 +1017,977 @@ TypeError: crop_to_size() got an unexpected keyword argument 'target_w'
 2025-10-18 20:22:42,085 - INFO - poster - Uploaded featured image. Media ID=1085
 2025-10-18 20:22:55,869 - INFO - poster - Article posted. Post ID=1086, Link=https://bukhdir.com/2025/10/18/pakistan-afghanistan-tensions-rise-as-ceasefire-violations-occur/
 2025-10-18 20:22:55,877 - INFO - db_utils - Generated article saved to database.
+2025-10-23 20:05:00,549 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 20:05:00,957 - ERROR - editor - OPENAI_API_KEY is not set in the environment.
+2025-10-23 20:08:05,458 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 20:08:47,021 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 20:08:47,492 - INFO - main - Modules imported.
+2025-10-23 20:08:47,529 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-23 20:08:47,546 - INFO - main - Schedule determined. Today is Thursday
+2025-10-23 20:08:47,561 - INFO - main - Topic pool, topic: Business
+2025-10-23 20:08:47,561 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-23 20:08:48,653 - INFO - scraper - Found 10 new articles
+2025-10-23 20:08:48,654 - INFO - scraper - Fetching News from CNN
+2025-10-23 20:10:43,218 - INFO - scraper - Found 33 new articles
+2025-10-23 20:10:43,355 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 20:12:18,549 - INFO - scraper - Found 23 new articles
+2025-10-23 20:12:18,639 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 20:13:29,464 - INFO - scraper - Found 0 new articles
+2025-10-23 20:13:29,536 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-23 20:13:29,905 - INFO - scraper - Found 5 new articles
+2025-10-23 20:13:29,905 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-23 20:13:30,063 - INFO - scraper - Found 5 new articles
+2025-10-23 20:13:30,063 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-23 20:14:58,499 - INFO - scraper - Found 0 new articles
+2025-10-23 20:15:01,155 - INFO - prompter - Stopping after 47 sources added. Tokens used: 10045
+2025-10-23 20:15:01,159 - INFO - writer - Starting article generation...
+2025-10-23 20:15:01,160 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251023_201501.txt
+2025-10-23 20:15:01,160 - INFO - writer - Requesting article from OpenAI API...
+2025-10-23 20:15:24,149 - INFO - writer - Article generated successfully.
+2025-10-23 20:15:24,149 - INFO - writer - Summarizing article and generating tags...
+2025-10-23 20:15:30,504 - INFO - writer - Summary and tags generated successfully.
+2025-10-23 20:15:30,507 - INFO - writer - Generating article title...
+2025-10-23 20:15:32,152 - INFO - writer - Article title generated successfully.
+2025-10-23 20:15:51,599 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-23 20:15:51,601 - INFO - editor - 
+--- Iteration 1 ---
+2025-10-23 20:15:52,652 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 20:15:52,653 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-23 20:15:52,653 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:17:17,175 - INFO - editor - 
+--- Iteration 2 ---
+2025-10-23 20:17:17,700 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 20:17:17,700 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:18:52,199 - INFO - editor - 
+--- Iteration 3 ---
+2025-10-23 20:18:52,753 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 20:18:52,754 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-23 20:19:13,923 - INFO - editor - 
+--- Iteration 4 ---
+2025-10-23 20:19:15,376 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 20:19:15,377 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-23 20:19:15,377 - INFO - editor - Returning best-so-far from iteration 1 (score 75).
+2025-10-23 20:29:45,014 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 20:31:22,174 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 20:31:22,510 - INFO - main - Modules imported.
+2025-10-23 20:31:22,547 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-23 20:31:22,563 - INFO - main - Schedule determined. Today is Thursday
+2025-10-23 20:31:22,579 - INFO - main - Topic pool, topic: Business
+2025-10-23 20:31:22,579 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-23 20:31:23,618 - INFO - scraper - Found 1 new articles
+2025-10-23 20:31:23,618 - INFO - scraper - Fetching News from CNN
+2025-10-23 20:33:00,579 - INFO - scraper - Found 1 new articles
+2025-10-23 20:33:00,725 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 20:34:35,850 - INFO - scraper - Found 0 new articles
+2025-10-23 20:34:35,921 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 20:36:03,400 - INFO - scraper - Found 0 new articles
+2025-10-23 20:36:03,476 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-23 20:36:03,621 - INFO - scraper - Found 0 new articles
+2025-10-23 20:36:03,621 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-23 20:36:03,721 - INFO - scraper - Found 0 new articles
+2025-10-23 20:36:03,722 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-23 20:37:34,547 - INFO - scraper - Found 0 new articles
+2025-10-23 20:37:35,004 - INFO - prompter - Stopping after 58 sources added. Tokens used: 10064
+2025-10-23 20:37:35,007 - INFO - writer - Starting article generation...
+2025-10-23 20:37:35,009 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251023_203735.txt
+2025-10-23 20:37:35,009 - INFO - writer - Requesting article from OpenAI API...
+2025-10-23 20:37:54,098 - INFO - writer - Article generated successfully.
+2025-10-23 20:37:54,099 - INFO - writer - Summarizing article and generating tags...
+2025-10-23 20:37:58,569 - INFO - writer - Summary and tags generated successfully.
+2025-10-23 20:37:58,570 - INFO - writer - Generating article title...
+2025-10-23 20:37:59,719 - INFO - writer - Article title generated successfully.
+2025-10-23 20:38:09,721 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-23 20:38:09,721 - INFO - editor - 
+--- Iteration 1 ---
+2025-10-23 20:38:10,488 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-23 20:38:10,488 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-23 20:38:10,488 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:38:29,893 - INFO - editor - 
+--- Iteration 2 ---
+2025-10-23 20:38:30,664 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-23 20:38:30,664 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:38:44,418 - INFO - editor - 
+--- Iteration 3 ---
+2025-10-23 20:38:44,987 - INFO - editor - Base score: 75 | Smoothed score: 69
+2025-10-23 20:38:44,989 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-23 20:38:53,844 - INFO - editor - 
+--- Iteration 4 ---
+2025-10-23 20:38:54,376 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-23 20:38:54,377 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:39:07,007 - INFO - editor - 
+--- Iteration 5 ---
+2025-10-23 20:39:07,828 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-23 20:39:07,828 - INFO - editor - Rewriting to sound more human...
+2025-10-23 20:39:18,079 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-23 20:39:18,081 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-23 20:39:18,083 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 20:39:18,111 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=64
+2025-10-23 20:39:21,243 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 20:39:21,251 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3368
+2025-10-23 20:39:34,166 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 20:39:34,189 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=64
+2025-10-23 20:39:36,695 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 20:39:36,716 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3368
+2025-10-23 20:39:57,126 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/RU/20251023_2039.txt
+2025-10-23 20:39:57,132 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251023_2039.txt
+2025-10-23 20:39:57,191 - INFO - image - Starting image pipeline...
+2025-10-23 20:40:00,029 - INFO - image - Starting image generation...
+2025-10-23 20:40:18,087 - INFO - image - Image generated successfully.
+2025-10-23 20:40:18,088 - INFO - image - Downloading image...
+2025-10-23 20:40:20,717 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 20:40:20,725 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 20:40:20,725 - INFO - image - Image pipeline finished successfully.
+2025-10-23 20:40:21,608 - ERROR - poster - Image upload failed. Status=404, Body=<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:21,876 - INFO - poster - [poster.py] - Failed to create tag 'lithuania': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:21,877 - WARNING - poster - Skipping tag 'lithuania' due to error: Failed to create tag 'lithuania': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,126 - INFO - poster - [poster.py] - Failed to create tag 'nato': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,127 - WARNING - poster - Skipping tag 'nato' due to error: Failed to create tag 'nato': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,414 - INFO - poster - [poster.py] - Failed to create tag 'russia': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,414 - WARNING - poster - Skipping tag 'russia' due to error: Failed to create tag 'russia': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,686 - INFO - poster - [poster.py] - Failed to create tag 'airspace-breach': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,686 - WARNING - poster - Skipping tag 'airspace-breach' due to error: Failed to create tag 'airspace-breach': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,954 - INFO - poster - [poster.py] - Failed to create tag 'baltic-security': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:22,954 - WARNING - poster - Skipping tag 'baltic-security' due to error: Failed to create tag 'baltic-security': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,227 - INFO - poster - [poster.py] - Failed to create tag 'international-law': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,228 - WARNING - poster - Skipping tag 'international-law' due to error: Failed to create tag 'international-law': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,500 - INFO - poster - [poster.py] - Failed to create tag 'military-provocations': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,501 - WARNING - poster - Skipping tag 'military-provocations' due to error: Failed to create tag 'military-provocations': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,771 - INFO - poster - [poster.py] - Failed to create tag 'eastern-europe': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:23,772 - WARNING - poster - Skipping tag 'eastern-europe' due to error: Failed to create tag 'eastern-europe': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,056 - INFO - poster - [poster.py] - Failed to create tag 'defense-strategy': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,057 - WARNING - poster - Skipping tag 'defense-strategy' due to error: Failed to create tag 'defense-strategy': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,311 - INFO - poster - [poster.py] - Failed to create tag 'geopolitical-tensions': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,313 - WARNING - poster - Skipping tag 'geopolitical-tensions' due to error: Failed to create tag 'geopolitical-tensions': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,602 - INFO - poster - [poster.py] - Failed to create categorie 'Business': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,603 - WARNING - poster - Skipping categorie 'Business' due to error: Failed to create categorie 'Business': <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 20:40:24,740 - ERROR - poster - Failed to create post. Status=404, Body=<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL was not found on this server.</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
+
+2025-10-23 21:24:17,311 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 21:24:17,757 - INFO - main - Modules imported.
+2025-10-23 21:24:17,806 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-23 21:24:17,823 - INFO - main - Schedule determined. Today is Thursday
+2025-10-23 21:24:17,839 - INFO - main - Topic pool, topic: Business
+2025-10-23 21:24:17,840 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-23 21:24:18,875 - INFO - scraper - Found 2 new articles
+2025-10-23 21:24:18,875 - INFO - scraper - Fetching News from CNN
+2025-10-23 21:25:46,789 - INFO - scraper - Found 0 new articles
+2025-10-23 21:25:46,950 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 21:27:14,873 - INFO - scraper - Found 0 new articles
+2025-10-23 21:27:14,936 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 21:28:40,493 - INFO - scraper - Found 0 new articles
+2025-10-23 21:28:40,580 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-23 21:28:40,725 - INFO - scraper - Found 0 new articles
+2025-10-23 21:28:40,725 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-23 21:28:40,830 - INFO - scraper - Found 0 new articles
+2025-10-23 21:28:40,830 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-23 21:30:12,578 - INFO - scraper - Found 0 new articles
+2025-10-23 21:30:13,167 - INFO - prompter - Stopping after 113 sources added. Tokens used: 10041
+2025-10-23 21:30:13,171 - INFO - writer - Starting article generation...
+2025-10-23 21:30:13,174 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251023_213013.txt
+2025-10-23 21:30:13,174 - INFO - writer - Requesting article from OpenAI API...
+2025-10-23 21:30:35,132 - INFO - writer - Article generated successfully.
+2025-10-23 21:30:35,132 - INFO - writer - Summarizing article and generating tags...
+2025-10-23 21:30:42,965 - INFO - writer - Summary and tags generated successfully.
+2025-10-23 21:30:42,967 - INFO - writer - Generating article title...
+2025-10-23 21:30:43,813 - INFO - writer - Article title generated successfully.
+2025-10-23 21:30:59,066 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-23 21:30:59,067 - INFO - editor - Iteration 1
+2025-10-23 21:30:59,774 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:30:59,775 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-23 21:30:59,775 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:31:13,895 - INFO - editor - Iteration 2
+2025-10-23 21:31:14,496 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:31:14,497 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:31:27,694 - INFO - editor - Iteration 3
+2025-10-23 21:31:28,524 - INFO - editor - Base score: 70 | Smoothed score: 73
+2025-10-23 21:31:28,525 - INFO - editor - New best iteration: 3 (score 73)
+2025-10-23 21:31:28,526 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:31:45,798 - INFO - editor - Iteration 4
+2025-10-23 21:31:46,437 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-23 21:31:46,438 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:32:03,429 - INFO - editor - Iteration 5
+2025-10-23 21:32:03,931 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-23 21:32:03,932 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:32:22,371 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-23 21:32:22,372 - INFO - editor - Returning best-so-far from iteration 3 (score 73).
+2025-10-23 21:32:22,376 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:32:22,403 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=65
+2025-10-23 21:32:24,883 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:32:24,890 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2704
+2025-10-23 21:32:38,904 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:32:38,928 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=65
+2025-10-23 21:32:40,036 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:32:40,058 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2704
+2025-10-23 21:32:54,120 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:32:54,146 - INFO - translator - Translating (title) to Chinesse (simplified) with model gpt-4o-mini. Input chars=65
+2025-10-23 21:32:57,127 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:32:57,151 - INFO - translator - Translating (article) to Chinesse (simplified) with model gpt-4o-mini. Input chars=2704
+2025-10-23 21:33:16,082 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/CN/20251023_2133.txt
+2025-10-23 21:33:16,084 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251023_2133.txt
+2025-10-23 21:33:16,144 - INFO - image - Starting image pipeline...
+2025-10-23 21:33:19,511 - INFO - image - Starting image generation...
+2025-10-23 21:33:39,532 - INFO - image - Image generated successfully.
+2025-10-23 21:33:39,534 - INFO - image - Downloading image...
+2025-10-23 21:33:42,634 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 21:33:42,637 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 21:33:42,637 - INFO - image - Image pipeline finished successfully.
+2025-10-23 21:33:44,461 - ERROR - poster - Image upload failed. Status=401, Body={"code":"rest_cannot_create","message":"Sorry, you are not allowed to create posts as this user.","data":{"status":401}}
+2025-10-23 21:49:44,414 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-23 21:49:44,822 - INFO - main - Modules imported.
+2025-10-23 21:49:44,868 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-23 21:49:44,885 - INFO - main - Schedule determined. Today is Thursday
+2025-10-23 21:49:44,899 - INFO - main - Topic pool, topic: Business
+2025-10-23 21:49:44,900 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-23 21:49:45,952 - INFO - scraper - Found 2 new articles
+2025-10-23 21:49:45,952 - INFO - scraper - Fetching News from CNN
+2025-10-23 21:51:25,455 - INFO - scraper - Found 0 new articles
+2025-10-23 21:51:25,591 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 21:52:53,490 - INFO - scraper - Found 0 new articles
+2025-10-23 21:52:53,550 - INFO - scraper - Fetching News from BBC Business
+2025-10-23 21:54:15,536 - INFO - scraper - Found 0 new articles
+2025-10-23 21:54:15,599 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-23 21:54:15,749 - INFO - scraper - Found 1 new articles
+2025-10-23 21:54:15,749 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-23 21:54:15,833 - INFO - scraper - Found 0 new articles
+2025-10-23 21:54:15,833 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-23 21:55:44,317 - INFO - scraper - Found 0 new articles
+2025-10-23 21:55:44,876 - INFO - prompter - Stopping after 106 sources added. Tokens used: 10064
+2025-10-23 21:55:44,880 - INFO - writer - Starting article generation...
+2025-10-23 21:55:44,882 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251023_215544.txt
+2025-10-23 21:55:44,882 - INFO - writer - Requesting article from OpenAI API...
+2025-10-23 21:56:08,946 - INFO - writer - Article generated successfully.
+2025-10-23 21:56:08,947 - INFO - writer - Summarizing article and generating tags...
+2025-10-23 21:56:13,917 - INFO - writer - Summary and tags generated successfully.
+2025-10-23 21:56:13,918 - INFO - writer - Generating article title...
+2025-10-23 21:56:15,001 - INFO - writer - Article title generated successfully.
+2025-10-23 21:56:25,252 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-23 21:56:25,252 - INFO - editor - Iteration 1
+2025-10-23 21:56:26,138 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:56:26,140 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-23 21:56:26,140 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:56:42,789 - INFO - editor - Iteration 2
+2025-10-23 21:56:43,395 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:56:43,395 - INFO - editor - Rewriting to sound more human...
+2025-10-23 21:56:55,982 - INFO - editor - Iteration 3
+2025-10-23 21:56:56,633 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:56:56,633 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-23 21:57:14,579 - INFO - editor - Iteration 4
+2025-10-23 21:57:15,046 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-23 21:57:15,046 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-23 21:57:15,046 - INFO - editor - Returning best-so-far from iteration 1 (score 75).
+2025-10-23 21:57:15,049 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:57:15,066 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=70
+2025-10-23 21:57:17,094 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:57:17,102 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3418
+2025-10-23 21:57:35,240 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:57:35,252 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=70
+2025-10-23 21:57:36,926 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:57:36,943 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3418
+2025-10-23 21:57:56,182 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-23 21:57:56,198 - INFO - translator - Translating (title) to Chinesse (simplified) with model gpt-4o-mini. Input chars=70
+2025-10-23 21:57:57,852 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-23 21:57:57,868 - INFO - translator - Translating (article) to Chinesse (simplified) with model gpt-4o-mini. Input chars=3418
+2025-10-23 21:58:12,650 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/CN/20251023_2158.txt
+2025-10-23 21:58:12,651 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251023_2158.txt
+2025-10-23 21:58:12,680 - INFO - image - Starting image pipeline...
+2025-10-23 21:58:15,735 - INFO - image - Starting image generation...
+2025-10-23 21:58:34,583 - INFO - image - Image generated successfully.
+2025-10-23 21:58:34,584 - INFO - image - Downloading image...
+2025-10-23 21:58:37,634 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 21:58:37,636 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-23 21:58:37,636 - INFO - image - Image pipeline finished successfully.
+2025-10-23 21:58:43,174 - INFO - poster - Uploaded featured image. Media ID=30
+2025-10-24 18:42:21,637 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 18:42:22,116 - INFO - main - Modules imported.
+2025-10-24 18:42:22,162 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 18:42:22,178 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 18:42:22,194 - INFO - main - Topic pool, topic: Business
+2025-10-24 18:42:22,194 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-24 18:42:23,274 - INFO - scraper - Found 10 new articles
+2025-10-24 18:42:23,275 - INFO - scraper - Fetching News from CNN
+2025-10-24 18:43:55,739 - INFO - scraper - Found 9 new articles
+2025-10-24 18:43:55,974 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 18:45:30,800 - INFO - scraper - Found 1 new articles
+2025-10-24 18:45:30,888 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 18:46:39,378 - INFO - scraper - Found 0 new articles
+2025-10-24 18:46:39,449 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-24 18:46:39,634 - INFO - scraper - Found 5 new articles
+2025-10-24 18:46:39,635 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-24 18:46:39,717 - INFO - scraper - Found 4 new articles
+2025-10-24 18:46:39,718 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-24 18:48:04,548 - INFO - scraper - Found 0 new articles
+2025-10-24 18:48:05,175 - INFO - prompter - Stopping after 118 sources added. Tokens used: 10512
+2025-10-24 18:48:05,180 - INFO - writer - Starting article generation...
+2025-10-24 18:48:05,183 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_184805.txt
+2025-10-24 18:48:05,183 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 18:48:24,657 - INFO - writer - Article generated successfully.
+2025-10-24 18:48:24,657 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 18:48:26,813 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 18:48:26,816 - INFO - writer - Generating article title...
+2025-10-24 18:48:27,607 - INFO - writer - Article title generated successfully.
+2025-10-24 18:48:39,350 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 18:48:39,351 - INFO - editor - Iteration 1
+2025-10-24 18:48:41,433 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 18:48:41,433 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-24 18:48:41,434 - INFO - editor - Rewriting to sound more human...
+2025-10-24 18:49:00,646 - INFO - editor - Iteration 2
+2025-10-24 18:49:02,128 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 18:49:02,129 - INFO - editor - Rewriting to sound more human...
+2025-10-24 18:49:17,467 - INFO - editor - Iteration 3
+2025-10-24 18:49:17,899 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 18:49:17,900 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-24 18:49:33,191 - INFO - editor - Iteration 4
+2025-10-24 18:49:33,882 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 18:49:33,882 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-24 18:49:33,883 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-24 18:49:33,886 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 18:49:33,917 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=64
+2025-10-24 18:49:36,312 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 18:49:36,320 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3427
+2025-10-24 18:49:57,484 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 18:49:57,506 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=64
+2025-10-24 18:50:00,872 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 18:50:00,901 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3427
+2025-10-24 18:50:22,836 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 18:50:22,860 - INFO - translator - Translating (title) to Chinesse (simplified) with model gpt-4o-mini. Input chars=64
+2025-10-24 18:50:25,507 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 18:50:25,531 - INFO - translator - Translating (article) to Chinesse (simplified) with model gpt-4o-mini. Input chars=3427
+2025-10-24 18:50:45,108 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/CN/20251024_1850.txt
+2025-10-24 18:50:45,110 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_1850.txt
+2025-10-24 18:50:45,145 - INFO - image - Starting image pipeline...
+2025-10-24 18:50:48,922 - INFO - image - Starting image generation...
+2025-10-24 18:51:04,351 - INFO - image - Image generated successfully.
+2025-10-24 18:51:04,351 - INFO - image - Downloading image...
+2025-10-24 18:51:29,370 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 18:51:29,375 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 18:51:29,375 - INFO - image - Image pipeline finished successfully.
+2025-10-24 18:51:35,580 - INFO - poster - Uploaded featured image. Media ID=31
+2025-10-24 18:51:52,046 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 18:51:52,934 - INFO - poster - Article posted. Post ID=32, Link=https://talasnews.com/garland-approved-fbi-probe-into-trump-sparking-political-debate/
+2025-10-24 18:51:52,949 - INFO - db_utils - Generated article saved to database.
+2025-10-24 18:52:02,476 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 18:52:03,335 - INFO - poster - Article posted. Post ID=33, Link=https://talasnews.com/garland-genehmigt-fbi-ermittlung-gegen-trump-und-entfacht-politischen-streit/
+2025-10-24 18:52:05,044 - INFO - poster - Linked translations for Post ID=33 → None
+2025-10-24 18:52:13,501 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 18:52:14,404 - INFO - poster - Article posted. Post ID=35, Link=https://talasnews.com/%d0%b3%d0%b0%d1%80%d0%bb%d0%b5%d0%bd%d0%b4-%d0%be%d0%b4%d0%be%d0%b1%d1%80%d0%b8%d0%bb-%d1%80%d0%b0%d1%81%d1%81%d0%bb%d0%b5%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d1%84%d0%b1%d1%80-%d0%b2-%d0%be/
+2025-10-24 18:52:16,090 - INFO - poster - Linked translations for Post ID=35 → None
+2025-10-24 18:52:24,332 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 18:52:25,111 - INFO - poster - Article posted. Post ID=37, Link=https://talasnews.com/%e5%8a%a0%e5%85%b0%e6%89%b9%e5%87%86%e5%af%b9%e7%89%b9%e6%9c%97%e6%99%ae%e7%9a%84fbi%e8%b0%83%e6%9f%a5%ef%bc%8c%e5%bc%95%e5%8f%91%e6%94%bf%e6%b2%bb%e8%be%a9%e8%ae%ba/
+2025-10-24 18:52:26,764 - INFO - poster - Linked translations for Post ID=37 → None
+2025-10-24 18:53:32,949 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 18:53:33,352 - INFO - main - Modules imported.
+2025-10-24 18:53:33,393 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 18:53:33,410 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 18:53:33,426 - INFO - main - Topic pool, topic: Business
+2025-10-24 18:53:33,426 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-24 18:53:34,459 - INFO - scraper - Found 2 new articles
+2025-10-24 18:53:34,459 - INFO - scraper - Fetching News from CNN
+2025-10-24 18:55:04,828 - INFO - scraper - Found 0 new articles
+2025-10-24 18:55:04,993 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 18:56:17,988 - INFO - scraper - Found 0 new articles
+2025-10-24 18:56:18,041 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 18:57:45,040 - INFO - scraper - Found 0 new articles
+2025-10-24 18:57:45,106 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-24 18:57:45,261 - INFO - scraper - Found 1 new articles
+2025-10-24 18:57:45,262 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-24 18:57:45,364 - INFO - scraper - Found 0 new articles
+2025-10-24 18:57:45,364 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-24 18:59:06,473 - INFO - scraper - Found 0 new articles
+2025-10-24 18:59:07,073 - INFO - prompter - Stopping after 98 sources added. Tokens used: 10007
+2025-10-24 18:59:07,078 - INFO - writer - Starting article generation...
+2025-10-24 18:59:07,080 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_185907.txt
+2025-10-24 18:59:07,081 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 18:59:35,009 - INFO - writer - Article generated successfully.
+2025-10-24 18:59:35,010 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 18:59:41,406 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 18:59:41,409 - INFO - writer - Generating article title...
+2025-10-24 18:59:42,182 - INFO - writer - Article title generated successfully.
+2025-10-24 18:59:55,470 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 18:59:55,472 - INFO - editor - Iteration 1
+2025-10-24 18:59:56,224 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 18:59:56,225 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-24 18:59:56,225 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:00:08,540 - INFO - editor - Iteration 2
+2025-10-24 19:00:09,118 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-24 19:00:09,119 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:00:30,546 - INFO - editor - Iteration 3
+2025-10-24 19:00:31,164 - INFO - editor - Base score: 75 | Smoothed score: 69
+2025-10-24 19:00:31,165 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-24 19:01:02,666 - INFO - editor - Iteration 4
+2025-10-24 19:01:03,591 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-24 19:01:03,592 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:01:22,859 - INFO - editor - Iteration 5
+2025-10-24 19:01:23,432 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-24 19:01:23,433 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:01:36,169 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-24 19:01:36,170 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-24 19:01:36,175 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:01:36,203 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=69
+2025-10-24 19:01:37,291 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:01:37,299 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3209
+2025-10-24 19:01:53,527 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:01:53,552 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=69
+2025-10-24 19:01:56,169 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:01:56,193 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3209
+2025-10-24 19:02:18,661 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:02:18,686 - INFO - translator - Translating (title) to Chinesse (simplified) with model gpt-4o-mini. Input chars=69
+2025-10-24 19:02:19,846 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:02:19,871 - INFO - translator - Translating (article) to Chinesse (simplified) with model gpt-4o-mini. Input chars=3209
+2025-10-24 19:02:33,908 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/CN/20251024_1902.txt
+2025-10-24 19:02:33,909 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_1902.txt
+2025-10-24 19:02:33,942 - INFO - image - Starting image pipeline...
+2025-10-24 19:02:37,204 - INFO - image - Starting image generation...
+2025-10-24 19:03:07,707 - INFO - image - Image generated successfully.
+2025-10-24 19:03:07,709 - INFO - image - Downloading image...
+2025-10-24 19:03:28,686 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 19:03:28,691 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 19:03:28,691 - INFO - image - Image pipeline finished successfully.
+2025-10-24 19:03:34,338 - INFO - poster - Uploaded featured image. Media ID=39
+2025-10-24 19:03:49,084 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:03:49,822 - INFO - poster - Article posted. Post ID=40, Link=https://talasnews.com/u-s-launches-trade-probe-into-chinas-phase-one-agreement-compliance/
+2025-10-24 19:03:49,835 - INFO - db_utils - Generated article saved to database.
+2025-10-24 19:03:58,657 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:03:59,479 - INFO - poster - Article posted. Post ID=41, Link=https://talasnews.com/usa-starten-untersuchung-zur-einhaltung-des-phase-one-abkommens-mit-china/
+2025-10-24 19:04:01,085 - INFO - poster - Linked translations for Post ID=41 → None
+2025-10-24 19:04:08,845 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:04:09,620 - INFO - poster - Article posted. Post ID=43, Link=https://talasnews.com/%d1%81%d1%88%d0%b0-%d0%bd%d0%b0%d1%87%d0%b0%d0%bb%d0%b8-%d1%80%d0%b0%d1%81%d1%81%d0%bb%d0%b5%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be-%d1%81%d0%be%d0%b1%d0%bb%d1%8e%d0%b4%d0%b5%d0%bd/
+2025-10-24 19:04:11,178 - INFO - poster - Linked translations for Post ID=43 → None
+2025-10-24 19:04:19,043 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:04:19,822 - INFO - poster - Article posted. Post ID=45, Link=https://talasnews.com/%e7%be%8e%e5%9b%bd%e5%90%af%e5%8a%a8%e5%af%b9%e4%b8%ad%e5%9b%bd%e4%b8%80%e6%9c%9f%e5%8d%8f%e8%ae%ae%e9%81%b5%e5%ae%88%e6%83%85%e5%86%b5%e7%9a%84%e8%b4%b8%e6%98%93%e8%b0%83%e6%9f%a5/
+2025-10-24 19:04:21,340 - INFO - poster - Linked translations for Post ID=45 → None
+2025-10-24 19:10:47,634 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 19:10:48,067 - INFO - main - Modules imported.
+2025-10-24 19:10:48,113 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 19:10:48,130 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 19:10:48,146 - INFO - main - Topic pool, topic: Business
+2025-10-24 19:10:48,146 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-24 19:10:49,184 - INFO - scraper - Found 0 new articles
+2025-10-24 19:10:49,184 - INFO - scraper - Fetching News from CNN
+2025-10-24 19:12:15,449 - INFO - scraper - Found 0 new articles
+2025-10-24 19:12:15,609 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 19:13:39,715 - INFO - scraper - Found 0 new articles
+2025-10-24 19:13:39,803 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 19:15:00,754 - INFO - scraper - Found 0 new articles
+2025-10-24 19:15:00,833 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-24 19:15:00,959 - INFO - scraper - Found 0 new articles
+2025-10-24 19:15:00,959 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-24 19:15:01,059 - INFO - scraper - Found 0 new articles
+2025-10-24 19:15:01,059 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-24 19:16:23,660 - INFO - scraper - Found 0 new articles
+2025-10-24 19:16:24,265 - INFO - prompter - Stopping after 98 sources added. Tokens used: 10026
+2025-10-24 19:16:24,271 - INFO - writer - Starting article generation...
+2025-10-24 19:16:24,274 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_191624.txt
+2025-10-24 19:16:24,274 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 19:16:44,678 - INFO - writer - Article generated successfully.
+2025-10-24 19:16:44,679 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 19:16:52,067 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 19:16:52,068 - INFO - writer - Generating article title...
+2025-10-24 19:16:53,965 - INFO - writer - Article title generated successfully.
+2025-10-24 19:17:04,822 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 19:17:04,823 - INFO - editor - Iteration 1
+2025-10-24 19:17:05,297 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-24 19:17:05,297 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-24 19:17:05,297 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:17:15,747 - INFO - editor - Iteration 2
+2025-10-24 19:17:16,611 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-24 19:17:16,611 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-24 19:17:16,611 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:17:36,965 - INFO - editor - Iteration 3
+2025-10-24 19:17:37,542 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-24 19:17:37,543 - INFO - editor - New best iteration: 3 (score 69)
+2025-10-24 19:17:37,543 - INFO - editor - Rewriting to sound more human...
+2025-10-24 19:17:55,472 - INFO - editor - Iteration 4
+2025-10-24 19:17:55,842 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-24 19:17:55,843 - INFO - editor - New best iteration: 4 (score 67)
+2025-10-24 19:17:55,843 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-24 19:18:13,890 - INFO - editor - Iteration 5
+2025-10-24 19:18:14,514 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-24 19:18:14,515 - INFO - editor - New best iteration: 5 (score 66)
+2025-10-24 19:18:14,516 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-24 19:18:14,517 - INFO - editor - Returning best-so-far from iteration 5 (score 66).
+2025-10-24 19:18:14,519 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:18:14,545 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=72
+2025-10-24 19:18:16,058 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:18:16,066 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2403
+2025-10-24 19:18:31,691 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:18:31,708 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=72
+2025-10-24 19:18:33,004 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:18:33,029 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2403
+2025-10-24 19:18:52,393 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 19:18:52,416 - INFO - translator - Translating (title) to Chinesse (simplified) with model gpt-4o-mini. Input chars=72
+2025-10-24 19:18:54,183 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 19:18:54,202 - INFO - translator - Translating (article) to Chinesse (simplified) with model gpt-4o-mini. Input chars=2403
+2025-10-24 19:19:05,483 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/CN/20251024_1919.txt
+2025-10-24 19:19:05,486 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_1919.txt
+2025-10-24 19:19:05,528 - INFO - image - Starting image pipeline...
+2025-10-24 19:19:08,640 - INFO - image - Starting image generation...
+2025-10-24 19:19:24,812 - INFO - image - Image generated successfully.
+2025-10-24 19:19:24,814 - INFO - image - Downloading image...
+2025-10-24 19:19:27,501 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 19:19:27,504 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 19:19:27,505 - INFO - image - Image pipeline finished successfully.
+2025-10-24 19:19:33,147 - INFO - poster - Uploaded featured image. Media ID=53
+2025-10-24 19:19:44,918 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:19:45,649 - INFO - poster - Article posted. Post ID=54, Link=https://talasnews.com/us-launches-trade-probe-on-china-amid-pre-apec-trump-xi-meeting-tensions/
+2025-10-24 19:19:45,663 - INFO - db_utils - Generated article saved to database.
+2025-10-24 19:19:54,437 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:19:55,278 - INFO - poster - Article posted. Post ID=55, Link=https://talasnews.com/usa-starten-handelsuntersuchung-gegen-china-vor-trump-xi-treffen-vor-apec/
+2025-10-24 19:19:56,873 - INFO - poster - Linked translations for Post ID=55 → None
+2025-10-24 19:20:04,822 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:20:05,797 - INFO - poster - Article posted. Post ID=57, Link=https://talasnews.com/%d1%81%d1%88%d0%b0-%d0%bd%d0%b0%d1%87%d0%b8%d0%bd%d0%b0%d1%8e%d1%82-%d1%82%d0%be%d1%80%d0%b3%d0%be%d0%b2%d0%be%d0%b5-%d1%80%d0%b0%d1%81%d1%81%d0%bb%d0%b5%d0%b4%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5/
+2025-10-24 19:20:06,648 - INFO - poster - Linked translations for Post ID=57 → None
+2025-10-24 19:20:14,474 - INFO - poster - [poster.py] Polylang REST detected.
+2025-10-24 19:20:15,282 - INFO - poster - Article posted. Post ID=59, Link=https://talasnews.com/%e7%be%8e%e5%9b%bd%e5%9c%a8%e7%89%b9%e6%9c%97%e6%99%ae%e4%b8%8e%e4%b9%a0%e4%b8%bb%e5%b8%ad%e4%ba%9a%e5%a4%aa%e7%bb%8f%e5%90%88%e7%bb%84%e7%bb%87%e4%bc%9a%e5%89%8d%e7%b4%a7%e5%bc%a0%e5%85%b3%e7%b3%bb/
+2025-10-24 19:20:16,888 - INFO - poster - Linked translations for Post ID=59 → None
+2025-10-24 20:13:10,600 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 20:13:11,035 - INFO - main - Modules imported.
+2025-10-24 20:13:11,082 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 20:13:11,098 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 20:13:11,114 - INFO - main - Topic pool, topic: Business
+2025-10-24 20:13:11,114 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-24 20:13:12,155 - INFO - scraper - Found 3 new articles
+2025-10-24 20:13:12,155 - INFO - scraper - Fetching News from CNN
+2025-10-24 20:14:43,250 - INFO - scraper - Found 0 new articles
+2025-10-24 20:14:43,434 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 20:16:05,300 - INFO - scraper - Found 23 new articles
+2025-10-24 20:16:05,349 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 20:17:21,120 - INFO - scraper - Found 1 new articles
+2025-10-24 20:17:21,188 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-24 20:17:21,322 - INFO - scraper - Found 0 new articles
+2025-10-24 20:17:21,322 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-24 20:17:21,417 - INFO - scraper - Found 0 new articles
+2025-10-24 20:17:21,417 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-24 20:18:51,551 - INFO - scraper - Found 0 new articles
+2025-10-24 20:18:51,839 - INFO - prompter - Stopping after 18 sources added. Tokens used: 10081
+2025-10-24 20:18:51,843 - INFO - writer - Starting article generation...
+2025-10-24 20:18:51,846 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_201851.txt
+2025-10-24 20:18:51,846 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 20:19:19,719 - INFO - writer - Article generated successfully.
+2025-10-24 20:19:19,720 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 20:19:25,709 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 20:19:25,710 - INFO - writer - Generating article title...
+2025-10-24 20:19:27,325 - INFO - writer - Article title generated successfully.
+2025-10-24 20:19:38,415 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 20:19:38,416 - INFO - editor - Iteration 1
+2025-10-24 20:19:38,892 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-24 20:19:38,893 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-24 20:19:38,893 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:19:58,883 - INFO - editor - Iteration 2
+2025-10-24 20:20:00,495 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-24 20:20:00,495 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-24 20:20:00,496 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:20:17,873 - INFO - editor - Iteration 3
+2025-10-24 20:20:18,370 - INFO - editor - Base score: 75 | Smoothed score: 73
+2025-10-24 20:20:18,370 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:20:29,678 - INFO - editor - Iteration 4
+2025-10-24 20:20:30,240 - INFO - editor - Base score: 65 | Smoothed score: 70
+2025-10-24 20:20:30,241 - INFO - editor - New best iteration: 4 (score 70)
+2025-10-24 20:20:30,242 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:20:41,255 - INFO - editor - Iteration 5
+2025-10-24 20:20:41,858 - INFO - editor - Base score: 65 | Smoothed score: 68
+2025-10-24 20:20:41,859 - INFO - editor - New best iteration: 5 (score 68)
+2025-10-24 20:20:41,860 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:20:59,702 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-24 20:20:59,703 - INFO - editor - Returning best-so-far from iteration 5 (score 68).
+2025-10-24 20:20:59,706 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:20:59,724 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=70
+2025-10-24 20:21:15,488 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:21:15,495 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2561
+2025-10-24 20:21:29,981 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:21:30,006 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=70
+2025-10-24 20:21:31,649 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:21:31,676 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2561
+2025-10-24 20:21:48,348 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:21:48,371 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=70
+2025-10-24 20:21:50,939 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:21:50,962 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2561
+2025-10-24 20:22:05,795 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251024_2022.txt
+2025-10-24 20:22:05,797 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_2022.txt
+2025-10-24 20:22:05,823 - INFO - image - Starting image pipeline...
+2025-10-24 20:22:10,000 - INFO - image - Starting image generation...
+2025-10-24 20:22:36,114 - INFO - image - Image generated successfully.
+2025-10-24 20:22:36,115 - INFO - image - Downloading image...
+2025-10-24 20:22:38,557 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 20:22:38,559 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 20:22:38,560 - INFO - image - Image pipeline finished successfully.
+2025-10-24 20:22:43,453 - INFO - poster - Uploaded featured image. Media ID=72
+2025-10-24 20:22:58,710 - INFO - poster - Article posted. Post ID=73, Link=https://talasnews.com/anonymous-donor-covers-130m-military-pay-gap-amid-government-shutdown/
+2025-10-24 20:23:00,452 - INFO - poster - Language set → post 73 → en
+2025-10-24 20:23:00,463 - INFO - db_utils - Generated article saved to database.
+2025-10-24 20:23:09,045 - INFO - poster - Article posted. Post ID=75, Link=https://talasnews.com/anonymer-spender-deckt-130-mio-militargehalter-wahrend-des-regierungsstillstands/
+2025-10-24 20:23:09,821 - INFO - poster - Language set → post 75 → true
+2025-10-24 20:45:28,723 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 20:45:29,188 - INFO - main - Modules imported.
+2025-10-24 20:45:29,238 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 20:45:29,255 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 20:45:29,272 - INFO - main - Topic pool, topic: Business
+2025-10-24 20:45:29,272 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-24 20:45:30,263 - INFO - scraper - Found 2 new articles
+2025-10-24 20:45:30,263 - INFO - scraper - Fetching News from CNN
+2025-10-24 20:47:05,661 - INFO - scraper - Found 0 new articles
+2025-10-24 20:47:05,821 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 20:48:37,871 - INFO - scraper - Found 1 new articles
+2025-10-24 20:48:37,924 - INFO - scraper - Fetching News from BBC Business
+2025-10-24 20:49:55,712 - INFO - scraper - Found 0 new articles
+2025-10-24 20:49:55,761 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSWorldNews
+2025-10-24 20:49:55,894 - INFO - scraper - Found 0 new articles
+2025-10-24 20:49:55,894 - INFO - scraper - Scraping RSS: https://feeds.content.dowjones.io/public/rss/RSSMarketsMain
+2025-10-24 20:49:55,983 - INFO - scraper - Found 0 new articles
+2025-10-24 20:49:55,983 - INFO - scraper - Fetching News from BBC Innovation
+2025-10-24 20:51:19,249 - INFO - scraper - Found 0 new articles
+2025-10-24 20:51:19,533 - INFO - prompter - Stopping after 19 sources added. Tokens used: 11144
+2025-10-24 20:51:19,535 - INFO - writer - Starting article generation...
+2025-10-24 20:51:19,538 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_205119.txt
+2025-10-24 20:51:19,538 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 20:51:45,414 - INFO - writer - Article generated successfully.
+2025-10-24 20:51:45,415 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 20:51:53,372 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 20:51:53,373 - INFO - writer - Generating article title...
+2025-10-24 20:51:54,279 - INFO - writer - Article title generated successfully.
+2025-10-24 20:52:09,669 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 20:52:09,671 - INFO - editor - Iteration 1
+2025-10-24 20:52:10,182 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-24 20:52:10,182 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-24 20:52:10,182 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:52:20,712 - INFO - editor - Iteration 2
+2025-10-24 20:52:21,283 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-24 20:52:21,284 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-24 20:52:21,284 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:52:39,958 - INFO - editor - Iteration 3
+2025-10-24 20:52:40,765 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-24 20:52:40,766 - INFO - editor - New best iteration: 3 (score 69)
+2025-10-24 20:52:40,766 - INFO - editor - Rewriting to sound more human...
+2025-10-24 20:52:59,283 - INFO - editor - Iteration 4
+2025-10-24 20:53:00,903 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-24 20:53:00,904 - INFO - editor - New best iteration: 4 (score 67)
+2025-10-24 20:53:00,905 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-24 20:53:19,102 - INFO - editor - Iteration 5
+2025-10-24 20:53:19,869 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-24 20:53:19,869 - INFO - editor - New best iteration: 5 (score 66)
+2025-10-24 20:53:19,870 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-24 20:53:19,870 - INFO - editor - Returning best-so-far from iteration 5 (score 66).
+2025-10-24 20:53:19,872 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:53:19,892 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=79
+2025-10-24 20:53:22,270 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:53:22,278 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2407
+2025-10-24 20:53:38,356 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:53:38,373 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=79
+2025-10-24 20:53:40,342 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:53:40,361 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2407
+2025-10-24 20:53:53,684 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 20:53:53,713 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=79
+2025-10-24 20:53:56,271 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 20:53:56,296 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2407
+2025-10-24 20:54:09,419 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251024_2054.txt
+2025-10-24 20:54:09,420 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_2054.txt
+2025-10-24 20:54:09,457 - INFO - image - Starting image pipeline...
+2025-10-24 20:54:12,564 - INFO - image - Starting image generation...
+2025-10-24 20:54:33,869 - INFO - image - Image generated successfully.
+2025-10-24 20:54:33,871 - INFO - image - Downloading image...
+2025-10-24 20:54:47,974 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 20:54:47,980 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 20:54:47,980 - INFO - image - Image pipeline finished successfully.
+2025-10-24 20:54:53,550 - INFO - poster - Uploaded featured image. Media ID=77
+2025-10-24 20:55:09,439 - INFO - poster - Article posted. Post ID=78, Link=https://talasnews.com/u-s-military-strikes-on-venezuelan-vessels-spark-legal-and-diplomatic-concerns/
+2025-10-24 20:55:11,054 - INFO - poster - Language set → post 78 → en
+2025-10-24 20:55:11,073 - INFO - db_utils - Generated article saved to database.
+2025-10-24 20:55:19,958 - INFO - poster - Article posted. Post ID=80, Link=https://talasnews.com/us-militarangriffe-auf-venezolanische-schiffe-losen-rechtliche-und-diplomatische-bedenken-aus/
+2025-10-24 20:55:21,643 - INFO - poster - Language set → post 80 → true
+2025-10-24 20:55:22,396 - INFO - poster - Linked translations for Post ID=80 → None
+2025-10-24 20:55:32,043 - INFO - poster - Article posted. Post ID=82, Link=https://talasnews.com/%d1%83%d0%b4%d0%b0%d1%80%d1%8b-%d0%b0%d0%bc%d0%b5%d1%80%d0%b8%d0%ba%d0%b0%d0%bd%d1%81%d0%ba%d0%b8%d1%85-%d0%b2%d0%be%d0%b5%d0%bd%d0%bd%d1%8b%d1%85-%d0%bf%d0%be-%d0%b2%d0%b5%d0%bd%d0%b5%d1%81%d1%83/
+2025-10-24 20:55:33,701 - INFO - poster - Language set → post 82 → true
+2025-10-24 20:55:34,473 - INFO - poster - Linked translations for Post ID=82 → None
+2025-10-24 20:55:43,432 - INFO - poster - Article posted. Post ID=85, Link=https://talasnews.com/%e7%be%8e%e5%86%9b%e5%af%b9%e5%a7%94%e5%86%85%e7%91%9e%e6%8b%89%e8%88%b9%e5%8f%aa%e7%9a%84%e6%89%93%e5%87%bb%e5%bc%95%e5%8f%91%e6%b3%95%e5%be%8b%e5%92%8c%e5%a4%96%e4%ba%a4%e6%8b%85%e5%bf%a7/
+2025-10-24 20:55:45,121 - INFO - poster - Language set → post 85 → true
+2025-10-24 20:55:45,844 - INFO - poster - Linked translations for Post ID=85 → None
+2025-10-24 21:02:18,176 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-24 21:02:18,586 - INFO - main - Modules imported.
+2025-10-24 21:02:18,630 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-24 21:02:18,646 - INFO - main - Schedule determined. Today is Friday
+2025-10-24 21:02:18,661 - INFO - main - Topic pool, topic: World News
+2025-10-24 21:02:18,661 - INFO - scraper - Fetching News from Aljazeera
+2025-10-24 21:03:36,140 - INFO - scraper - Found 49 new articles
+2025-10-24 21:03:36,227 - INFO - scraper - Fetching News from Insiderr
+2025-10-24 21:03:39,498 - INFO - scraper - Found 0 new articles
+2025-10-24 21:03:39,500 - INFO - scraper - research(): searching SERP for 'latest world news today'
+2025-10-24 21:03:39,746 - INFO - scraper - Error in research(): 401 Client Error: Unauthorized for url: https://serpapi.com/search?engine=google&q=latest+world+news+today&tbm=nws&num=5
+2025-10-24 21:03:39,751 - INFO - scraper - Found 0 new articles
+2025-10-24 21:03:40,012 - INFO - prompter - Stopping after 13 sources added. Tokens used: 10457
+2025-10-24 21:03:40,016 - INFO - writer - Starting article generation...
+2025-10-24 21:03:40,019 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251024_210340.txt
+2025-10-24 21:03:40,019 - INFO - writer - Requesting article from OpenAI API...
+2025-10-24 21:04:16,038 - INFO - writer - Article generated successfully.
+2025-10-24 21:04:16,039 - INFO - writer - Summarizing article and generating tags...
+2025-10-24 21:04:21,856 - INFO - writer - Summary and tags generated successfully.
+2025-10-24 21:04:21,857 - INFO - writer - Generating article title...
+2025-10-24 21:04:23,061 - INFO - writer - Article title generated successfully.
+2025-10-24 21:04:33,818 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-24 21:04:33,818 - INFO - editor - Iteration 1
+2025-10-24 21:04:34,341 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-24 21:04:34,342 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-24 21:04:34,342 - INFO - editor - Rewriting to sound more human...
+2025-10-24 21:04:58,815 - INFO - editor - Iteration 2
+2025-10-24 21:04:59,218 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-24 21:04:59,219 - INFO - editor - Rewriting to sound more human...
+2025-10-24 21:05:08,521 - INFO - editor - Iteration 3
+2025-10-24 21:05:09,106 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-24 21:05:09,106 - INFO - editor - New best iteration: 3 (score 71)
+2025-10-24 21:05:09,107 - INFO - editor - Rewriting to sound more human...
+2025-10-24 21:05:19,442 - INFO - editor - Iteration 4
+2025-10-24 21:05:19,838 - INFO - editor - Base score: 75 | Smoothed score: 73
+2025-10-24 21:05:19,839 - INFO - editor - Rewriting to sound more human...
+2025-10-24 21:05:45,873 - INFO - editor - Iteration 5
+2025-10-24 21:05:46,323 - INFO - editor - Base score: 65 | Smoothed score: 70
+2025-10-24 21:05:46,324 - INFO - editor - New best iteration: 5 (score 70)
+2025-10-24 21:05:46,324 - INFO - editor - Rewriting to sound more human...
+2025-10-24 21:06:14,004 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-24 21:06:14,004 - INFO - editor - Returning best-so-far from iteration 5 (score 70).
+2025-10-24 21:06:14,008 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 21:06:14,030 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=83
+2025-10-24 21:06:16,679 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 21:06:16,687 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2440
+2025-10-24 21:06:30,619 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 21:06:30,641 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=83
+2025-10-24 21:06:35,252 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 21:06:35,276 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2440
+2025-10-24 21:06:53,496 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-24 21:06:53,521 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=83
+2025-10-24 21:06:57,753 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-24 21:06:57,777 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2440
+2025-10-24 21:07:09,859 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251024_2107.txt
+2025-10-24 21:07:09,860 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251024_2107.txt
+2025-10-24 21:07:09,895 - INFO - image - Starting image pipeline...
+2025-10-24 21:07:13,141 - INFO - image - Starting image generation...
+2025-10-24 21:07:39,271 - INFO - image - Image generated successfully.
+2025-10-24 21:07:39,272 - INFO - image - Downloading image...
+2025-10-24 21:07:42,561 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 21:07:42,564 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-24 21:07:42,564 - INFO - image - Image pipeline finished successfully.
+2025-10-24 21:07:48,055 - INFO - poster - Uploaded featured image. Media ID=87
+2025-10-24 21:08:04,352 - INFO - poster - Article posted. Post ID=88, Link=https://talasnews.com/tropical-storm-melissa-threatens-caribbean-with-potential-to-become-major-hurricane/
+2025-10-24 21:08:06,042 - INFO - poster - Language set → post 88 → en
+2025-10-24 21:08:06,067 - INFO - db_utils - Generated article saved to database.
+2025-10-24 21:08:14,797 - INFO - poster - Article posted. Post ID=90, Link=https://talasnews.com/de/tropensturm-melissa-bedroht-karibik-mit-potenzial-zu-einem-schweren-hurrikan/
+2025-10-24 21:08:16,390 - INFO - poster - Language set → post 90 → de
+2025-10-24 21:08:17,129 - INFO - poster - Linked translations for Post ID=90 → None
+2025-10-24 21:08:27,053 - INFO - poster - Article posted. Post ID=92, Link=https://talasnews.com/ru/%d1%82%d1%80%d0%be%d0%bf%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d0%b9-%d1%88%d1%82%d0%be%d1%80%d0%bc-%d0%bc%d0%b5%d0%bb%d0%b8%d1%81%d1%81%d0%b0-%d1%83%d0%b3%d1%80%d0%be%d0%b6%d0%b0%d0%b5%d1%82-%d0%ba/
+2025-10-24 21:08:28,618 - INFO - poster - Language set → post 92 → ru
+2025-10-24 21:08:29,395 - INFO - poster - Linked translations for Post ID=92 → None
+2025-10-24 21:08:39,535 - INFO - poster - Article posted. Post ID=94, Link=https://talasnews.com/zh/%e7%83%ad%e5%b8%a6%e9%a3%8e%e6%9a%b4%e6%a2%85%e4%b8%bd%e8%8e%8e%e5%a8%81%e8%83%81%e5%8a%a0%e5%8b%92%e6%af%94%ef%bc%8c%e5%8f%af%e8%83%bd%e5%8d%87%e7%ba%a7%e4%b8%ba%e5%bc%ba%e9%a3%93%e9%a3%8e/
+2025-10-24 21:08:41,109 - INFO - poster - Language set → post 94 → zh
+2025-10-24 21:08:41,919 - INFO - poster - Linked translations for Post ID=94 → None

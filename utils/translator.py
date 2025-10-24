@@ -1,10 +1,8 @@
 from __future__ import annotations
-import utils.logging
+from utils.logger  import logger
 from pathlib import Path
 from typing import Literal, Optional
 from openai import OpenAI
-
-logger = logging.getLogger(__name__)
 
 DEFAULT_MODEL = "gpt-4o-mini"
 
@@ -36,7 +34,7 @@ def _load_system_prompt(kind: Literal["title", "article"]) -> str:
         content = prompt_path.read_text(encoding="utf-8").strip()
         if not content:
             raise ValueError(f"System prompt file is empty: {prompt_path}")
-        logger.debug("Loaded system prompt '%s' from %s", kind, prompt_path)
+        logger.info("Loaded system prompt '%s' from %s", kind, prompt_path)
         return content
     except FileNotFoundError as exc:
         msg = (
@@ -81,7 +79,7 @@ def translate_text(
     # Resolve the system prompt: override > file-based
     if system_prompt_override is not None:
         system_prompt = system_prompt_override.strip()
-        logger.debug("Using system_prompt_override for kind '%s'.", kind)
+        logger.info("Using system_prompt_override for kind '%s'.", kind)
     else:
         system_prompt = _load_system_prompt(kind)
 

@@ -20,6 +20,7 @@ if not openai_key:
 client = OpenAI(api_key=openai_key)
 
 
+
 # ====================================
 # 0) Cheap deterministic pre-processing
 # ====================================
@@ -267,7 +268,7 @@ def refine_article(
 
     while counter < limit:
         counter += 1
-        logger.info(f"\n--- Iteration {counter} ---")
+        logger.info(f"Iteration {counter}")
 
         # 1) Grade
         base = grade_base(test_article)
