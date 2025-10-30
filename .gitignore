@@ -9,3 +9,5 @@ launch_db.command
 prompts/logged_prompts
 drafts
 debug
+blog_config.xlsx
+talasnews

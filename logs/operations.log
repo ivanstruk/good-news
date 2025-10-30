@@ -1991,3 +1991,1153 @@ error was encountered while trying to use an ErrorDocument to handle the request
 2025-10-24 21:08:39,535 - INFO - poster - Article posted. Post ID=94, Link=https://talasnews.com/zh/%e7%83%ad%e5%b8%a6%e9%a3%8e%e6%9a%b4%e6%a2%85%e4%b8%bd%e8%8e%8e%e5%a8%81%e8%83%81%e5%8a%a0%e5%8b%92%e6%af%94%ef%bc%8c%e5%8f%af%e8%83%bd%e5%8d%87%e7%ba%a7%e4%b8%ba%e5%bc%ba%e9%a3%93%e9%a3%8e/
 2025-10-24 21:08:41,109 - INFO - poster - Language set → post 94 → zh
 2025-10-24 21:08:41,919 - INFO - poster - Linked translations for Post ID=94 → None
+2025-10-26 13:39:28,238 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-26 13:39:28,683 - INFO - main - Modules imported.
+2025-10-26 13:39:28,731 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-26 13:39:28,747 - INFO - main - Schedule determined. Today is Sunday
+2025-10-26 13:39:28,762 - INFO - main - Topic pool, topic: Politics
+2025-10-26 13:39:28,762 - INFO - scraper - Fetching News from Danas
+2025-10-26 13:41:02,132 - INFO - scraper - Found 50 new articles
+2025-10-26 13:41:02,193 - INFO - scraper - Fetching News from Politika
+2025-10-26 13:42:07,449 - INFO - scraper - Found 48 new articles
+2025-10-26 13:42:07,495 - INFO - scraper - Fetching News from Blic
+2025-10-26 13:43:44,546 - INFO - scraper - Found 43 new articles
+2025-10-26 13:43:46,868 - INFO - prompter - Stopping after 13 sources added. Tokens used: 11401
+2025-10-26 13:43:46,871 - INFO - writer - Starting article generation...
+2025-10-26 13:43:46,874 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_134346.txt
+2025-10-26 13:43:46,874 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 13:44:03,268 - INFO - writer - Article generated successfully.
+2025-10-26 13:44:03,269 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 13:44:06,577 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 13:44:06,580 - INFO - writer - Generating article title...
+2025-10-26 13:44:07,674 - INFO - writer - Article title generated successfully.
+2025-10-26 13:44:22,601 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 13:44:22,601 - INFO - editor - Iteration 1
+2025-10-26 13:44:23,084 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 13:44:23,084 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-26 13:44:23,084 - INFO - editor - Rewriting to sound more human...
+2025-10-26 13:44:32,079 - INFO - editor - Iteration 2
+2025-10-26 13:44:33,112 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 13:44:33,113 - INFO - editor - Rewriting to sound more human...
+2025-10-26 13:44:42,664 - INFO - editor - Iteration 3
+2025-10-26 13:44:43,150 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 13:44:43,151 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 13:44:55,281 - INFO - editor - Iteration 4
+2025-10-26 13:44:55,705 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 13:44:55,706 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 13:44:55,706 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-26 13:44:55,710 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:44:55,735 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=60
+2025-10-26 13:44:58,555 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:44:58,563 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3230
+2025-10-26 13:45:16,363 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:45:16,383 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=60
+2025-10-26 13:45:18,587 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:45:18,611 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3230
+2025-10-26 13:45:34,023 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:45:34,051 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=60
+2025-10-26 13:45:35,526 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:45:35,552 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3230
+2025-10-26 13:45:52,295 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1345.txt
+2025-10-26 13:45:52,296 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1345.txt
+2025-10-26 13:45:52,330 - INFO - image - Starting image pipeline...
+2025-10-26 13:45:55,981 - INFO - image - Starting image generation...
+2025-10-26 13:46:18,067 - INFO - image - Image generated successfully.
+2025-10-26 13:46:18,068 - INFO - image - Downloading image...
+2025-10-26 13:46:22,989 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 13:46:22,996 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 13:46:22,997 - INFO - image - Image pipeline finished successfully.
+2025-10-26 13:46:29,033 - INFO - poster - Uploaded featured image. Media ID=97
+2025-10-26 13:46:46,281 - INFO - poster - Article posted. Post ID=98, Link=https://talasnews.com/kosovo-assembly-fails-to-elect-albin-kurti-as-prime-minister/
+2025-10-26 13:46:48,032 - INFO - poster - Language set → post 98 → en
+2025-10-26 13:46:48,050 - INFO - db_utils - Generated article saved to database.
+2025-10-26 13:46:57,037 - INFO - poster - Article posted. Post ID=100, Link=https://talasnews.com/de/kosovo-versammlung-wahlt-albin-kurti-nicht-zum-ministerprasidenten/
+2025-10-26 13:46:58,649 - INFO - poster - Language set → post 100 → de
+2025-10-26 13:46:59,390 - INFO - poster - Linked translations for Post ID=100 → None
+2025-10-26 13:47:09,527 - INFO - poster - Article posted. Post ID=102, Link=https://talasnews.com/ru/%d0%ba%d0%be%d1%81%d0%be%d0%b2%d1%81%d0%ba%d0%b0%d1%8f-%d0%b0%d1%81%d1%81%d0%b0%d0%bc%d0%b1%d0%bb%d0%b5%d1%8f-%d0%bd%d0%b5-%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d0%bb%d0%b0-%d0%b0%d0%bb%d1%8c%d0%b1%d0%b8/
+2025-10-26 13:47:11,209 - INFO - poster - Language set → post 102 → ru
+2025-10-26 13:47:12,032 - INFO - poster - Linked translations for Post ID=102 → None
+2025-10-26 13:47:22,036 - INFO - poster - Article posted. Post ID=104, Link=https://talasnews.com/zh/%e7%a7%91%e7%b4%a2%e6%b2%83%e8%ae%ae%e4%bc%9a%e6%9c%aa%e8%83%bd%e9%80%89%e4%b8%be%e9%98%bf%e5%b0%94%e5%ae%be%c2%b7%e5%ba%93%e5%b0%94%e6%8f%90%e4%b8%ba%e6%80%bb%e7%90%86/
+2025-10-26 13:47:23,686 - INFO - poster - Language set → post 104 → zh
+2025-10-26 13:47:24,489 - INFO - poster - Linked translations for Post ID=104 → None
+2025-10-26 13:47:24,506 - INFO - main - Topic pool, topic: Culture
+2025-10-26 13:47:24,508 - INFO - scraper - Fetching News from Danas
+2025-10-26 13:48:35,518 - INFO - scraper - Found 2 new articles
+2025-10-26 13:48:35,587 - INFO - scraper - Fetching News from Danas
+2025-10-26 13:49:46,997 - INFO - scraper - Found 0 new articles
+2025-10-26 13:49:47,046 - INFO - scraper - Fetching News from Politika
+2025-10-26 13:50:55,408 - INFO - scraper - Found 1 new articles
+2025-10-26 13:50:55,486 - INFO - prompter - Stopping after 14 sources added. Tokens used: 11209
+2025-10-26 13:50:55,488 - INFO - writer - Starting article generation...
+2025-10-26 13:50:55,489 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_135055.txt
+2025-10-26 13:50:55,489 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 13:51:16,383 - INFO - writer - Article generated successfully.
+2025-10-26 13:51:16,385 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 13:51:23,083 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 13:51:23,084 - INFO - writer - Generating article title...
+2025-10-26 13:51:23,681 - INFO - writer - Article title generated successfully.
+2025-10-26 13:51:36,092 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 13:51:36,093 - INFO - editor - Iteration 1
+2025-10-26 13:51:36,511 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 13:51:36,512 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-26 13:51:36,513 - INFO - editor - Rewriting to sound more human...
+2025-10-26 13:51:49,242 - INFO - editor - Iteration 2
+2025-10-26 13:51:49,663 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-26 13:51:49,663 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-26 13:51:49,663 - INFO - editor - Rewriting to sound more human...
+2025-10-26 13:51:58,169 - INFO - editor - Iteration 3
+2025-10-26 13:51:58,637 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-26 13:51:58,638 - INFO - editor - New best iteration: 3 (score 69)
+2025-10-26 13:51:58,638 - INFO - editor - Rewriting to sound more human...
+2025-10-26 13:52:09,277 - INFO - editor - Iteration 4
+2025-10-26 13:52:09,903 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-26 13:52:09,904 - INFO - editor - New best iteration: 4 (score 67)
+2025-10-26 13:52:09,904 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 13:52:19,884 - INFO - editor - Iteration 5
+2025-10-26 13:52:20,289 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-26 13:52:20,289 - INFO - editor - New best iteration: 5 (score 66)
+2025-10-26 13:52:20,289 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 13:52:20,289 - INFO - editor - Returning best-so-far from iteration 5 (score 66).
+2025-10-26 13:52:20,292 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:52:20,315 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=54
+2025-10-26 13:52:22,089 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:52:22,112 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2153
+2025-10-26 13:52:36,952 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:52:36,975 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=54
+2025-10-26 13:52:39,429 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:52:39,458 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2153
+2025-10-26 13:52:51,363 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 13:52:51,387 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=54
+2025-10-26 13:52:52,884 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 13:52:52,900 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2153
+2025-10-26 13:53:03,278 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1353.txt
+2025-10-26 13:53:03,280 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1353.txt
+2025-10-26 13:53:03,305 - INFO - image - Starting image pipeline...
+2025-10-26 13:53:05,413 - INFO - image - Starting image generation...
+2025-10-26 13:53:22,131 - INFO - image - Image generated successfully.
+2025-10-26 13:53:22,131 - INFO - image - Downloading image...
+2025-10-26 13:53:25,833 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 13:53:25,834 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 13:53:25,834 - INFO - image - Image pipeline finished successfully.
+2025-10-26 13:53:34,018 - INFO - poster - Uploaded featured image. Media ID=106
+2025-10-26 13:53:46,698 - INFO - poster - Article posted. Post ID=107, Link=https://talasnews.com/kosovo-assembly-fails-to-elect-kurti-as-prime-minister/
+2025-10-26 13:53:48,403 - INFO - poster - Language set → post 107 → en
+2025-10-26 13:53:48,432 - INFO - db_utils - Generated article saved to database.
+2025-10-26 13:53:57,194 - INFO - poster - Article posted. Post ID=109, Link=https://talasnews.com/de/kosovo-versammlung-wahlt-kurti-nicht-zum-premierminister/
+2025-10-26 13:53:58,764 - INFO - poster - Language set → post 109 → de
+2025-10-26 13:53:59,541 - INFO - poster - Linked translations for Post ID=109 → None
+2025-10-26 13:54:09,457 - INFO - poster - Article posted. Post ID=111, Link=https://talasnews.com/ru/%d0%ba%d0%be%d1%81%d0%be%d0%b2%d1%81%d0%ba%d0%b0%d1%8f-%d0%b0%d1%81%d1%81%d0%b0%d0%bc%d0%b1%d0%bb%d0%b5%d1%8f-%d0%bd%d0%b5-%d1%81%d0%bc%d0%be%d0%b3%d0%bb%d0%b0-%d0%b8%d0%b7%d0%b1%d1%80%d0%b0%d1%82/
+2025-10-26 13:54:11,165 - INFO - poster - Language set → post 111 → ru
+2025-10-26 13:54:11,961 - INFO - poster - Linked translations for Post ID=111 → None
+2025-10-26 13:54:21,454 - INFO - poster - Article posted. Post ID=113, Link=https://talasnews.com/zh/%e7%a7%91%e7%b4%a2%e6%b2%83%e8%ae%ae%e4%bc%9a%e6%9c%aa%e8%83%bd%e9%80%89%e4%b8%be%e5%ba%93%e5%b0%94%e8%92%82%e4%b8%ba%e6%80%bb%e7%90%86/
+2025-10-26 13:54:23,152 - INFO - poster - Language set → post 113 → zh
+2025-10-26 13:54:23,973 - INFO - poster - Linked translations for Post ID=113 → None
+2025-10-26 13:54:23,985 - INFO - main - Topic pool, topic: Serbian News
+2025-10-26 13:54:23,986 - INFO - scraper - Fetching News from Danas
+2025-10-26 13:56:15,519 - INFO - scraper - Found 0 new articles
+2025-10-26 13:56:15,571 - INFO - scraper - Fetching News from Blic
+2025-10-26 13:56:55,950 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://sportal.blic.rs/prica/fjodor-jemeljanenko-na-poklon-dobio-noz-sa-motivima-srbije-2025102612004414159 on URL https://sportal.blic.rs/prica/fjodor-jemeljanenko-na-poklon-dobio-noz-sa-motivima-srbije-2025102612004414159
+2025-10-26 13:57:51,030 - INFO - scraper - Found 3 new articles
+2025-10-26 13:57:51,118 - INFO - scraper - Fetching News from Politika
+2025-10-26 13:58:54,752 - INFO - scraper - Found 1 new articles
+2025-10-26 13:58:54,796 - INFO - scraper - Fetching News from Danas
+2025-10-26 14:00:09,946 - INFO - scraper - Found 2 new articles
+2025-10-26 14:00:09,994 - INFO - scraper - Fetching News from Politika
+2025-10-26 14:01:13,974 - INFO - scraper - Found 0 new articles
+2025-10-26 14:01:14,018 - INFO - scraper - Scraping RSS: https://www.politika.rs/sr/rss
+2025-10-26 14:01:14,124 - INFO - scraper - Found 3 new articles
+2025-10-26 14:01:14,125 - INFO - scraper - Scraping RSS: https://www.blic.rs/rss
+2025-10-26 14:01:14,244 - INFO - scraper - Found 0 new articles
+2025-10-26 14:01:14,244 - INFO - scraper - Scraping RSS: https://www.danas.rs/feed/
+2025-10-26 14:01:14,435 - INFO - scraper - Found 1 new articles
+2025-10-26 14:01:14,435 - INFO - scraper - Fetching News from @NewsSerbia
+2025-10-26 14:01:17,506 - INFO - scraper - Found 0 new articles
+2025-10-26 14:01:17,594 - INFO - prompter - Stopping after 22 sources added. Tokens used: 12522
+2025-10-26 14:01:17,596 - INFO - writer - Starting article generation...
+2025-10-26 14:01:17,598 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_140117.txt
+2025-10-26 14:01:17,599 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 14:01:31,911 - INFO - writer - Article generated successfully.
+2025-10-26 14:01:31,913 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 14:01:35,110 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 14:01:35,111 - INFO - writer - Generating article title...
+2025-10-26 14:01:35,891 - INFO - writer - Article title generated successfully.
+2025-10-26 14:01:50,707 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 14:01:50,708 - INFO - editor - Iteration 1
+2025-10-26 14:01:53,515 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 14:01:53,516 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-26 14:01:53,516 - INFO - editor - Rewriting to sound more human...
+2025-10-26 14:02:03,226 - INFO - editor - Iteration 2
+2025-10-26 14:02:03,636 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 14:02:03,637 - INFO - editor - Rewriting to sound more human...
+2025-10-26 14:02:14,285 - INFO - editor - Iteration 3
+2025-10-26 14:02:15,109 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 14:02:15,111 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 14:02:28,841 - INFO - editor - Iteration 4
+2025-10-26 14:02:29,426 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 14:02:29,426 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 14:02:29,426 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-26 14:02:29,429 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 14:02:29,444 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=62
+2025-10-26 14:02:32,035 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 14:02:32,048 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3384
+2025-10-26 14:02:43,605 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 14:02:43,615 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=62
+2025-10-26 14:02:45,799 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 14:02:45,815 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3384
+2025-10-26 14:03:09,596 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 14:03:09,612 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=62
+2025-10-26 14:03:14,778 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 14:03:14,792 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3384
+2025-10-26 14:03:30,569 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1403.txt
+2025-10-26 14:03:30,570 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1403.txt
+2025-10-26 14:03:30,590 - INFO - image - Starting image pipeline...
+2025-10-26 14:03:36,021 - INFO - image - Starting image generation...
+2025-10-26 14:04:00,617 - INFO - image - Image generated successfully.
+2025-10-26 14:04:00,617 - INFO - image - Downloading image...
+2025-10-26 14:04:03,232 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 14:04:03,234 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 14:04:03,234 - INFO - image - Image pipeline finished successfully.
+2025-10-26 14:04:13,133 - INFO - poster - Uploaded featured image. Media ID=115
+2025-10-26 14:04:29,761 - INFO - poster - Article posted. Post ID=116, Link=https://talasnews.com/en/slovenian-ministers-resign-amid-outrage-over-fatal-altercation/
+2025-10-26 14:04:31,531 - INFO - poster - Language set → post 116 → en
+2025-10-26 14:04:31,542 - INFO - db_utils - Generated article saved to database.
+2025-10-26 14:04:40,055 - INFO - poster - Article posted. Post ID=118, Link=https://talasnews.com/de/slowenische-minister-treten-zuruck-nach-emporung-uber-todlichen-vorfall/
+2025-10-26 14:04:41,620 - INFO - poster - Language set → post 118 → de
+2025-10-26 14:04:42,400 - INFO - poster - Linked translations for Post ID=118 → None
+2025-10-26 14:04:52,146 - INFO - poster - Article posted. Post ID=120, Link=https://talasnews.com/ru/%d1%81%d0%bb%d0%be%d0%b2%d0%b5%d0%bd%d1%81%d0%ba%d0%b8%d0%b5-%d0%bc%d0%b8%d0%bd%d0%b8%d1%81%d1%82%d1%80%d1%8b-%d0%bf%d0%be%d0%b4%d0%b0%d0%bb%d0%b8-%d0%b2-%d0%be%d1%82%d1%81%d1%82%d0%b0%d0%b2%d0%ba/
+2025-10-26 14:04:53,942 - INFO - poster - Language set → post 120 → ru
+2025-10-26 14:04:57,984 - INFO - poster - Linked translations for Post ID=120 → None
+2025-10-26 14:05:08,384 - INFO - poster - Article posted. Post ID=122, Link=https://talasnews.com/zh/%e6%96%af%e6%b4%9b%e6%96%87%e5%b0%bc%e4%ba%9a%e9%83%a8%e9%95%bf%e5%9b%a0%e8%87%b4%e5%91%bd%e5%86%b2%e7%aa%81%e5%bc%95%e5%8f%91%e6%84%a4%e6%80%92%e8%be%9e%e8%81%8c/
+2025-10-26 14:05:09,975 - INFO - poster - Language set → post 122 → zh
+2025-10-26 14:05:10,752 - INFO - poster - Linked translations for Post ID=122 → None
+2025-10-26 15:56:57,646 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-26 15:56:58,064 - INFO - main - Modules imported.
+2025-10-26 15:56:58,115 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-26 15:56:58,131 - INFO - main - Schedule determined. Today is Sunday
+2025-10-26 15:56:58,146 - INFO - main - Topic pool, topic: Politics
+2025-10-26 15:56:58,146 - INFO - scraper - Fetching News from Danas
+2025-10-26 15:58:09,417 - INFO - scraper - Found 13 new articles
+2025-10-26 15:58:09,467 - INFO - scraper - Fetching News from Politika
+2025-10-26 15:59:14,730 - INFO - scraper - Found 14 new articles
+2025-10-26 15:59:14,794 - INFO - scraper - Fetching News from Blic
+2025-10-26 16:00:52,998 - INFO - scraper - Found 8 new articles
+2025-10-26 16:00:53,295 - INFO - prompter - Stopping after 12 sources added. Tokens used: 12436
+2025-10-26 16:00:53,298 - INFO - writer - Starting article generation...
+2025-10-26 16:00:53,300 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_160053.txt
+2025-10-26 16:00:53,301 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 16:01:11,149 - INFO - writer - Article generated successfully.
+2025-10-26 16:01:11,150 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 16:01:16,139 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 16:01:16,142 - INFO - writer - Generating article title...
+2025-10-26 16:01:17,640 - INFO - writer - Article title generated successfully.
+2025-10-26 16:01:29,767 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 16:01:29,768 - INFO - editor - Iteration 1
+2025-10-26 16:01:30,237 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 16:01:30,237 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-26 16:01:30,237 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:01:42,221 - INFO - editor - Iteration 2
+2025-10-26 16:01:43,211 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 16:01:43,212 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:01:57,130 - INFO - editor - Iteration 3
+2025-10-26 16:01:57,787 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 16:01:57,788 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 16:02:09,120 - INFO - editor - Iteration 4
+2025-10-26 16:02:09,985 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-26 16:02:09,985 - INFO - editor - New best iteration: 4 (score 71)
+2025-10-26 16:02:09,986 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:02:19,936 - INFO - editor - Iteration 5
+2025-10-26 16:02:20,340 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-26 16:02:20,341 - INFO - editor - New best iteration: 5 (score 69)
+2025-10-26 16:02:20,341 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:02:30,496 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-26 16:02:30,497 - INFO - editor - Returning best-so-far from iteration 5 (score 69).
+2025-10-26 16:02:30,502 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:02:30,523 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=74
+2025-10-26 16:02:32,740 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:02:32,748 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2288
+2025-10-26 16:02:47,685 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:02:47,708 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=74
+2025-10-26 16:02:49,171 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:02:49,187 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2288
+2025-10-26 16:03:02,206 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:03:02,219 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=74
+2025-10-26 16:03:03,392 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:03:03,417 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2288
+2025-10-26 16:03:15,624 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1603.txt
+2025-10-26 16:03:15,625 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1603.txt
+2025-10-26 16:03:15,663 - INFO - image - Starting image pipeline...
+2025-10-26 16:03:20,045 - INFO - image - Starting image generation...
+2025-10-26 16:03:36,334 - INFO - image - Image generated successfully.
+2025-10-26 16:03:36,337 - INFO - image - Downloading image...
+2025-10-26 16:03:39,334 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:03:39,340 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:03:39,340 - INFO - image - Image pipeline finished successfully.
+2025-10-26 16:03:45,930 - INFO - poster - Uploaded featured image. Media ID=124
+2025-10-26 16:04:03,732 - INFO - poster - Article posted. Post ID=125, Link=https://talasnews.com/en/serbia-opens-russian-historical-society-branch-to-strengthen-cultural-ties/
+2025-10-26 16:04:05,607 - INFO - poster - Language set → post 125 → en
+2025-10-26 16:04:05,628 - INFO - db_utils - Generated article saved to database.
+2025-10-26 16:04:14,893 - INFO - poster - Article posted. Post ID=127, Link=https://talasnews.com/de/serbien-eroffnet-zweig-der-russischen-historischen-gesellschaft-zur-starkung-kultureller-beziehungen/
+2025-10-26 16:04:16,522 - INFO - poster - Language set → post 127 → de
+2025-10-26 16:04:17,309 - INFO - poster - Linked translations for Post ID=127 → None
+2025-10-26 16:04:27,713 - INFO - poster - Article posted. Post ID=129, Link=https://talasnews.com/ru/%d1%81%d0%b5%d1%80%d0%b1%d0%b8%d1%8f-%d0%be%d1%82%d0%ba%d1%80%d1%8b%d0%b2%d0%b0%d0%b5%d1%82-%d1%84%d0%b8%d0%bb%d0%b8%d0%b0%d0%bb-%d1%80%d0%be%d1%81%d1%81%d0%b8%d0%b9%d1%81%d0%ba%d0%be%d0%b3%d0%be/
+2025-10-26 16:04:29,456 - INFO - poster - Language set → post 129 → ru
+2025-10-26 16:04:30,373 - INFO - poster - Linked translations for Post ID=129 → None
+2025-10-26 16:04:40,901 - INFO - poster - Article posted. Post ID=131, Link=https://talasnews.com/zh/%e5%a1%9e%e5%b0%94%e7%bb%b4%e4%ba%9a%e8%ae%be%e7%ab%8b%e4%bf%84%e7%bd%97%e6%96%af%e5%8e%86%e5%8f%b2%e5%ad%a6%e4%bc%9a%e5%88%86%e6%94%af%e4%bb%a5%e5%8a%a0%e5%bc%ba%e6%96%87%e5%8c%96%e8%81%94%e7%b3%bb/
+2025-10-26 16:04:42,807 - INFO - poster - Language set → post 131 → zh
+2025-10-26 16:04:43,755 - INFO - poster - Linked translations for Post ID=131 → None
+2025-10-26 16:04:43,766 - INFO - main - Topic pool, topic: Culture
+2025-10-26 16:04:43,769 - INFO - scraper - Fetching News from Danas
+2025-10-26 16:05:51,056 - INFO - scraper - Found 1 new articles
+2025-10-26 16:05:51,105 - INFO - scraper - Fetching News from Danas
+2025-10-26 16:07:00,917 - INFO - scraper - Found 0 new articles
+2025-10-26 16:07:00,981 - INFO - scraper - Fetching News from Politika
+2025-10-26 16:08:07,166 - INFO - scraper - Found 4 new articles
+2025-10-26 16:08:07,264 - INFO - prompter - Stopping after 13 sources added. Tokens used: 10308
+2025-10-26 16:08:07,266 - INFO - writer - Starting article generation...
+2025-10-26 16:08:07,267 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_160807.txt
+2025-10-26 16:08:07,267 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 16:08:24,057 - INFO - writer - Article generated successfully.
+2025-10-26 16:08:24,060 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 16:08:27,543 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 16:08:27,545 - INFO - writer - Generating article title...
+2025-10-26 16:08:29,525 - INFO - writer - Article title generated successfully.
+2025-10-26 16:08:41,213 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 16:08:41,215 - INFO - editor - Iteration 1
+2025-10-26 16:08:41,792 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 16:08:41,793 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-26 16:08:41,793 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:08:50,613 - INFO - editor - Iteration 2
+2025-10-26 16:08:51,139 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-26 16:08:51,140 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-26 16:08:51,140 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:09:01,195 - INFO - editor - Iteration 3
+2025-10-26 16:09:01,633 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-26 16:09:01,634 - INFO - editor - New best iteration: 3 (score 69)
+2025-10-26 16:09:01,635 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:09:09,912 - INFO - editor - Iteration 4
+2025-10-26 16:09:10,601 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-26 16:09:10,602 - INFO - editor - New best iteration: 4 (score 67)
+2025-10-26 16:09:10,602 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 16:09:19,375 - INFO - editor - Iteration 5
+2025-10-26 16:09:19,920 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-26 16:09:19,921 - INFO - editor - New best iteration: 5 (score 66)
+2025-10-26 16:09:19,921 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 16:09:19,922 - INFO - editor - Returning best-so-far from iteration 5 (score 66).
+2025-10-26 16:09:19,927 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:09:19,948 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=70
+2025-10-26 16:09:21,890 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:09:21,912 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2611
+2025-10-26 16:09:47,347 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:09:47,370 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=70
+2025-10-26 16:09:48,966 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:09:48,986 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2611
+2025-10-26 16:10:06,199 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:10:06,228 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=70
+2025-10-26 16:10:08,014 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:10:08,030 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2611
+2025-10-26 16:10:19,751 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1610.txt
+2025-10-26 16:10:19,754 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1610.txt
+2025-10-26 16:10:19,798 - INFO - image - Starting image pipeline...
+2025-10-26 16:10:24,178 - INFO - image - Starting image generation...
+2025-10-26 16:10:40,222 - INFO - image - Image generated successfully.
+2025-10-26 16:10:40,226 - INFO - image - Downloading image...
+2025-10-26 16:10:44,560 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:10:44,564 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:10:44,564 - INFO - image - Image pipeline finished successfully.
+2025-10-26 16:10:50,023 - INFO - poster - Uploaded featured image. Media ID=133
+2025-10-26 16:11:05,846 - INFO - poster - Article posted. Post ID=134, Link=https://talasnews.com/en/russia-conducts-successful-test-of-nuclear-powered-burevestnik-missile/
+2025-10-26 16:11:07,540 - INFO - poster - Language set → post 134 → en
+2025-10-26 16:11:07,552 - INFO - db_utils - Generated article saved to database.
+2025-10-26 16:11:16,434 - INFO - poster - Article posted. Post ID=136, Link=https://talasnews.com/de/russland-fuhrt-erfolgreichen-test-des-nukleargetriebenen-marschflugkorpers-burevestnik-durch/
+2025-10-26 16:11:18,051 - INFO - poster - Language set → post 136 → de
+2025-10-26 16:11:18,803 - INFO - poster - Linked translations for Post ID=136 → None
+2025-10-26 16:11:28,984 - INFO - poster - Article posted. Post ID=138, Link=https://talasnews.com/ru/%d1%80%d0%be%d1%81%d1%81%d0%b8%d1%8f-%d1%83%d1%81%d0%bf%d0%b5%d1%88%d0%bd%d0%be-%d0%b8%d1%81%d0%bf%d1%8b%d1%82%d0%b0%d0%bb%d0%b0-%d1%8f%d0%b4%d0%b5%d1%80%d0%bd%d1%8b%d0%b9-%d1%80%d0%b0%d0%ba%d0%b5/
+2025-10-26 16:11:30,594 - INFO - poster - Language set → post 138 → ru
+2025-10-26 16:11:31,371 - INFO - poster - Linked translations for Post ID=138 → None
+2025-10-26 16:11:41,522 - INFO - poster - Article posted. Post ID=140, Link=https://talasnews.com/zh/%e4%bf%84%e5%9b%bd%e6%88%90%e5%8a%9f%e6%b5%8b%e8%af%95%e6%a0%b8%e5%8a%a8%e5%8a%9b%e5%b8%83%e9%9b%b7%e9%9f%a6%e6%96%af%e7%89%b9%e5%b0%bc%e5%85%8b%e5%af%bc%e5%bc%b9/
+2025-10-26 16:11:43,255 - INFO - poster - Language set → post 140 → zh
+2025-10-26 16:11:44,054 - INFO - poster - Linked translations for Post ID=140 → None
+2025-10-26 16:11:44,065 - INFO - main - Topic pool, topic: Serbian News
+2025-10-26 16:11:44,069 - INFO - scraper - Fetching News from Danas
+2025-10-26 16:12:58,116 - INFO - scraper - Found 0 new articles
+2025-10-26 16:12:58,182 - INFO - scraper - Fetching News from Blic
+2025-10-26 16:14:34,866 - INFO - scraper - Found 0 new articles
+2025-10-26 16:14:34,978 - INFO - scraper - Fetching News from Politika
+2025-10-26 16:15:48,076 - INFO - scraper - Found 0 new articles
+2025-10-26 16:15:48,137 - INFO - scraper - Fetching News from Danas
+2025-10-26 16:17:02,567 - INFO - scraper - Found 2 new articles
+2025-10-26 16:17:02,636 - INFO - scraper - Fetching News from Politika
+2025-10-26 16:18:15,404 - INFO - scraper - Found 1 new articles
+2025-10-26 16:18:15,465 - INFO - scraper - Scraping RSS: https://www.politika.rs/sr/rss
+2025-10-26 16:18:15,573 - INFO - scraper - Found 3 new articles
+2025-10-26 16:18:15,573 - INFO - scraper - Scraping RSS: https://www.blic.rs/rss
+2025-10-26 16:18:15,703 - INFO - scraper - Found 0 new articles
+2025-10-26 16:18:15,703 - INFO - scraper - Scraping RSS: https://www.danas.rs/feed/
+2025-10-26 16:18:15,916 - INFO - scraper - Found 0 new articles
+2025-10-26 16:18:15,917 - INFO - scraper - Fetching News from @NewsSerbia
+2025-10-26 16:18:19,150 - INFO - scraper - Found 0 new articles
+2025-10-26 16:18:19,232 - INFO - prompter - Stopping after 13 sources added. Tokens used: 10253
+2025-10-26 16:18:19,235 - INFO - writer - Starting article generation...
+2025-10-26 16:18:19,236 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_161819.txt
+2025-10-26 16:18:19,237 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 16:18:32,841 - INFO - writer - Article generated successfully.
+2025-10-26 16:18:32,842 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 16:18:35,531 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 16:18:35,532 - INFO - writer - Generating article title...
+2025-10-26 16:18:36,463 - INFO - writer - Article title generated successfully.
+2025-10-26 16:18:45,886 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 16:18:45,887 - INFO - editor - Iteration 1
+2025-10-26 16:18:46,704 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 16:18:46,705 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-26 16:18:46,705 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:18:56,200 - INFO - editor - Iteration 2
+2025-10-26 16:18:56,913 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 16:18:56,914 - INFO - editor - Rewriting to sound more human...
+2025-10-26 16:19:04,846 - INFO - editor - Iteration 3
+2025-10-26 16:19:05,249 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 16:19:05,250 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 16:19:18,688 - INFO - editor - Iteration 4
+2025-10-26 16:19:19,533 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 16:19:19,534 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 16:19:19,534 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-26 16:19:19,538 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:19:19,563 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=66
+2025-10-26 16:19:21,755 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:19:21,779 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3333
+2025-10-26 16:19:39,623 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:19:39,640 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=66
+2025-10-26 16:19:41,433 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:19:41,456 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3333
+2025-10-26 16:20:00,377 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 16:20:00,402 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=66
+2025-10-26 16:20:02,359 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 16:20:02,383 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3333
+2025-10-26 16:20:15,358 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1620.txt
+2025-10-26 16:20:15,361 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1620.txt
+2025-10-26 16:20:15,405 - INFO - image - Starting image pipeline...
+2025-10-26 16:20:18,881 - INFO - image - Starting image generation...
+2025-10-26 16:20:34,332 - INFO - image - Image generated successfully.
+2025-10-26 16:20:34,333 - INFO - image - Downloading image...
+2025-10-26 16:20:36,898 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:20:36,905 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 16:20:36,905 - INFO - image - Image pipeline finished successfully.
+2025-10-26 16:20:42,891 - INFO - poster - Uploaded featured image. Media ID=142
+2025-10-26 16:20:58,421 - INFO - poster - Article posted. Post ID=143, Link=https://talasnews.com/en/serbias-economy-faces-challenges-over-foreign-investment-reliance/
+2025-10-26 16:21:00,059 - INFO - poster - Language set → post 143 → en
+2025-10-26 16:21:00,069 - INFO - db_utils - Generated article saved to database.
+2025-10-26 16:21:09,238 - INFO - poster - Article posted. Post ID=145, Link=https://talasnews.com/de/serbiens-wirtschaft-steht-vor-herausforderungen-durch-abhangigkeit-von-auslandischen-investitionen/
+2025-10-26 16:21:10,765 - INFO - poster - Language set → post 145 → de
+2025-10-26 16:21:11,542 - INFO - poster - Linked translations for Post ID=145 → None
+2025-10-26 16:21:21,165 - INFO - poster - Article posted. Post ID=147, Link=https://talasnews.com/ru/%d1%8d%d0%ba%d0%be%d0%bd%d0%be%d0%bc%d0%b8%d0%ba%d0%b0-%d1%81%d0%b5%d1%80%d0%b1%d0%b8%d0%b8-%d1%81%d1%82%d0%b0%d0%bb%d0%ba%d0%b8%d0%b2%d0%b0%d0%b5%d1%82%d1%81%d1%8f-%d1%81-%d0%bf%d1%80%d0%be%d0%b1/
+2025-10-26 16:21:22,747 - INFO - poster - Language set → post 147 → ru
+2025-10-26 16:21:23,644 - INFO - poster - Linked translations for Post ID=147 → None
+2025-10-26 16:21:33,664 - INFO - poster - Article posted. Post ID=149, Link=https://talasnews.com/zh/%e5%a1%9e%e5%b0%94%e7%bb%b4%e4%ba%9a%e7%bb%8f%e6%b5%8e%e5%9b%a0%e4%be%9d%e8%b5%96%e5%a4%96%e5%9b%bd%e6%8a%95%e8%b5%84%e9%9d%a2%e4%b8%b4%e6%8c%91%e6%88%98/
+2025-10-26 16:21:35,191 - INFO - poster - Language set → post 149 → zh
+2025-10-26 16:21:36,023 - INFO - poster - Linked translations for Post ID=149 → None
+2025-10-26 18:32:58,631 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-26 18:32:59,089 - INFO - main - Modules imported.
+2025-10-26 18:32:59,144 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-26 18:32:59,160 - INFO - main - Schedule determined. Today is Sunday
+2025-10-26 18:32:59,176 - INFO - main - Topic pool, topic: Politics
+2025-10-26 18:32:59,176 - INFO - scraper - Fetching News from Danas
+2025-10-26 18:34:11,223 - INFO - scraper - Found 8 new articles
+2025-10-26 18:34:11,299 - INFO - scraper - Fetching News from Politika
+2025-10-26 18:35:17,077 - INFO - scraper - Found 20 new articles
+2025-10-26 18:35:17,152 - INFO - scraper - Fetching News from Blic
+2025-10-26 18:36:55,949 - INFO - scraper - Found 15 new articles
+2025-10-26 18:36:56,308 - INFO - prompter - Stopping after 10 sources added. Tokens used: 15489
+2025-10-26 18:36:56,312 - INFO - writer - Starting article generation...
+2025-10-26 18:36:56,315 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_183656.txt
+2025-10-26 18:36:56,315 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 18:37:09,266 - INFO - writer - Article generated successfully.
+2025-10-26 18:37:09,267 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 18:37:13,412 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 18:37:13,414 - INFO - writer - Generating article title...
+2025-10-26 18:37:14,954 - INFO - writer - Article title generated successfully.
+2025-10-26 18:37:27,410 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 18:37:27,412 - INFO - editor - Iteration 1
+2025-10-26 18:37:28,077 - INFO - editor - Base score: 70 | Smoothed score: 70
+2025-10-26 18:37:28,077 - INFO - editor - New best iteration: 1 (score 70)
+2025-10-26 18:37:28,078 - INFO - editor - Rewriting to sound more human...
+2025-10-26 18:37:39,169 - INFO - editor - Iteration 2
+2025-10-26 18:37:39,645 - INFO - editor - Base score: 65 | Smoothed score: 68
+2025-10-26 18:37:39,646 - INFO - editor - New best iteration: 2 (score 68)
+2025-10-26 18:37:39,646 - INFO - editor - Rewriting to sound more human...
+2025-10-26 18:37:46,358 - INFO - editor - Iteration 3
+2025-10-26 18:37:47,654 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-26 18:37:47,654 - INFO - editor - New best iteration: 3 (score 67)
+2025-10-26 18:37:47,655 - INFO - editor - Rewriting to sound more human...
+2025-10-26 18:37:56,455 - INFO - editor - Iteration 4
+2025-10-26 18:37:56,848 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-26 18:37:56,849 - INFO - editor - New best iteration: 4 (score 66)
+2025-10-26 18:37:56,850 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 18:38:06,082 - INFO - editor - Iteration 5
+2025-10-26 18:38:07,200 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-26 18:38:07,200 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 18:38:07,201 - INFO - editor - Returning best-so-far from iteration 4 (score 66).
+2025-10-26 18:38:07,204 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:38:07,224 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=72
+2025-10-26 18:38:09,601 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:38:09,608 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=1798
+2025-10-26 18:38:22,136 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:38:22,158 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=72
+2025-10-26 18:38:23,659 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:38:23,674 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=1798
+2025-10-26 18:38:34,073 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:38:34,100 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=72
+2025-10-26 18:38:37,998 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:38:38,022 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=1798
+2025-10-26 18:38:46,706 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1838.txt
+2025-10-26 18:38:46,707 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1838.txt
+2025-10-26 18:38:46,747 - INFO - image - Starting image pipeline...
+2025-10-26 18:38:50,313 - INFO - image - Starting image generation...
+2025-10-26 18:39:06,064 - INFO - image - Image generated successfully.
+2025-10-26 18:39:06,065 - INFO - image - Downloading image...
+2025-10-26 18:39:08,659 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 18:39:08,663 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 18:39:08,663 - INFO - image - Image pipeline finished successfully.
+2025-10-26 18:39:16,130 - INFO - poster - Uploaded featured image. Media ID=153
+2025-10-26 18:39:31,964 - INFO - poster - Article posted. Post ID=154, Link=https://talasnews.com/en/kragujevac-welcomes-students-walking-for-unity-and-freedom-across-serbia/
+2025-10-26 18:39:33,553 - INFO - poster - Language set → post 154 → en
+2025-10-26 18:39:33,579 - INFO - db_utils - Generated article saved to database.
+2025-10-26 18:39:43,421 - INFO - poster - Article posted. Post ID=156, Link=https://talasnews.com/de/kragujevac-heist-schuler-willkommen-die-fur-einheit-und-freiheit-in-serbien-gehen/
+2025-10-26 18:39:45,106 - INFO - poster - Language set → post 156 → de
+2025-10-26 18:39:45,879 - INFO - poster - Linked translations for Post ID=156 → None
+2025-10-26 18:39:56,622 - INFO - poster - Article posted. Post ID=158, Link=https://talasnews.com/ru/%d0%ba%d1%80%d0%b0%d0%b3%d1%83%d0%b5%d0%b2%d0%b0%d1%86-%d0%bf%d1%80%d0%b8%d0%bd%d0%b8%d0%bc%d0%b0%d0%b5%d1%82-%d1%81%d1%82%d1%83%d0%b4%d0%b5%d0%bd%d1%82%d0%be%d0%b2-%d0%b8%d0%b4%d1%83%d1%89%d0%b8/
+2025-10-26 18:39:58,334 - INFO - poster - Language set → post 158 → ru
+2025-10-26 18:39:59,156 - INFO - poster - Linked translations for Post ID=158 → None
+2025-10-26 18:40:09,061 - INFO - poster - Article posted. Post ID=160, Link=https://talasnews.com/zh/%e5%85%8b%e6%8b%89%e5%8f%a4%e8%80%b6%e7%93%a6%e8%8c%a8%e6%ac%a2%e8%bf%8e%e4%b8%ba%e5%9b%a2%e7%bb%93%e4%b8%8e%e8%87%aa%e7%94%b1%e8%80%8c%e6%ad%a5%e8%a1%8c%e7%9a%84%e5%ad%a6%e7%94%9f/
+2025-10-26 18:40:09,862 - INFO - poster - Language set → post 160 → zh
+2025-10-26 18:40:10,650 - INFO - poster - Linked translations for Post ID=160 → None
+2025-10-26 18:40:10,666 - INFO - main - Topic pool, topic: Culture
+2025-10-26 18:40:10,668 - INFO - scraper - Fetching News from Danas
+2025-10-26 18:41:32,851 - INFO - scraper - Found 1 new articles
+2025-10-26 18:41:32,903 - INFO - scraper - Fetching News from Danas
+2025-10-26 18:42:40,659 - INFO - scraper - Found 0 new articles
+2025-10-26 18:42:40,726 - INFO - scraper - Fetching News from Politika
+2025-10-26 18:43:47,154 - INFO - scraper - Found 0 new articles
+2025-10-26 18:43:47,244 - INFO - prompter - Stopping after 11 sources added. Tokens used: 12023
+2025-10-26 18:43:47,246 - INFO - writer - Starting article generation...
+2025-10-26 18:43:47,247 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_184347.txt
+2025-10-26 18:43:47,248 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 18:44:05,147 - INFO - writer - Article generated successfully.
+2025-10-26 18:44:05,150 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 18:44:08,990 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 18:44:08,993 - INFO - writer - Generating article title...
+2025-10-26 18:44:10,063 - INFO - writer - Article title generated successfully.
+2025-10-26 18:44:21,950 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 18:44:21,952 - INFO - editor - Iteration 1
+2025-10-26 18:44:22,865 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 18:44:22,865 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-26 18:44:22,865 - INFO - editor - Rewriting to sound more human...
+2025-10-26 18:44:33,603 - INFO - editor - Iteration 2
+2025-10-26 18:44:34,172 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 18:44:34,173 - INFO - editor - Rewriting to sound more human...
+2025-10-26 18:44:43,651 - INFO - editor - Iteration 3
+2025-10-26 18:44:44,182 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 18:44:44,182 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 18:44:57,717 - INFO - editor - Iteration 4
+2025-10-26 18:44:58,192 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-26 18:44:58,193 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 18:44:58,193 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-26 18:44:58,198 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:44:58,226 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=66
+2025-10-26 18:44:59,923 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:44:59,948 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3058
+2025-10-26 18:45:16,674 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:45:16,697 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=66
+2025-10-26 18:45:17,898 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:45:17,922 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3058
+2025-10-26 18:47:28,230 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 18:47:28,244 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=66
+2025-10-26 18:47:29,826 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 18:47:29,846 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3058
+2025-10-26 18:47:43,568 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1847.txt
+2025-10-26 18:47:43,570 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1847.txt
+2025-10-26 18:47:43,617 - INFO - image - Starting image pipeline...
+2025-10-26 18:47:48,233 - INFO - image - Starting image generation...
+2025-10-26 18:48:08,960 - INFO - image - Image generated successfully.
+2025-10-26 18:48:08,962 - INFO - image - Downloading image...
+2025-10-26 18:48:12,384 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 18:48:12,389 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 18:48:12,389 - INFO - image - Image pipeline finished successfully.
+2025-10-26 18:48:18,317 - INFO - poster - Uploaded featured image. Media ID=163
+2025-10-26 18:48:34,450 - INFO - poster - Article posted. Post ID=164, Link=https://talasnews.com/en/milorad-dodik-faces-possible-ouster-amid-political-shift-in-srpska/
+2025-10-26 18:48:37,009 - INFO - poster - Language set → post 164 → en
+2025-10-26 18:48:37,021 - INFO - db_utils - Generated article saved to database.
+2025-10-26 18:48:49,071 - INFO - poster - Article posted. Post ID=166, Link=https://talasnews.com/de/milorad-dodik-vor-mogliche-absetzung-bei-politischem-wandel-in-srpska/
+2025-10-26 18:48:50,704 - INFO - poster - Language set → post 166 → de
+2025-10-26 18:48:51,428 - INFO - poster - Linked translations for Post ID=166 → None
+2025-10-26 18:49:01,034 - INFO - poster - Article posted. Post ID=168, Link=https://talasnews.com/ru/%d0%bc%d0%b8%d0%bb%d0%be%d1%80%d0%b0%d0%b4-%d0%b4%d0%be%d0%b4%d0%b8%d0%ba-%d0%bf%d0%be%d0%b4-%d1%83%d0%b3%d1%80%d0%be%d0%b7%d0%be%d0%b9-%d1%81%d0%bc%d0%b5%d1%89%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bd%d0%b0/
+2025-10-26 18:49:02,564 - INFO - poster - Language set → post 168 → ru
+2025-10-26 18:49:03,371 - INFO - poster - Linked translations for Post ID=168 → None
+2025-10-26 18:49:13,387 - INFO - poster - Article posted. Post ID=170, Link=https://talasnews.com/zh/%e7%b1%b3%e6%b4%9b%e6%8b%89%e5%be%b7%c2%b7%e5%a4%9a%e8%bf%aa%e5%85%8b%e5%9c%a8%e5%a1%9e%e5%b0%94%e7%bb%b4%e4%ba%9a%e6%94%bf%e6%b2%bb%e5%8f%98%e5%b1%80%e4%b8%ad%e9%9d%a2%e4%b8%b4%e5%8f%af%e8%83%bd/
+2025-10-26 18:49:14,971 - INFO - poster - Language set → post 170 → zh
+2025-10-26 18:49:15,698 - INFO - poster - Linked translations for Post ID=170 → None
+2025-10-26 18:49:15,712 - INFO - main - Topic pool, topic: Serbian News
+2025-10-26 18:49:15,716 - INFO - scraper - Fetching News from Danas
+2025-10-26 18:50:33,146 - INFO - scraper - Found 0 new articles
+2025-10-26 18:50:33,217 - INFO - scraper - Fetching News from Blic
+2025-10-26 18:52:09,208 - INFO - scraper - Found 3 new articles
+2025-10-26 18:52:09,321 - INFO - scraper - Fetching News from Politika
+2025-10-26 18:54:00,762 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer')) on URL https://www.politika.rs/scc/clanak/706309/london-salje-ilegalne-migrante-u-pristinu
+2025-10-26 18:55:02,387 - INFO - scraper - Found 2 new articles
+2025-10-26 18:55:02,453 - INFO - scraper - Fetching News from Danas
+2025-10-26 18:56:22,492 - INFO - scraper - Found 1 new articles
+2025-10-26 18:56:22,542 - INFO - scraper - Fetching News from Politika
+2025-10-26 18:57:27,487 - INFO - scraper - Found 0 new articles
+2025-10-26 18:57:27,549 - INFO - scraper - Scraping RSS: https://www.politika.rs/sr/rss
+2025-10-26 18:57:27,682 - INFO - scraper - Found 3 new articles
+2025-10-26 18:57:27,682 - INFO - scraper - Scraping RSS: https://www.blic.rs/rss
+2025-10-26 18:57:28,006 - INFO - scraper - Found 0 new articles
+2025-10-26 18:57:28,006 - INFO - scraper - Scraping RSS: https://www.danas.rs/feed/
+2025-10-26 18:57:28,217 - INFO - scraper - Found 1 new articles
+2025-10-26 18:57:28,217 - INFO - scraper - Fetching News from @NewsSerbia
+2025-10-26 18:57:31,513 - INFO - scraper - Found 0 new articles
+2025-10-26 18:57:31,595 - INFO - prompter - Stopping after 17 sources added. Tokens used: 11520
+2025-10-26 18:57:31,598 - INFO - writer - Starting article generation...
+2025-10-26 18:57:31,599 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251026_185731.txt
+2025-10-26 18:57:31,600 - INFO - writer - Requesting article from OpenAI API...
+2025-10-26 19:03:32,763 - INFO - writer - Article generated successfully.
+2025-10-26 19:03:32,766 - INFO - writer - Summarizing article and generating tags...
+2025-10-26 19:03:36,147 - INFO - writer - Summary and tags generated successfully.
+2025-10-26 19:03:36,148 - INFO - writer - Generating article title...
+2025-10-26 19:03:37,161 - INFO - writer - Article title generated successfully.
+2025-10-26 19:04:20,837 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-26 19:04:20,838 - INFO - editor - Iteration 1
+2025-10-26 19:04:21,274 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-26 19:04:21,274 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-26 19:04:21,274 - INFO - editor - Rewriting to sound more human...
+2025-10-26 19:04:32,774 - INFO - editor - Iteration 2
+2025-10-26 19:04:33,225 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-26 19:04:33,225 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-26 19:04:33,225 - INFO - editor - Rewriting to sound more human...
+2025-10-26 19:04:47,021 - INFO - editor - Iteration 3
+2025-10-26 19:04:47,478 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-26 19:04:47,479 - INFO - editor - New best iteration: 3 (score 69)
+2025-10-26 19:04:47,479 - INFO - editor - Rewriting to sound more human...
+2025-10-26 19:04:57,259 - INFO - editor - Iteration 4
+2025-10-26 19:04:57,849 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-26 19:04:57,850 - INFO - editor - New best iteration: 4 (score 67)
+2025-10-26 19:04:57,851 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-26 19:05:09,736 - INFO - editor - Iteration 5
+2025-10-26 19:05:10,284 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-26 19:05:10,285 - INFO - editor - New best iteration: 5 (score 66)
+2025-10-26 19:05:10,285 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-26 19:05:10,285 - INFO - editor - Returning best-so-far from iteration 5 (score 66).
+2025-10-26 19:05:10,290 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 19:05:10,317 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=65
+2025-10-26 19:05:11,918 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 19:05:11,942 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2007
+2025-10-26 19:05:29,453 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 19:05:29,477 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=65
+2025-10-26 19:05:35,578 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 19:05:35,600 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2007
+2025-10-26 19:05:48,805 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-26 19:05:48,829 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=65
+2025-10-26 19:05:50,399 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-26 19:05:50,422 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2007
+2025-10-26 19:07:51,640 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251026_1907.txt
+2025-10-26 19:07:51,642 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251026_1907.txt
+2025-10-26 19:07:51,689 - INFO - image - Starting image pipeline...
+2025-10-26 19:07:55,725 - INFO - image - Starting image generation...
+2025-10-26 19:08:11,597 - INFO - image - Image generated successfully.
+2025-10-26 19:08:11,599 - INFO - image - Downloading image...
+2025-10-26 19:08:14,683 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 19:08:14,688 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-26 19:08:14,688 - INFO - image - Image pipeline finished successfully.
+2025-10-26 19:08:21,517 - INFO - poster - Uploaded featured image. Media ID=172
+2025-10-26 19:08:31,597 - INFO - poster - Article posted. Post ID=173, Link=https://talasnews.com/en/milorad-dodik-faces-ouster-as-snsd-president-in-political-shakeup/
+2025-10-26 19:08:33,186 - INFO - poster - Language set → post 173 → en
+2025-10-26 19:08:33,204 - INFO - db_utils - Generated article saved to database.
+2025-10-26 19:08:41,502 - INFO - poster - Article posted. Post ID=175, Link=https://talasnews.com/de/milorad-dodik-steht-vor-der-ablosung-als-snsd-prasident-nach-politischen-umbruchen/
+2025-10-26 19:08:43,086 - INFO - poster - Language set → post 175 → de
+2025-10-26 19:08:43,801 - INFO - poster - Linked translations for Post ID=175 → None
+2025-10-26 19:08:52,857 - INFO - poster - Article posted. Post ID=177, Link=https://talasnews.com/ru/%d0%bc%d0%b8%d0%bb%d0%be%d1%80%d0%b0%d0%b4-%d0%b4%d0%be%d0%b4%d0%b8%d0%ba-%d0%bf%d0%be%d0%b4-%d1%83%d0%b3%d1%80%d0%be%d0%b7%d0%be%d0%b9-%d0%be%d1%82%d1%81%d1%82%d0%b0%d0%b2%d0%ba%d0%b8-%d1%81-%d0%bf/
+2025-10-26 19:08:54,327 - INFO - poster - Language set → post 177 → ru
+2025-10-26 19:08:55,119 - INFO - poster - Linked translations for Post ID=177 → None
+2025-10-26 19:09:04,777 - INFO - poster - Article posted. Post ID=179, Link=https://talasnews.com/zh/%e7%b1%b3%e6%b4%9b%e6%8b%89%e5%be%b7%c2%b7%e5%a4%9a%e8%bf%aa%e5%85%8b%e5%9c%a8%e6%94%bf%e6%b2%bb%e5%8a%a8%e8%8d%a1%e4%b8%ad%e9%9d%a2%e4%b8%b4snsd%e4%b8%bb%e5%b8%ad%e8%81%8c%e4%bd%8d%e8%a2%ab%e6%92%a4/
+2025-10-26 19:09:08,192 - INFO - poster - Language set → post 179 → zh
+2025-10-26 19:09:08,968 - INFO - poster - Linked translations for Post ID=179 → None
+2025-10-27 18:17:31,746 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-27 18:17:32,193 - INFO - main - Modules imported.
+2025-10-27 18:17:32,249 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-27 18:17:32,266 - INFO - main - Schedule determined. Today is Monday
+2025-10-27 18:17:32,283 - INFO - main - Topic pool, topic: Business
+2025-10-27 18:17:32,284 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-27 18:17:33,747 - INFO - scraper - Found 5 new articles
+2025-10-27 18:17:33,936 - INFO - writer - Starting article generation...
+2025-10-27 18:17:33,939 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_181733.txt
+2025-10-27 18:17:33,939 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 18:17:55,753 - INFO - writer - Article generated successfully.
+2025-10-27 18:17:55,754 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 18:18:01,985 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 18:18:01,988 - INFO - writer - Generating article title...
+2025-10-27 18:18:02,630 - INFO - writer - Article title generated successfully.
+2025-10-27 18:18:17,060 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 18:18:17,061 - INFO - editor - Iteration 1
+2025-10-27 18:18:18,856 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-27 18:18:18,857 - INFO - editor - New best iteration: 1 (score 65)
+2025-10-27 18:18:18,857 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:18:43,159 - INFO - editor - Iteration 2
+2025-10-27 18:18:44,294 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-27 18:18:44,294 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:18:59,906 - INFO - editor - Iteration 3
+2025-10-27 18:19:00,904 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-27 18:19:00,905 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-27 18:19:20,866 - INFO - editor - Iteration 4
+2025-10-27 18:19:21,408 - INFO - editor - Base score: 65 | Smoothed score: 65
+2025-10-27 18:19:21,408 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-27 18:19:21,408 - INFO - editor - Returning best-so-far from iteration 1 (score 65).
+2025-10-27 18:19:21,410 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:19:21,437 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=55
+2025-10-27 18:19:24,749 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:19:24,757 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3411
+2025-10-27 18:19:44,487 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:19:44,500 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=55
+2025-10-27 18:19:46,919 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:19:46,946 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3411
+2025-10-27 18:20:08,783 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:20:08,803 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=55
+2025-10-27 18:20:11,450 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:20:11,470 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3411
+2025-10-27 18:20:23,575 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1820.txt
+2025-10-27 18:20:23,576 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1820.txt
+2025-10-27 18:20:23,627 - INFO - image - Starting image pipeline...
+2025-10-27 18:20:28,191 - INFO - image - Starting image generation...
+2025-10-27 18:20:56,463 - INFO - image - Image generated successfully.
+2025-10-27 18:20:56,467 - INFO - image - Downloading image...
+2025-10-27 18:20:59,970 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:20:59,976 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:20:59,979 - INFO - image - Image pipeline finished successfully.
+2025-10-27 18:21:07,988 - INFO - poster - Uploaded featured image. Media ID=181
+2025-10-27 18:21:24,394 - INFO - poster - Article posted. Post ID=182, Link=https://talasnews.com/en/u-s-army-plans-nuclear-microreactors-for-bases-by-2028/
+2025-10-27 18:21:26,093 - INFO - poster - Language set → post 182 → en
+2025-10-27 18:21:26,118 - INFO - db_utils - Generated article saved to database.
+2025-10-27 18:21:35,557 - INFO - poster - Article posted. Post ID=184, Link=https://talasnews.com/de/us-armee-plant-nukleare-mikrorektor-fur-stutzpunkte-bis-2028/
+2025-10-27 18:21:37,193 - INFO - poster - Language set → post 184 → de
+2025-10-27 18:21:37,947 - INFO - poster - Linked translations for Post ID=184 → None
+2025-10-27 18:21:48,705 - INFO - poster - Article posted. Post ID=186, Link=https://talasnews.com/ru/%d0%b0%d1%80%d0%bc%d0%b8%d1%8f-%d1%81%d1%88%d0%b0-%d0%bf%d0%bb%d0%b0%d0%bd%d0%b8%d1%80%d1%83%d0%b5%d1%82-%d1%8f%d0%b4%d0%b5%d1%80%d0%bd%d1%8b%d0%b5-%d0%bc%d0%b8%d0%ba%d1%80%d0%be%d1%80%d0%b5%d0%b0/
+2025-10-27 18:21:50,499 - INFO - poster - Language set → post 186 → ru
+2025-10-27 18:21:51,423 - INFO - poster - Linked translations for Post ID=186 → None
+2025-10-27 18:22:02,024 - INFO - poster - Article posted. Post ID=188, Link=https://talasnews.com/zh/%e7%be%8e%e5%9b%bd%e5%86%9b%e6%96%b9%e8%ae%a1%e5%88%92%e5%9c%a82028%e5%b9%b4%e5%89%8d%e4%b8%ba%e5%9f%ba%e5%9c%b0%e5%bb%ba%e8%ae%be%e6%a0%b8%e5%be%ae%e5%8f%8d%e5%ba%94%e5%a0%86/
+2025-10-27 18:22:03,877 - INFO - poster - Language set → post 188 → zh
+2025-10-27 18:22:04,639 - INFO - poster - Linked translations for Post ID=188 → None
+2025-10-27 18:22:04,645 - INFO - main - Topic pool, topic: Politics
+2025-10-27 18:22:04,646 - INFO - scraper - Fetching News from Danas
+2025-10-27 18:23:23,152 - INFO - scraper - Found 34 new articles
+2025-10-27 18:23:23,219 - INFO - scraper - Fetching News from Politika
+2025-10-27 18:24:30,187 - INFO - scraper - Found 47 new articles
+2025-10-27 18:24:30,239 - INFO - scraper - Fetching News from Blic
+2025-10-27 18:25:55,494 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada on URL https://vesti.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada
+2025-10-27 18:25:56,950 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije on URL https://vesti.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije
+2025-10-27 18:25:58,397 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021 on URL https://vesti.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021
+2025-10-27 18:26:07,615 - INFO - scraper - Found 27 new articles
+2025-10-27 18:26:07,751 - INFO - prompter - Stopping after 9 sources added. Tokens used: 10067
+2025-10-27 18:26:07,753 - INFO - writer - Starting article generation...
+2025-10-27 18:26:07,754 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_182607.txt
+2025-10-27 18:26:07,754 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 18:26:24,661 - INFO - writer - Article generated successfully.
+2025-10-27 18:26:24,662 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 18:26:30,069 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 18:26:30,070 - INFO - writer - Generating article title...
+2025-10-27 18:26:30,789 - INFO - writer - Article title generated successfully.
+2025-10-27 18:26:45,148 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 18:26:45,149 - INFO - editor - Iteration 1
+2025-10-27 18:26:45,583 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 18:26:45,583 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-27 18:26:45,583 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:26:54,530 - INFO - editor - Iteration 2
+2025-10-27 18:26:54,989 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-27 18:26:54,990 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-27 18:26:54,990 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:27:02,926 - INFO - editor - Iteration 3
+2025-10-27 18:27:03,417 - INFO - editor - Base score: 75 | Smoothed score: 73
+2025-10-27 18:27:03,418 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:27:20,119 - INFO - editor - Iteration 4
+2025-10-27 18:27:21,158 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-27 18:27:21,158 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-27 18:27:31,130 - INFO - editor - Iteration 5
+2025-10-27 18:27:31,736 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-27 18:27:31,736 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-27 18:27:31,736 - INFO - editor - Returning best-so-far from iteration 2 (score 71).
+2025-10-27 18:27:31,738 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:27:31,765 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=72
+2025-10-27 18:27:33,580 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:27:33,601 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2309
+2025-10-27 18:27:48,535 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:27:48,554 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=72
+2025-10-27 18:27:51,629 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:27:51,655 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2309
+2025-10-27 18:28:05,294 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:28:05,319 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=72
+2025-10-27 18:28:07,170 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:28:07,193 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2309
+2025-10-27 18:28:27,520 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1828.txt
+2025-10-27 18:28:27,522 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1828.txt
+2025-10-27 18:28:27,565 - INFO - image - Starting image pipeline...
+2025-10-27 18:28:34,886 - INFO - image - Starting image generation...
+2025-10-27 18:28:52,097 - INFO - image - Image generated successfully.
+2025-10-27 18:28:52,098 - INFO - image - Downloading image...
+2025-10-27 18:28:55,089 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:28:55,099 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:28:55,101 - INFO - image - Image pipeline finished successfully.
+2025-10-27 18:29:02,688 - INFO - poster - Uploaded featured image. Media ID=191
+2025-10-27 18:29:21,920 - INFO - poster - Article posted. Post ID=192, Link=https://talasnews.com/en/katy-perry-and-justin-trudeau-confirm-relationship-with-paris-appearance/
+2025-10-27 18:29:23,939 - INFO - poster - Language set → post 192 → en
+2025-10-27 18:29:23,953 - INFO - db_utils - Generated article saved to database.
+2025-10-27 18:29:34,645 - INFO - poster - Article posted. Post ID=194, Link=https://talasnews.com/de/katy-perry-und-justin-trudeau-bestatigen-beziehung-mit-auftritt-in-paris/
+2025-10-27 18:29:36,711 - INFO - poster - Language set → post 194 → de
+2025-10-27 18:29:37,643 - INFO - poster - Linked translations for Post ID=194 → None
+2025-10-27 18:29:49,966 - INFO - poster - Article posted. Post ID=196, Link=https://talasnews.com/ru/%d0%ba%d1%8d%d1%82%d0%b8-%d0%bf%d0%b5%d1%80%d1%80%d0%b8-%d0%b8-%d0%b4%d0%b6%d0%b0%d1%81%d1%82%d0%b8%d0%bd-%d1%82%d1%80%d1%8e%d0%b4%d0%be-%d0%bf%d0%be%d0%b4%d1%82%d0%b2%d0%b5%d1%80%d0%b4%d0%b8%d0%bb/
+2025-10-27 18:29:51,955 - INFO - poster - Language set → post 196 → ru
+2025-10-27 18:29:53,026 - INFO - poster - Linked translations for Post ID=196 → None
+2025-10-27 18:30:05,803 - INFO - poster - Article posted. Post ID=198, Link=https://talasnews.com/zh/%e5%87%af%e8%92%82%c2%b7%e4%bd%a9%e9%87%8c%e4%b8%8e%e8%b4%be%e6%96%af%e5%bb%b7%c2%b7%e7%89%b9%e9%b2%81%e5%a4%9a%e5%9c%a8%e5%b7%b4%e9%bb%8e%e4%ba%ae%e7%9b%b8%e7%a1%ae%e8%ae%a4%e5%85%b3%e7%b3%bb/
+2025-10-27 18:30:07,839 - INFO - poster - Language set → post 198 → zh
+2025-10-27 18:30:08,812 - INFO - poster - Linked translations for Post ID=198 → None
+2025-10-27 18:30:08,824 - INFO - main - Topic pool, topic: Serbian News
+2025-10-27 18:30:08,826 - INFO - scraper - Fetching News from Danas
+2025-10-27 18:31:35,902 - INFO - scraper - Found 0 new articles
+2025-10-27 18:31:35,944 - INFO - scraper - Fetching News from Blic
+2025-10-27 18:32:57,247 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada on URL https://vesti.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada
+2025-10-27 18:32:58,701 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije on URL https://vesti.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije
+2025-10-27 18:33:00,173 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021 on URL https://vesti.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021
+2025-10-27 18:33:09,309 - INFO - scraper - Found 0 new articles
+2025-10-27 18:33:09,418 - INFO - scraper - Fetching News from Politika
+2025-10-27 18:34:14,696 - INFO - scraper - Found 2 new articles
+2025-10-27 18:34:14,759 - INFO - scraper - Fetching News from Danas
+2025-10-27 18:35:51,460 - INFO - scraper - Found 0 new articles
+2025-10-27 18:35:51,524 - INFO - scraper - Fetching News from Politika
+2025-10-27 18:36:58,295 - INFO - scraper - Found 0 new articles
+2025-10-27 18:36:58,354 - INFO - scraper - Scraping RSS: https://www.politika.rs/sr/rss
+2025-10-27 18:36:58,467 - INFO - scraper - Found 3 new articles
+2025-10-27 18:36:58,468 - INFO - scraper - Scraping RSS: https://www.blic.rs/rss
+2025-10-27 18:36:58,637 - INFO - scraper - Found 0 new articles
+2025-10-27 18:36:58,637 - INFO - scraper - Scraping RSS: https://www.danas.rs/feed/
+2025-10-27 18:36:58,863 - INFO - scraper - Found 3 new articles
+2025-10-27 18:36:58,863 - INFO - scraper - Fetching News from @NewsSerbia
+2025-10-27 18:37:02,307 - INFO - scraper - Found 0 new articles
+2025-10-27 18:37:02,381 - INFO - prompter - Stopping after 19 sources added. Tokens used: 10969
+2025-10-27 18:37:02,383 - INFO - writer - Starting article generation...
+2025-10-27 18:37:02,384 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_183702.txt
+2025-10-27 18:37:02,384 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 18:37:28,460 - INFO - writer - Article generated successfully.
+2025-10-27 18:37:28,461 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 18:37:33,071 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 18:37:33,071 - INFO - writer - Generating article title...
+2025-10-27 18:37:34,057 - INFO - writer - Article title generated successfully.
+2025-10-27 18:37:49,362 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 18:37:49,363 - INFO - editor - Iteration 1
+2025-10-27 18:37:50,046 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 18:37:50,047 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-27 18:37:50,047 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:38:06,903 - INFO - editor - Iteration 2
+2025-10-27 18:38:07,791 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-27 18:38:07,792 - INFO - editor - New best iteration: 2 (score 71)
+2025-10-27 18:38:07,793 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:38:17,217 - INFO - editor - Iteration 3
+2025-10-27 18:38:18,136 - INFO - editor - Base score: 75 | Smoothed score: 73
+2025-10-27 18:38:18,137 - INFO - editor - Rewriting to sound more human...
+2025-10-27 18:38:38,380 - INFO - editor - Iteration 4
+2025-10-27 18:38:38,918 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-27 18:38:38,918 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-27 18:38:55,819 - INFO - editor - Iteration 5
+2025-10-27 18:38:56,735 - INFO - editor - Base score: 75 | Smoothed score: 74
+2025-10-27 18:38:56,736 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-27 18:38:56,736 - INFO - editor - Returning best-so-far from iteration 2 (score 71).
+2025-10-27 18:38:56,738 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:38:56,772 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=74
+2025-10-27 18:38:59,925 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:38:59,953 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2585
+2025-10-27 18:39:28,887 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:39:28,908 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=74
+2025-10-27 18:39:30,545 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:39:30,573 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2585
+2025-10-27 18:39:44,832 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 18:39:44,862 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=74
+2025-10-27 18:39:46,795 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 18:39:46,813 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2585
+2025-10-27 18:39:59,555 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1839.txt
+2025-10-27 18:39:59,558 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1839.txt
+2025-10-27 18:39:59,602 - INFO - image - Starting image pipeline...
+2025-10-27 18:40:04,234 - INFO - image - Starting image generation...
+2025-10-27 18:40:21,368 - INFO - image - Image generated successfully.
+2025-10-27 18:40:21,368 - INFO - image - Downloading image...
+2025-10-27 18:40:24,768 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:40:24,773 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 18:40:24,773 - INFO - image - Image pipeline finished successfully.
+2025-10-27 18:40:31,325 - INFO - poster - Uploaded featured image. Media ID=204
+2025-10-27 18:40:45,015 - INFO - poster - Article posted. Post ID=205, Link=https://talasnews.com/en/zelensky-war-severely-impacts-russias-oil-industry-amid-ongoing-conflict/
+2025-10-27 18:40:46,764 - INFO - poster - Language set → post 205 → en
+2025-10-27 18:40:46,782 - INFO - db_utils - Generated article saved to database.
+2025-10-27 18:40:56,972 - INFO - poster - Article posted. Post ID=207, Link=https://talasnews.com/de/zelensky-krieg-hat-massive-auswirkungen-auf-russlands-olindustrie/
+2025-10-27 18:40:58,631 - INFO - poster - Language set → post 207 → de
+2025-10-27 18:40:59,444 - INFO - poster - Linked translations for Post ID=207 → None
+2025-10-27 18:41:10,276 - INFO - poster - Article posted. Post ID=209, Link=https://talasnews.com/ru/%d0%b7%d0%b5%d0%bb%d0%b5%d0%bd%d1%81%d0%ba%d0%b8%d0%b9-%d0%b2%d0%be%d0%b9%d0%bd%d0%b0-%d1%81%d0%b5%d1%80%d1%8c%d0%b5%d0%b7%d0%bd%d0%be-%d0%b2%d0%bb%d0%b8%d1%8f%d0%b5%d1%82-%d0%bd%d0%b0-%d0%bd%d0%b5/
+2025-10-27 18:41:11,128 - INFO - poster - Language set → post 209 → ru
+2025-10-27 18:41:11,930 - INFO - poster - Linked translations for Post ID=209 → None
+2025-10-27 18:41:23,041 - INFO - poster - Article posted. Post ID=211, Link=https://talasnews.com/zh/%e6%b3%bd%e4%bc%a6%e6%96%af%e5%9f%ba%ef%bc%9a%e6%88%98%e4%ba%89%e4%b8%a5%e9%87%8d%e5%bd%b1%e5%93%8d%e4%bf%84%e7%bd%97%e6%96%af%e7%9f%b3%e6%b2%b9%e4%ba%a7%e4%b8%9a/
+2025-10-27 18:41:24,695 - INFO - poster - Language set → post 211 → zh
+2025-10-27 18:41:25,514 - INFO - poster - Linked translations for Post ID=211 → None
+2025-10-27 19:27:43,945 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-27 19:27:44,368 - INFO - main - Modules imported.
+2025-10-27 19:27:44,402 - INFO - main - Startup backup OK → /Users/ivanstruk/Documents/GitHub/good-news/assets/backup_articles.db
+2025-10-27 19:27:44,417 - INFO - main - Schedule determined. Today is Monday
+2025-10-27 19:27:44,433 - INFO - main - Topic pool, topic: Business
+2025-10-27 19:27:44,433 - INFO - scraper - Scraping RSS: https://cms.zerohedge.com/fullrss2.xml
+2025-10-27 19:27:45,473 - INFO - scraper - Found 5 new articles
+2025-10-27 19:27:45,647 - INFO - writer - Starting article generation...
+2025-10-27 19:27:45,649 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_192745.txt
+2025-10-27 19:27:45,649 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 19:28:08,012 - INFO - writer - Article generated successfully.
+2025-10-27 19:28:08,013 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 19:28:13,698 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 19:28:13,700 - INFO - writer - Generating article title...
+2025-10-27 19:28:14,496 - INFO - writer - Article title generated successfully.
+2025-10-27 19:28:24,618 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 19:28:24,618 - INFO - editor - Iteration 1
+2025-10-27 19:28:26,259 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 19:28:26,260 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-27 19:28:26,260 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:28:50,734 - INFO - editor - Iteration 2
+2025-10-27 19:28:51,220 - INFO - editor - Base score: 70 | Smoothed score: 73
+2025-10-27 19:28:51,220 - INFO - editor - New best iteration: 2 (score 73)
+2025-10-27 19:28:51,221 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:29:10,475 - INFO - editor - Iteration 3
+2025-10-27 19:29:11,039 - INFO - editor - Base score: 70 | Smoothed score: 72
+2025-10-27 19:29:11,039 - INFO - editor - New best iteration: 3 (score 72)
+2025-10-27 19:29:11,040 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:29:30,543 - INFO - editor - Iteration 4
+2025-10-27 19:29:31,147 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-27 19:29:31,147 - INFO - editor - New best iteration: 4 (score 69)
+2025-10-27 19:29:31,148 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:29:51,269 - INFO - editor - Iteration 5
+2025-10-27 19:29:51,937 - INFO - editor - Base score: 70 | Smoothed score: 69
+2025-10-27 19:29:51,938 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:30:12,187 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-27 19:30:12,188 - INFO - editor - Returning best-so-far from iteration 4 (score 69).
+2025-10-27 19:30:12,191 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:30:12,214 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=66
+2025-10-27 19:30:14,901 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:30:14,909 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2456
+2025-10-27 19:30:33,021 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:30:33,040 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=66
+2025-10-27 19:30:34,986 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:30:35,011 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2456
+2025-10-27 19:30:50,021 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:30:50,045 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=66
+2025-10-27 19:30:51,853 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:30:51,884 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2456
+2025-10-27 19:31:03,752 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1931.txt
+2025-10-27 19:31:03,754 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1931.txt
+2025-10-27 19:31:03,802 - INFO - image - Starting image pipeline...
+2025-10-27 19:31:08,064 - INFO - image - Starting image generation...
+2025-10-27 19:31:28,507 - INFO - image - Image generated successfully.
+2025-10-27 19:31:28,508 - INFO - image - Downloading image...
+2025-10-27 19:31:45,492 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:31:45,497 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:31:45,498 - INFO - image - Image pipeline finished successfully.
+2025-10-27 19:31:52,266 - INFO - poster - Uploaded featured image. Media ID=220
+2025-10-27 19:32:08,061 - INFO - poster - Article posted. Post ID=221, Link=https://talasnews.com/en/tech-giants-embrace-debt-financing-for-ai-infrastructure-expansion/
+2025-10-27 19:32:09,671 - INFO - poster - Language set → post 221 → en
+2025-10-27 19:32:09,687 - INFO - db_utils - Generated article saved to database.
+2025-10-27 19:32:18,789 - INFO - poster - Article posted. Post ID=223, Link=https://talasnews.com/de/tech-giganten-setzen-auf-fremdfinanzierung-zur-erweiterung-der-ki-infrastruktur/
+2025-10-27 19:32:20,620 - INFO - poster - Language set → post 223 → de
+2025-10-27 19:32:21,512 - INFO - poster - Linked translations for Post ID=223 → None
+2025-10-27 19:32:31,422 - INFO - poster - Article posted. Post ID=225, Link=https://talasnews.com/ru/%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%b3%d0%b8%d0%b3%d0%b0%d0%bd%d1%82%d1%8b-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d1%8e%d1%82-%d0%b4%d0%be%d0%bb%d0%b3%d0%be%d0%b2%d0%be%d0%b5-%d1%84%d0%b8/
+2025-10-27 19:32:33,143 - INFO - poster - Language set → post 225 → ru
+2025-10-27 19:32:33,899 - INFO - poster - Linked translations for Post ID=225 → None
+2025-10-27 19:32:44,479 - INFO - poster - Article posted. Post ID=227, Link=https://talasnews.com/zh/%e7%a7%91%e6%8a%80%e5%b7%a8%e5%a4%b4%e5%80%9f%e5%80%ba%e8%9e%8d%e8%b5%84%e6%89%a9%e5%b1%95%e4%ba%ba%e5%b7%a5%e6%99%ba%e8%83%bd%e5%9f%ba%e7%a1%80%e8%ae%be%e6%96%bd/
+2025-10-27 19:32:45,292 - INFO - poster - Language set → post 227 → zh
+2025-10-27 19:32:47,060 - INFO - poster - Linked translations for Post ID=227 → None
+2025-10-27 19:32:47,073 - INFO - main - Topic pool, topic: Politics
+2025-10-27 19:32:47,073 - INFO - scraper - Fetching News from Danas
+2025-10-27 19:34:01,341 - INFO - scraper - Found 7 new articles
+2025-10-27 19:34:01,410 - INFO - scraper - Fetching News from Blic
+2025-10-27 19:35:26,111 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada on URL https://vesti.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada
+2025-10-27 19:35:27,476 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije on URL https://vesti.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije
+2025-10-27 19:35:28,829 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021 on URL https://vesti.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021
+2025-10-27 19:35:33,825 - INFO - scraper - Found 7 new articles
+2025-10-27 19:35:33,935 - INFO - prompter - Stopping after 12 sources added. Tokens used: 10878
+2025-10-27 19:35:33,937 - INFO - writer - Starting article generation...
+2025-10-27 19:35:33,938 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_193533.txt
+2025-10-27 19:35:33,938 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 19:35:53,744 - INFO - writer - Article generated successfully.
+2025-10-27 19:35:53,745 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 19:36:01,573 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 19:36:01,574 - INFO - writer - Generating article title...
+2025-10-27 19:36:02,928 - INFO - writer - Article title generated successfully.
+2025-10-27 19:36:19,844 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 19:36:19,845 - INFO - editor - Iteration 1
+2025-10-27 19:36:20,287 - INFO - editor - Base score: 70 | Smoothed score: 70
+2025-10-27 19:36:20,288 - INFO - editor - New best iteration: 1 (score 70)
+2025-10-27 19:36:20,288 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:36:36,733 - INFO - editor - Iteration 2
+2025-10-27 19:36:37,153 - INFO - editor - Base score: 65 | Smoothed score: 68
+2025-10-27 19:36:37,154 - INFO - editor - New best iteration: 2 (score 68)
+2025-10-27 19:36:37,154 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:36:50,603 - INFO - editor - Iteration 3
+2025-10-27 19:36:51,073 - INFO - editor - Base score: 65 | Smoothed score: 67
+2025-10-27 19:36:51,073 - INFO - editor - New best iteration: 3 (score 67)
+2025-10-27 19:36:51,073 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:37:05,590 - INFO - editor - Iteration 4
+2025-10-27 19:37:06,064 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-27 19:37:06,065 - INFO - editor - New best iteration: 4 (score 66)
+2025-10-27 19:37:06,065 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-27 19:37:21,479 - INFO - editor - Iteration 5
+2025-10-27 19:37:21,997 - INFO - editor - Base score: 65 | Smoothed score: 66
+2025-10-27 19:37:21,998 - INFO - editor - No meaningful base-score improvement for consecutive rounds. Stopping early.
+2025-10-27 19:37:21,998 - INFO - editor - Returning best-so-far from iteration 4 (score 66).
+2025-10-27 19:37:22,002 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:37:22,015 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=73
+2025-10-27 19:37:23,522 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:37:23,543 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2262
+2025-10-27 19:37:38,386 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:37:38,408 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=73
+2025-10-27 19:37:40,635 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:37:40,655 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2262
+2025-10-27 19:37:52,211 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:37:52,234 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=73
+2025-10-27 19:37:53,920 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:37:53,942 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2262
+2025-10-27 19:38:04,860 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1938.txt
+2025-10-27 19:38:04,861 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1938.txt
+2025-10-27 19:38:04,904 - INFO - image - Starting image pipeline...
+2025-10-27 19:38:07,691 - INFO - image - Starting image generation...
+2025-10-27 19:38:23,685 - INFO - image - Image generated successfully.
+2025-10-27 19:38:23,687 - INFO - image - Downloading image...
+2025-10-27 19:38:26,475 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:38:26,478 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:38:26,478 - INFO - image - Image pipeline finished successfully.
+2025-10-27 19:38:32,051 - INFO - poster - Uploaded featured image. Media ID=229
+2025-10-27 19:38:46,741 - INFO - poster - Article posted. Post ID=230, Link=https://talasnews.com/en/montenegro-reevaluates-visa-policies-amid-tensions-with-turkish-nationals/
+2025-10-27 19:38:48,544 - INFO - poster - Language set → post 230 → en
+2025-10-27 19:38:48,558 - INFO - db_utils - Generated article saved to database.
+2025-10-27 19:38:58,386 - INFO - poster - Article posted. Post ID=232, Link=https://talasnews.com/de/montenegro-uberpruft-visapolitik-bei-spannungen-mit-turkischen-staatsangehorigen/
+2025-10-27 19:39:00,241 - INFO - poster - Language set → post 232 → de
+2025-10-27 19:39:01,043 - INFO - poster - Linked translations for Post ID=232 → None
+2025-10-27 19:39:11,762 - INFO - poster - Article posted. Post ID=234, Link=https://talasnews.com/ru/%d1%87%d0%b5%d1%80%d0%bd%d0%be%d0%b3%d0%be%d1%80%d0%b8%d1%8f-%d0%bf%d0%b5%d1%80%d0%b5%d1%81%d0%bc%d0%b0%d1%82%d1%80%d0%b8%d0%b2%d0%b0%d0%b5%d1%82-%d0%b2%d0%b8%d0%b7%d0%be%d0%b2%d1%83%d1%8e-%d0%bf/
+2025-10-27 19:39:13,452 - INFO - poster - Language set → post 234 → ru
+2025-10-27 19:39:14,219 - INFO - poster - Linked translations for Post ID=234 → None
+2025-10-27 19:39:24,516 - INFO - poster - Article posted. Post ID=236, Link=https://talasnews.com/zh/%e9%bb%91%e5%b1%b1%e5%9c%a8%e4%b8%8e%e5%9c%9f%e8%80%b3%e5%85%b6%e5%85%ac%e6%b0%91%e7%b4%a7%e5%bc%a0%e5%85%b3%e7%b3%bb%e4%b8%ad%e9%87%8d%e6%96%b0%e8%af%84%e4%bc%b0%e7%ad%be%e8%af%81%e6%94%bf%e7%ad%96/
+2025-10-27 19:39:26,318 - INFO - poster - Language set → post 236 → zh
+2025-10-27 19:39:27,158 - INFO - poster - Linked translations for Post ID=236 → None
+2025-10-27 19:39:27,167 - INFO - main - Topic pool, topic: Serbian News
+2025-10-27 19:39:27,168 - INFO - scraper - Fetching News from Danas
+2025-10-27 19:40:34,197 - INFO - scraper - Found 0 new articles
+2025-10-27 19:40:34,264 - INFO - scraper - Fetching News from Blic
+2025-10-27 19:41:59,475 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada on URL https://vesti.mojauto.rs/Testovi/611677/Jeep-Wrangler-4xe--sta-je-novo-u-2022-za-najsnazniji-najefikasniji-najekoloskiji-najpovezaniji-i-tehnoloski-najnapredniji-Wrangler-ikada
+2025-10-27 19:42:00,881 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije on URL https://vesti.mojauto.rs/Noviteti/611675/Dizajnirana-u-Nemackoj-Kako-nova-Opel-Astra-budi-emocije
+2025-10-27 19:42:02,317 - INFO - scraper - fetchNews() - Failed parsing article: Article `download()` failed with 404 Client Error: Not Found for url: https://www.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021 on URL https://vesti.mojauto.rs/Aktuelne-vesti/611671/Nova-Opel-Mokkae-osvojila-Zlatni-volan-2021
+2025-10-27 19:42:07,287 - INFO - scraper - Found 0 new articles
+2025-10-27 19:42:07,397 - INFO - scraper - Fetching News from Politika
+2025-10-27 19:43:14,099 - INFO - scraper - Found 14 new articles
+2025-10-27 19:43:14,159 - INFO - scraper - Fetching News from @NewsSerbia
+2025-10-27 19:43:17,452 - INFO - scraper - Found 0 new articles
+2025-10-27 19:43:17,661 - INFO - prompter - Stopping after 37 sources added. Tokens used: 10011
+2025-10-27 19:43:17,663 - INFO - writer - Starting article generation...
+2025-10-27 19:43:17,664 - INFO - writer - Saved filled prompt to /Users/ivanstruk/Documents/GitHub/good-news/prompts/logged_prompts/article_prompt_20251027_194317.txt
+2025-10-27 19:43:17,664 - INFO - writer - Requesting article from OpenAI API...
+2025-10-27 19:43:42,844 - INFO - writer - Article generated successfully.
+2025-10-27 19:43:42,846 - INFO - writer - Summarizing article and generating tags...
+2025-10-27 19:43:48,246 - INFO - writer - Summary and tags generated successfully.
+2025-10-27 19:43:48,247 - INFO - writer - Generating article title...
+2025-10-27 19:43:49,405 - INFO - writer - Article title generated successfully.
+2025-10-27 19:44:02,921 - INFO - editor - Applied one-time lede de-templating pass.
+2025-10-27 19:44:02,922 - INFO - editor - Iteration 1
+2025-10-27 19:44:03,434 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 19:44:03,435 - INFO - editor - New best iteration: 1 (score 75)
+2025-10-27 19:44:03,435 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:44:22,714 - INFO - editor - Iteration 2
+2025-10-27 19:44:23,423 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 19:44:23,424 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:44:44,522 - INFO - editor - Iteration 3
+2025-10-27 19:44:45,085 - INFO - editor - Base score: 75 | Smoothed score: 75
+2025-10-27 19:44:45,086 - INFO - editor - Stagnation detected — applying one aggressive de-templating pass...
+2025-10-27 19:45:07,310 - INFO - editor - Iteration 4
+2025-10-27 19:45:07,728 - INFO - editor - Base score: 65 | Smoothed score: 71
+2025-10-27 19:45:07,729 - INFO - editor - New best iteration: 4 (score 71)
+2025-10-27 19:45:07,729 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:45:27,765 - INFO - editor - Iteration 5
+2025-10-27 19:45:28,248 - INFO - editor - Base score: 65 | Smoothed score: 69
+2025-10-27 19:45:28,249 - INFO - editor - New best iteration: 5 (score 69)
+2025-10-27 19:45:28,249 - INFO - editor - Rewriting to sound more human...
+2025-10-27 19:45:46,357 - INFO - editor - ⚠️ Reached iteration limit without crossing threshold.
+2025-10-27 19:45:46,358 - INFO - editor - Returning best-so-far from iteration 5 (score 69).
+2025-10-27 19:45:46,361 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:45:46,385 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=73
+2025-10-27 19:45:49,400 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:45:49,424 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2541
+2025-10-27 19:46:10,129 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:46:10,152 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=73
+2025-10-27 19:46:11,569 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:46:11,590 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2541
+2025-10-27 19:46:28,666 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-27 19:46:28,692 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=73
+2025-10-27 19:46:30,169 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-27 19:46:30,189 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2541
+2025-10-27 19:46:46,262 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251027_1946.txt
+2025-10-27 19:46:46,268 - INFO - main - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251027_1946.txt
+2025-10-27 19:46:46,306 - INFO - image - Starting image pipeline...
+2025-10-27 19:46:49,686 - INFO - image - Starting image generation...
+2025-10-27 19:47:06,334 - INFO - image - Image generated successfully.
+2025-10-27 19:47:06,336 - INFO - image - Downloading image...
+2025-10-27 19:47:09,469 - INFO - image - Image saved to /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:47:09,475 - INFO - image - Image saved at: /Users/ivanstruk/Documents/GitHub/good-news/assets/featured_image.jpg
+2025-10-27 19:47:09,476 - INFO - image - Image pipeline finished successfully.
+2025-10-27 19:47:15,778 - INFO - poster - Uploaded featured image. Media ID=238
+2025-10-27 19:47:29,870 - INFO - poster - Article posted. Post ID=239, Link=https://talasnews.com/en/montenegro-tightens-visa-rules-after-violence-involving-foreign-nationals/
+2025-10-27 19:47:31,514 - INFO - poster - Language set → post 239 → en
+2025-10-27 19:47:31,523 - INFO - db_utils - Generated article saved to database.
+2025-10-27 19:47:40,365 - INFO - poster - Article posted. Post ID=241, Link=https://talasnews.com/de/montenegro-verscharft-visa-regeln-nach-gewalt-mit-auslandern/
+2025-10-27 19:47:42,400 - INFO - poster - Language set → post 241 → de
+2025-10-27 19:47:43,257 - INFO - poster - Linked translations for Post ID=241 → None
+2025-10-27 19:47:53,975 - INFO - poster - Article posted. Post ID=243, Link=https://talasnews.com/ru/%d1%87%d0%b5%d1%80%d0%bd%d0%be%d0%b3%d0%be%d1%80%d0%b8%d1%8f-%d1%83%d0%b6%d0%b5%d1%81%d1%82%d0%be%d1%87%d0%b0%d0%b5%d1%82-%d0%b2%d0%b8%d0%b7%d0%be%d0%b2%d1%8b%d0%b5-%d0%bf%d1%80%d0%b0%d0%b2%d0%b8/
+2025-10-27 19:47:55,890 - INFO - poster - Language set → post 243 → ru
+2025-10-27 19:47:56,703 - INFO - poster - Linked translations for Post ID=243 → None
+2025-10-27 19:48:07,438 - INFO - poster - Article posted. Post ID=245, Link=https://talasnews.com/zh/%e9%bb%91%e5%b1%b1%e5%9c%a8%e5%a4%96%e7%b1%8d%e4%ba%ba%e5%91%98%e6%9a%b4%e5%8a%9b%e4%ba%8b%e4%bb%b6%e5%90%8e%e6%94%b6%e7%b4%a7%e7%ad%be%e8%af%81%e6%94%bf%e7%ad%96/
+2025-10-27 19:48:09,134 - INFO - poster - Language set → post 245 → zh
+2025-10-27 19:48:10,033 - INFO - poster - Linked translations for Post ID=245 → None
+2025-10-28 18:29:41,317 - INFO - ana - Created questions.csv at /Users/ivanstruk/Documents/GitHub/good-news/ask-ana/questions.csv
+2025-10-28 18:29:41,319 - INFO - ana - New question appended to CSV at index 0.
+2025-10-28 18:39:16,289 - INFO - ana - Created questions.csv at /Users/ivanstruk/Documents/GitHub/good-news/ask-ana/questions.csv
+2025-10-28 18:39:16,290 - INFO - ana - New question appended to CSV at index 0.
+2025-10-28 18:40:22,532 - INFO - ana - New question appended to CSV at index 0.
+2025-10-28 18:40:22,533 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 18:40:27,576 - INFO - ana - Answer recorded at 2025-10-28T17:40:27+00:00
+2025-10-28 19:37:50,954 - INFO - ana - Question present in CSV at index 46.
+2025-10-28 19:37:50,956 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 19:37:57,892 - INFO - ana - Answer recorded at 2025-10-28T18:37:57+00:00
+2025-10-28 19:37:57,893 - INFO - ana - Question present in CSV at index 41.
+2025-10-28 19:37:57,893 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 19:38:03,805 - INFO - ana - Answer recorded at 2025-10-28T18:38:03+00:00
+2025-10-28 19:38:03,806 - INFO - ana - Question present in CSV at index 36.
+2025-10-28 19:38:03,807 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 19:51:58,591 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-28 19:51:58,604 - INFO - starter - Chosen question: Should I speak up about sexism at work in Serbia? Dear Ana, I moved back after years abroad and was shocked by some comments in the office. I want to say something but fear backlash. How do I handle it?,,
+2025-10-28 19:51:58,605 - INFO - ana - Question present in CSV at index 43.
+2025-10-28 19:51:58,606 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 19:52:04,285 - INFO - ana - Answer recorded at 2025-10-28T18:52:04+00:00
+2025-10-28 19:52:09,524 - INFO - poster - Article posted. Post ID=255, Link=https://talasnews.com/en/should-i-speak-up-about-sexism-at-work-in-serbia/
+2025-10-28 19:52:11,317 - INFO - poster - Language set → post 255 → en
+2025-10-28 19:52:30,497 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-28 19:52:30,504 - INFO - starter - Chosen question: How do I support my son who wants to leave Serbia? Dear Ana, he’s 25, talented, and dreams of living abroad. I’m proud but heartbroken. Should I encourage him or convince him to stay?,,
+2025-10-28 19:52:30,505 - INFO - ana - Question present in CSV at index 49.
+2025-10-28 19:52:30,505 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 19:52:35,395 - INFO - ana - Answer recorded at 2025-10-28T18:52:35+00:00
+2025-10-28 19:52:37,991 - INFO - poster - Article posted. Post ID=257, Link=https://talasnews.com/en/how-do-i-support-my-son-who-wants-to-leave-serbia/
+2025-10-28 19:52:39,549 - INFO - poster - Language set → post 257 → en
+2025-10-28 20:15:20,636 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-28 20:15:20,651 - INFO - starter - Chosen question: Should I invest in property in Serbia or keep my money abroad? Dear Ana, I’ve been saving for years and dream of buying a small house near Kopaonik. But my friends say the system is risky. Is owning property in Serbia worth it?,,
+2025-10-28 20:15:20,653 - INFO - ana - Question present in CSV at index 20.
+2025-10-28 20:15:20,653 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 20:15:29,290 - INFO - ana - Answer recorded at 2025-10-28T19:15:29+00:00
+2025-10-28 20:15:32,796 - INFO - poster - Article posted. Post ID=259, Link=https://talasnews.com/en/should-i-invest-in-property-in-serbia-or-keep-my-money-abroad/
+2025-10-28 20:15:34,559 - INFO - poster - Language set → post 259 → en
+2025-10-28 20:18:34,367 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-28 20:18:34,380 - INFO - starter - Chosen question: Should I date a much younger man? Dear Ana, I’m 52 and met someone 15 years younger. He’s kind, funny, and serious about me. My friends say it’s a midlife crisis. What do you think?,,
+2025-10-28 20:18:34,381 - INFO - ana - Question present in CSV at index 40.
+2025-10-28 20:18:34,382 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-28 20:18:39,733 - INFO - ana - Answer recorded at 2025-10-28T19:18:39+00:00
+2025-10-28 20:18:42,618 - INFO - poster - Article posted. Post ID=261, Link=https://talasnews.com/en/should-i-date-a-much-younger-man/
+2025-10-28 20:18:44,167 - INFO - poster - Language set → post 261 → en
