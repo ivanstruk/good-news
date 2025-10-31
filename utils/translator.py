@@ -3,6 +3,7 @@ from utils.logger  import logger
 from pathlib import Path
 from typing import Literal, Optional
 from openai import OpenAI
+import pandas as pd
 
 DEFAULT_MODEL = "gpt-4o-mini"
 
@@ -16,6 +17,43 @@ PROMPT_FILES: dict[str, str] = {
     "article": "article_translation_system.txt",
 }
 
+def load_language_config(excel_path: str | Path) -> list[dict]:
+    """
+    Load language configuration from the 'lang_config' sheet
+    in blog_config.xlsx and return it as a list of dictionaries.
+
+    Each row should have: lang, post, run, code
+    """
+    excel_path = Path(excel_path)
+    df = pd.read_excel(excel_path, sheet_name="lang_config")
+
+    # Normalize boolean columns if they're strings like 'TRUE'/'FALSE'
+    for col in ["post", "run"]:
+        if df[col].dtype == object:
+            df[col] = df[col].astype(str).str.lower().map({"true": True, "false": False})
+        else:
+            df[col] = df[col].astype(bool)
+
+    # Convert the dataframe into a list of dicts
+    config_list = df.to_dict(orient="records")
+
+    return config_list
+
+def _get_lang_code(item: dict) -> Optional[str]:
+    """Return a normalized 2–5 char language code from a translation item."""
+    for key in ("language", "code", "lang", "slug"):
+        if key in item and item[key]:
+            code = str(item[key]).strip().lower()
+            if 2 <= len(code) <= 5:
+                return code
+    return None
+
+def _get_text(item: dict, *keys: str) -> Optional[str]:
+    """Return the first present non-empty string for given keys from item."""
+    for k in keys:
+        if k in item and isinstance(item[k], str) and item[k].strip():
+            return item[k]
+    return None
 
 def _load_system_prompt(kind: Literal["title", "article"]) -> str:
     """

@@ -1,0 +1,4 @@
+<p><q><i>{question}</i></q></p>
+{answer}
+
+<i> This question was submitted by a reader. Do you have a question or need advice? Send your worries, thoughts, and questions to Ana by <a href="mailto:saveti@talasnews.com">e-mail</a> and your question may appear in our next issue. </i>

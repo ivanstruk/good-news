@@ -3141,3 +3141,122 @@ error was encountered while trying to use an ErrorDocument to handle the request
 2025-10-28 20:18:39,733 - INFO - ana - Answer recorded at 2025-10-28T19:18:39+00:00
 2025-10-28 20:18:42,618 - INFO - poster - Article posted. Post ID=261, Link=https://talasnews.com/en/should-i-date-a-much-younger-man/
 2025-10-28 20:18:44,167 - INFO - poster - Language set → post 261 → en
+2025-10-30 08:59:03,095 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 08:59:03,109 - INFO - starter - Chosen question: Why is it so hard to find love after 50 in Serbia? Dear Ana, I’ve been divorced for ten years, and dating feels impossible. Everyone my age seems bitter or stuck in the past. Is there still hope for romance?,,
+2025-10-30 08:59:03,110 - INFO - ana - Question present in CSV at index 24.
+2025-10-30 08:59:03,111 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 08:59:10,322 - INFO - ana - Answer recorded at 2025-10-30T07:59:10+00:00
+2025-10-30 09:00:11,918 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 09:00:11,933 - INFO - starter - Chosen question: Why do my relatives still treat me like a child? Dear Ana, I’m 45, have a family, and run a business, yet when I visit Serbia, my aunt still tells me to wear a sweater. Is this love or control?,,
+2025-10-30 09:00:28,643 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 09:00:28,655 - INFO - starter - Chosen question: Why do Serbs abroad act like they’re better than locals? Dear Ana, I came back from the diaspora and noticed how some returnees talk down to people here. It bothers me. How can I remind them gently that humility never went out of style?,,
+2025-10-30 09:00:28,655 - ERROR - starter - Failed to load writer template: [Errno 2] No such file or directory: '/Users/ivanstruk/Documents/GitHub/good-news/askana_template.txt'
+2025-10-30 09:00:54,444 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 09:00:54,458 - INFO - starter - Chosen question: Should I be worried about Serbia’s future in the next 10 years? Dear Ana, every time I read the news, I see people leaving, politics in chaos, and young people without hope. I love my country, but I worry what it will become. Am I overthinking it?,,
+2025-10-30 09:00:54,460 - INFO - ana - Question present in CSV at index 8.
+2025-10-30 09:00:54,461 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 09:01:00,582 - INFO - ana - Answer recorded at 2025-10-30T08:01:00+00:00
+2025-10-30 09:01:03,251 - INFO - poster - Article posted. Post ID=329, Link=https://talasnews.com/en/should-i-be-worried-about-serbias-future-in-the-next-10-years/
+2025-10-30 09:01:04,872 - INFO - poster - Language set → post 329 → en
+2025-10-30 09:02:57,326 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 09:02:57,338 - INFO - starter - Chosen question: Why do so many people in Serbia drink so much? Dear Ana, every celebration seems to end in overindulgence. My father calls me ‘Americanized’ for not keeping up. Is there a way to stay respectful without joining in?,,
+2025-10-30 09:02:57,340 - INFO - ana - Question present in CSV at index 27.
+2025-10-30 09:02:57,341 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 09:03:04,304 - INFO - ana - Answer recorded at 2025-10-30T08:03:04+00:00
+2025-10-30 09:03:06,843 - INFO - poster - Article posted. Post ID=331, Link=https://talasnews.com/en/why-do-so-many-people-in-serbia-drink-so-much/
+2025-10-30 09:03:08,385 - INFO - poster - Language set → post 331 → en
+2025-10-30 16:38:34,039 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 16:38:34,052 - INFO - starter - Chosen question: Is it worth trying to make peace with an estranged sibling? Dear Ana, my brother and I haven’t spoken since the inheritance dispute ten years ago. We’re both stubborn. Should I be the one to reach out?,,
+2025-10-30 16:38:34,053 - INFO - ana - Question present in CSV at index 48.
+2025-10-30 16:38:34,054 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 16:38:43,894 - INFO - ana - Answer recorded at 2025-10-30T15:38:43+00:00
+2025-10-30 16:38:47,111 - INFO - poster - Article posted. Post ID=335, Link=https://talasnews.com/en/is-it-worth-trying-to-make-peace-with-an-estranged-sibling/
+2025-10-30 16:38:49,069 - INFO - poster - Language set → post 335 → en
+2025-10-30 16:53:54,332 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 16:53:54,345 - INFO - starter - Chosen question: Why do Serbs abroad always fight about politics? Dear Ana, every diaspora gathering ends with yelling about who ruined the country. I’m tired of it. Why can’t we just enjoy music and rakija without turning it into a debate?,,
+2025-10-30 16:53:54,347 - INFO - ana - Question present in CSV at index 10.
+2025-10-30 16:53:54,347 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 16:54:05,048 - INFO - ana - Answer recorded at 2025-10-30T15:54:05+00:00
+2025-10-30 16:54:05,048 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 16:54:05,059 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=48
+2025-10-30 16:54:07,310 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 16:54:07,318 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3447
+2025-10-30 16:54:57,483 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 16:54:57,502 - INFO - starter - Chosen question: How do I handle being single in a small Serbian town? Dear Ana, I’m 45, never married, and everyone seems to think that’s a tragedy. The gossip is exhausting. Should I move to a bigger city or just stop caring?,,
+2025-10-30 16:54:57,504 - INFO - ana - Question present in CSV at index 18.
+2025-10-30 16:54:57,504 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 16:55:06,829 - INFO - ana - Answer recorded at 2025-10-30T15:55:06+00:00
+2025-10-30 16:55:06,829 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 16:55:06,839 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=53
+2025-10-30 16:55:09,583 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 16:55:09,592 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3312
+2025-10-30 16:57:57,313 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 16:57:57,326 - INFO - starter - Chosen question: Should I move back to Serbia after 20 years abroad? Dear Ana, I left Serbia in the late 90s and built a life in Canada. My children are grown now, and I find myself missing the smell of coffee and neighbours who drop by uninvited. Everyone tells me I’m romanticizing the past, but I can’t shake the feeling that my heart belongs there. Would moving back be a mistake at my age?,,
+2025-10-30 16:57:57,328 - INFO - ana - Question present in CSV at index 1.
+2025-10-30 16:57:57,328 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 16:58:07,238 - INFO - ana - Answer recorded at 2025-10-30T15:58:07+00:00
+2025-10-30 16:58:07,239 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 16:58:07,249 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=51
+2025-10-30 16:58:10,829 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 16:58:10,838 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3870
+2025-10-30 16:59:35,855 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-30 16:59:35,867 - INFO - starter - Chosen question: Why do Serbs abroad act like they’re better than locals? Dear Ana, I came back from the diaspora and noticed how some returnees talk down to people here. It bothers me. How can I remind them gently that humility never went out of style?,,
+2025-10-30 16:59:35,868 - INFO - ana - Question present in CSV at index 19.
+2025-10-30 16:59:35,869 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-30 16:59:45,826 - INFO - ana - Answer recorded at 2025-10-30T15:59:45+00:00
+2025-10-30 16:59:45,827 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 16:59:45,839 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=56
+2025-10-30 16:59:50,137 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 16:59:50,145 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3832
+2025-10-30 17:00:10,700 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 17:00:10,707 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=56
+2025-10-30 17:00:12,585 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 17:00:12,595 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=3832
+2025-10-30 17:00:39,992 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-30 17:00:40,013 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=56
+2025-10-30 17:00:41,285 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-30 17:00:41,302 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=3832
+2025-10-30 17:01:10,555 - INFO - starter - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251030_1701.txt
+2025-10-30 17:01:10,557 - INFO - starter - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251030_1701.txt
+2025-10-30 17:01:18,683 - INFO - poster - Article posted. Post ID=338, Link=https://talasnews.com/en/why-do-serbs-abroad-act-like-theyre-better-than-locals/
+2025-10-30 17:01:20,669 - INFO - poster - Language set → post 338 → en
+2025-10-31 08:15:18,494 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-31 08:15:18,534 - INFO - starter - Chosen question: Is it rude to refuse to be someone’s kum? Dear Ana, my coworker asked me to be his child’s kum, but we’re not that close. I didn’t want to offend him, so I said I’d think about it. What’s the polite way to decline?,,
+2025-10-31 08:15:18,535 - INFO - ana - Question present in CSV at index 28.
+2025-10-31 08:15:18,536 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-31 08:15:26,741 - INFO - ana - Answer recorded at 2025-10-31T07:15:26+00:00
+2025-10-31 08:15:26,742 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-31 08:15:26,750 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=41
+2025-10-31 08:15:29,138 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-31 08:15:29,146 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=2869
+2025-10-31 08:15:43,760 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-31 08:15:43,769 - INFO - translator - Translating (title) to Russian with model gpt-4o-mini. Input chars=41
+2025-10-31 08:15:45,542 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-31 08:15:45,557 - INFO - translator - Translating (article) to Russian with model gpt-4o-mini. Input chars=2869
+2025-10-31 08:16:00,178 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-31 08:16:00,202 - INFO - translator - Translating (title) to Chinese (simplified) with model gpt-4o-mini. Input chars=41
+2025-10-31 08:16:01,450 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-31 08:16:01,473 - INFO - translator - Translating (article) to Chinese (simplified) with model gpt-4o-mini. Input chars=2869
+2025-10-31 08:16:17,277 - INFO - starter - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/zh/20251031_0816.txt
+2025-10-31 08:16:17,279 - INFO - starter - Draft saved: /Users/ivanstruk/Documents/GitHub/good-news/drafts/EN/20251031_0816.txt
+2025-10-31 08:16:21,440 - INFO - poster - Article posted. Post ID=340, Link=https://talasnews.com/en/is-it-rude-to-refuse-to-be-someones-kum/
+2025-10-31 08:16:22,983 - INFO - poster - Language set → post 340 → en
+2025-10-31 08:16:23,005 - INFO - db_utils - Generated article saved to database.
+2025-10-31 08:16:27,103 - INFO - poster - Article posted. Post ID=342, Link=https://talasnews.com/de/ist-es-unhoflich-abzulehnen-jemandes-kum-zu-sein/
+2025-10-31 08:16:28,609 - INFO - poster - Language set → post 342 → de
+2025-10-31 08:16:29,321 - INFO - poster - Linked translations for Post ID=342 → None
+2025-10-31 08:16:34,632 - INFO - poster - Article posted. Post ID=344, Link=https://talasnews.com/ru/%d0%bd%d0%b5%d0%b7%d0%b0%d0%b1%d0%b0%d0%b2%d0%bd%d0%be-%d0%bb%d0%b8-%d0%be%d1%82%d0%ba%d0%b0%d0%b7%d1%8b%d0%b2%d0%b0%d1%82%d1%8c-%d0%b1%d1%8b%d1%82%d1%8c-%d1%87%d1%8c%d0%b8%d0%bc-%d1%82%d0%be-%d0%ba/
+2025-10-31 08:16:36,145 - INFO - poster - Language set → post 344 → ru
+2025-10-31 08:16:36,870 - INFO - poster - Linked translations for Post ID=344 → None
+2025-10-31 08:16:42,457 - INFO - poster - Article posted. Post ID=346, Link=https://talasnews.com/zh/%e6%8b%92%e7%bb%9d%e6%88%90%e4%b8%ba%e6%9f%90%e4%ba%ba%e7%9a%84%e4%bc%b4%e9%83%8e%e7%ae%97%e4%b8%8d%e7%ae%97%e5%a4%b1%e7%a4%bc%ef%bc%9f/
+2025-10-31 08:16:43,971 - INFO - poster - Language set → post 346 → zh
+2025-10-31 08:16:44,705 - INFO - poster - Linked translations for Post ID=346 → None
+2025-10-31 08:29:18,704 - INFO - poster - [poster.py] - Connecting to WordPress
+2025-10-31 08:29:18,947 - INFO - starter - Chosen question: Why does everyone in Serbia seem so pessimistic? Dear Ana, I recently moved from London to Belgrade, full of excitement, but people here constantly talk about how everything is ‘propalo.’ Is it cultural humour or genuine hopelessness?,,
+2025-10-31 08:29:18,949 - INFO - ana - Question present in CSV at index 7.
+2025-10-31 08:29:18,949 - INFO - ana - Requesting completion from model: gpt-4.1-mini
+2025-10-31 08:29:28,830 - INFO - ana - Answer recorded at 2025-10-31T07:29:28+00:00
+2025-10-31 08:29:28,831 - INFO - translator - Loaded system prompt 'title' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/title_translation_system.txt
+2025-10-31 08:29:28,838 - INFO - translator - Translating (title) to German with model gpt-4o-mini. Input chars=48
+2025-10-31 08:29:30,233 - INFO - translator - Loaded system prompt 'article' from /Users/ivanstruk/Documents/GitHub/good-news/prompts/article_translation_system.txt
+2025-10-31 08:29:30,240 - INFO - translator - Translating (article) to German with model gpt-4o-mini. Input chars=3503

@@ -9,7 +9,7 @@ from utils.poster import upload_featured_image, post_to_wordpress
 from utils.db_utils import DB_PATH, backup_sqlite, connect, save_generated_article
 from utils.editor import refine_article
 from utils.image import process_image
-from utils.translator import translate_post_content
+from utils.translator import translate_post_content, load_language_config, _get_lang_code, _get_text
 
 from prompts.prompter import build_news_prompt, build_history_prompt
 from prompts.writer import write_article, summarize_article, generate_article_title
@@ -46,14 +46,9 @@ sources = pd.read_excel("blog_config.xlsx", sheet_name="sources").to_dict(orient
 sources = [s for s in sources if s["bool_visibility"]==True]
 
 # Translation Settings
-supported_languages = [
-    {"lang": "German",  "post": True, "run": True,  "code": "de"},
-    {"lang": "Russian", "post": True, "run": True,  "code": "ru"},
-    {"lang": "Chinese (simplified)", "post": True, "run": True, "code": "zh"},
-    {"lang": "Hindi",   "post": False, "run": False, "code": "hi"},
-    {"lang": "Spanish", "post": False, "run": False, "code": "es"},
-    {"lang": "French",  "post": True,  "run": False, "code": "fr"},
-]
+excel_file = Path("blog_config.xlsx")  # adjust if stored elsewhere
+supported_languages = load_language_config(excel_file)
+
 
 # Initializing script...
 for topic in topic_agenda:
